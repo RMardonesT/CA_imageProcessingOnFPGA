@@ -1,0 +1,176 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Aug 21 20:38:56 2018
+# Process ID: 13428
+# Current directory: C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7288 C:\Users\ricar\Desktop\Lab. Digitales\sesion_9_ptoyectada\sesion 9\sesion 9.xpr
+# Log file: C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/vivado.log
+# Journal file: C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/sesion 9.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/.Xil/Vivado-6908-Alpha-16/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 712.129 ; gain = 87.816
+update_compile_order -fileset sources_1
+close [ open {C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/sesion 9.srcs/sources_1/new/gray_scale.sv} w ]
+add_files {{C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/sesion 9.srcs/sources_1/new/gray_scale.sv}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 21 21:00:10 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/sesion 9.runs/synth_1/runme.log
+[Tue Aug 21 21:00:10 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/sesion 9.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Aug 21 21:08:20 2018] Launched synth_1...
+Run output will be captured here: C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/sesion 9.runs/synth_1/runme.log
+[Tue Aug 21 21:08:20 2018] Launched impl_1...
+Run output will be captured here: C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/sesion 9.runs/impl_1/runme.log
+archive_project {C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9.xpr.zip} -temp_dir {C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0} -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'clk_wiz_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'blk_mem_gen_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'clk_wiz_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'blk_mem_gen_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'blk_mem_gen_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'blk_mem_gen_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'clk_wiz_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'clk_wiz_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+ERROR: [Common 17-680] Path length exceeds 248-Byte maximum allowed by Windows: C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0/PrjAr/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 8/sesion_8_casi_final.xpr/sesion_8_ahora_si/sesion_8_ahora_si.srcs/sources_1/new
+Please consider using the OS subst command to shorten the path length by mapping part of the path to a virtual drive letter. See Answer Record AR52787 for more information.
+Resolution: In Windows 7 or later, the mklink command can also be used to create a symbolic link and shorten the path.
+archive_project {C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9.xpr.zip} -temp_dir {C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0} -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'clk_wiz_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'blk_mem_gen_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'clk_wiz_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'blk_mem_gen_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'blk_mem_gen_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'blk_mem_gen_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'clk_wiz_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'clk_wiz_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+ERROR: [Common 17-680] Path length exceeds 248-Byte maximum allowed by Windows: C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0/PrjAr/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 8/sesion_8_casi_final.xpr/sesion_8_ahora_si/sesion_8_ahora_si.srcs/sources_1/new
+Please consider using the OS subst command to shorten the path length by mapping part of the path to a virtual drive letter. See Answer Record AR52787 for more information.
+Resolution: In Windows 7 or later, the mklink command can also be used to create a symbolic link and shorten the path.
+archive_project {C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9 gray.xpr.zip} -temp_dir {C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0} -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'clk_wiz_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'blk_mem_gen_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'clk_wiz_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'blk_mem_gen_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'blk_mem_gen_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'blk_mem_gen_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'clk_wiz_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'clk_wiz_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+ERROR: [Common 17-680] Path length exceeds 248-Byte maximum allowed by Windows: C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0/PrjAr/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 8/sesion_8_casi_final.xpr/sesion_8_ahora_si/sesion_8_ahora_si.srcs/sources_1/new
+Please consider using the OS subst command to shorten the path length by mapping part of the path to a virtual drive letter. See Answer Record AR52787 for more information.
+Resolution: In Windows 7 or later, the mklink command can also be used to create a symbolic link and shorten the path.
+archive_project {C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion_gray.xpr.zip} -temp_dir {C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0} -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'clk_wiz_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'blk_mem_gen_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'clk_wiz_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'blk_mem_gen_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'blk_mem_gen_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'blk_mem_gen_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'clk_wiz_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'clk_wiz_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+ERROR: [Common 17-680] Path length exceeds 248-Byte maximum allowed by Windows: C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0/PrjAr/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 8/sesion_8_casi_final.xpr/sesion_8_ahora_si/sesion_8_ahora_si.srcs/sources_1/new
+Please consider using the OS subst command to shorten the path length by mapping part of the path to a virtual drive letter. See Answer Record AR52787 for more information.
+Resolution: In Windows 7 or later, the mklink command can also be used to create a symbolic link and shorten the path.
+save_project_as sesion9__gray {C:/Users/ricar/Desktop/Lab. Digitales/sesion 9/sesion9__gray} -force
+save_project_as: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 812.945 ; gain = 0.000
+archive_project {C:/Users/ricar/Desktop/Lab. Digitales/sesion 9/sesion9__gray.xpr.zip} -temp_dir {C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0} -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0/PrjAr/_X_'.
+ERROR: [Common 17-680] Path length exceeds 248-Byte maximum allowed by Windows: C:/Users/ricar/Desktop/Lab. Digitales/sesion_9_ptoyectada/sesion 9/.Xil/Vivado-13428-DESKTOP-HLFV2O0/PrjAr/_X_/sesion9__gray.srcs/sources_1/imports/Lab. Digitales/sesion 8/sesion_8_casi_final.xpr/sesion_8_ahora_si/sesion_8_ahora_si.srcs/sources_1/new
+Please consider using the OS subst command to shorten the path length by mapping part of the path to a virtual drive letter. See Answer Record AR52787 for more information.
+Resolution: In Windows 7 or later, the mklink command can also be used to create a symbolic link and shorten the path.
+ERROR: [Coretcl 2-229] (archive_project): Project save_as failed due to the previous error(s).
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 22 00:35:17 2018...

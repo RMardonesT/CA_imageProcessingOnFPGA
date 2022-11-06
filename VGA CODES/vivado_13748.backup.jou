@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Aug 22 13:11:19 2018
+# Process ID: 13748
+# Current directory: C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4932 C:\Users\fgarrido\Desktop\sesion 9_SEN\sesion 9_SEN\sesion 9\sesion 9.xpr
+# Log file: C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/vivado.log
+# Journal file: C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.xpr}
+update_compile_order -fileset sources_1
+archive_project {C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion9_sindit.xpr.zip} -temp_dir {C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/.Xil/Vivado-13748-Alpha-16} -force -include_local_ip_cache

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Oct  1 18:09:37 2022
+# Process ID: 7144
+# Current directory: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/VIVADO/sesion 9/sesion 9.runs/synth_1
+# Command line: vivado.exe -log TOP_9.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_9.tcl
+# Log file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/VIVADO/sesion 9/sesion 9.runs/synth_1/TOP_9.vds
+# Journal file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/VIVADO/sesion 9/sesion 9.runs/synth_1\vivado.jou
+# Running On: Richi-PC, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 12730 MB
+#-----------------------------------------------------------
+source TOP_9.tcl -notrace
+ERROR: [Common 17-165] Too many positional options when parsing '9.srcs/utils_1/imports/synth_1/TOP_9.dcp', please type 'read_checkpoint -help' for usage info.
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  1 18:09:43 2022...

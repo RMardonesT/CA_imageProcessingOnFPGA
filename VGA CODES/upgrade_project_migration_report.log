@@ -1,0 +1,27 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Fri Jun 17 15:56:47 2022
+| Host         : LAPTOP-R5U6T19K running 64-bit major release  (build 9200)
+| Command      : upgrade_project -migrate_output_products
+| Project_Path : C:/Users/ricar/Desktop/MEMORIA/sesion 9/sesion 9.xpr
+------------------------------------------------------------------------------------
+
+Project Status Summary
+
+1. Project IP Status
+--------------------
+This project contains 2 IP and 0 Block Designs.
+
+
+1.1 Project IP Instances
++---------------+-------------------------+-------------------------------------+-------------------------------------+
+| Instance Name | Status                  | Reason                              | Recommendation                      |
++---------------+-------------------------+-------------------------------------+-------------------------------------+
+| clk_wiz_0     | Will be Migrated.       |                                     |                                     |
++---------------+-------------------------+-------------------------------------+-------------------------------------+
+| blk_mem_gen_0 | Will be Migrated.       |                                     |                                     |
++---------------+-------------------------+-------------------------------------+-------------------------------------+
+
+
+

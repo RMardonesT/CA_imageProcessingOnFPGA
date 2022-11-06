@@ -1,0 +1,9 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/Rule30/Rule30.sim/sim_1/behav/xsim/glbl.v,1655954827,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/Rule30/Rule30.srcs/sim_1/new/CA_sim.sv,1655954824,systemVerilog,,,,CA_sim,,uvm,,,,,,
+C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/Rule30/Rule30.srcs/sources_1/new/CA.sv,1655954824,systemVerilog,,,,CA,,uvm,,,,,,
+C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/Rule30/Rule30.srcs/sources_1/new/CA_genvar.sv,1655954824,systemVerilog,,C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/Rule30/Rule30.srcs/sources_1/new/cell.sv,,CA_genvar,,uvm,,,,,,
+C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/Rule30/Rule30.srcs/sources_1/new/cell.sv,1655954824,systemVerilog,,C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/Rule30/Rule30.srcs/sim_1/new/CA_sim.sv,,celda,,uvm,,,,,,

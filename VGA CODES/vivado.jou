@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Jun 17 15:55:24 2022
+# Process ID: 17440
+# Current directory: C:/Users/ricar/Desktop/MEMORIA/sesion 9
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19860 C:\Users\ricar\Desktop\MEMORIA\sesion 9\sesion 9.xpr
+# Log file: C:/Users/ricar/Desktop/MEMORIA/sesion 9/vivado.log
+# Journal file: C:/Users/ricar/Desktop/MEMORIA/sesion 9\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/ricar/Desktop/MEMORIA/sesion 9/sesion 9.xpr}
+upgrade_project -migrate_output_products
+update_compile_order -fileset sources_1

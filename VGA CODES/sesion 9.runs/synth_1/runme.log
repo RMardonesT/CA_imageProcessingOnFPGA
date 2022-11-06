@@ -1,0 +1,557 @@
+
+*** Running vivado
+    with args -log TOP_9.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_9.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source TOP_9.tcl -notrace
+Command: synth_design -top TOP_9 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16812 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 371.520 ; gain = 101.422
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP_9' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:4]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.runs/synth_1/.Xil/Vivado-10508-Alpha-16/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.runs/synth_1/.Xil/Vivado-10508-Alpha-16/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'inst' of module 'clk_wiz_0' requires 4 connections, but only 3 given [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:26]
+INFO: [Synth 8-638] synthesizing module 'uart_basic' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 7/uart_basic.v:10]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uart_baud_tick_gen' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 7/uart_baud_tick_gen.v:11]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter OVERSAMPLING bound to: 8 - type: integer 
+	Parameter ACC_WIDTH bound to: 18 - type: integer 
+	Parameter SHIFT_LIMITER bound to: 7 - type: integer 
+	Parameter INCREMENT bound to: 2416 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 7/uart_baud_tick_gen.v:38]
+INFO: [Synth 8-256] done synthesizing module 'uart_baud_tick_gen' (2#1) [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 7/uart_baud_tick_gen.v:11]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 7/uart_rx.v:10]
+	Parameter RX_IDLE bound to: 0 - type: integer 
+	Parameter RX_START bound to: 1 - type: integer 
+	Parameter RX_RECV bound to: 2 - type: integer 
+	Parameter RX_STOP bound to: 3 - type: integer 
+	Parameter RX_READY bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'data_sync' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 7/reference/data_sync.v:11]
+INFO: [Synth 8-256] done synthesizing module 'data_sync' (3#1) [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 7/reference/data_sync.v:11]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 7/uart_rx.v:78]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (4#1) [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 7/uart_rx.v:10]
+INFO: [Synth 8-638] synthesizing module 'uart_baud_tick_gen__parameterized0' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 7/uart_baud_tick_gen.v:11]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter OVERSAMPLING bound to: 1 - type: integer 
+	Parameter ACC_WIDTH bound to: 18 - type: integer 
+	Parameter SHIFT_LIMITER bound to: 4 - type: integer 
+	Parameter INCREMENT bound to: 302 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_baud_tick_gen__parameterized0' (4#1) [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 7/uart_baud_tick_gen.v:11]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 7/uart_tx.v:10]
+	Parameter TX_IDLE bound to: 2'b00 
+	Parameter TX_START bound to: 2'b01 
+	Parameter TX_SEND bound to: 2'b10 
+	Parameter TX_STOP bound to: 2'b11 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (5#1) [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 7/uart_tx.v:10]
+INFO: [Synth 8-256] done synthesizing module 'uart_basic' (6#1) [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 7/uart_basic.v:10]
+INFO: [Synth 8-638] synthesizing module 'color_byte' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/color_byte.sv:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/color_byte.sv:50]
+INFO: [Synth 8-256] done synthesizing module 'color_byte' (7#1) [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/color_byte.sv:1]
+INFO: [Synth 8-638] synthesizing module 'display_s6' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 8/sesion_8_casi_final.xpr/sesion_8_ahora_si/sesion_8_ahora_si.srcs/sources_1/new/le_display.sv:22]
+	Parameter counter_max bound to: 62499 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 8/sesion_8_casi_final.xpr/sesion_8_ahora_si/sesion_8_ahora_si.srcs/sources_1/new/le_display.sv:72]
+INFO: [Synth 8-226] default block is never used [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 8/sesion_8_casi_final.xpr/sesion_8_ahora_si/sesion_8_ahora_si.srcs/sources_1/new/le_display.sv:90]
+INFO: [Synth 8-226] default block is never used [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 8/sesion_8_casi_final.xpr/sesion_8_ahora_si/sesion_8_ahora_si.srcs/sources_1/new/le_display.sv:113]
+INFO: [Synth 8-256] done synthesizing module 'display_s6' (8#1) [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/imports/Lab. Digitales/sesion 8/sesion_8_casi_final.xpr/sesion_8_ahora_si/sesion_8_ahora_si.srcs/sources_1/new/le_display.sv:22]
+WARNING: [Synth 8-689] width (56) of port connection 'numero' does not match port width (32) of module 'display_s6' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:79]
+INFO: [Synth 8-638] synthesizing module 'driver_vga' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/driver_vga.sv:15]
+	Parameter hpixels bound to: 11'b10101010000 
+	Parameter vlines bound to: 11'b01100100101 
+	Parameter hfp bound to: 11'b00001000000 
+	Parameter hsc bound to: 11'b00001101000 
+	Parameter hbp bound to: 11'b00010101000 
+	Parameter vfp bound to: 11'b00000000011 
+	Parameter vsc bound to: 11'b00000000100 
+	Parameter vbp bound to: 11'b00000011110 
+INFO: [Synth 8-256] done synthesizing module 'driver_vga' (9#1) [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/driver_vga.sv:15]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.runs/synth_1/.Xil/Vivado-10508-Alpha-16/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (10#1) [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.runs/synth_1/.Xil/Vivado-10508-Alpha-16/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'color_scrambler' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/color_scrambler.sv:4]
+INFO: [Synth 8-256] done synthesizing module 'color_scrambler' (11#1) [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/color_scrambler.sv:4]
+INFO: [Synth 8-638] synthesizing module 'gray_scale' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/gray_scale.sv:3]
+INFO: [Synth 8-256] done synthesizing module 'gray_scale' (12#1) [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/gray_scale.sv:3]
+WARNING: [Synth 8-689] width (4) of port connection 'azul' does not match port width (8) of module 'gray_scale' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:123]
+WARNING: [Synth 8-689] width (4) of port connection 'verde' does not match port width (8) of module 'gray_scale' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:123]
+WARNING: [Synth 8-689] width (4) of port connection 'rojo' does not match port width (8) of module 'gray_scale' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:123]
+WARNING: [Synth 8-689] width (4) of port connection 'rojo_gris' does not match port width (8) of module 'gray_scale' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:123]
+WARNING: [Synth 8-689] width (4) of port connection 'verde_gris' does not match port width (8) of module 'gray_scale' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:123]
+WARNING: [Synth 8-689] width (4) of port connection 'azul_gris' does not match port width (8) of module 'gray_scale' [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:123]
+INFO: [Synth 8-256] done synthesizing module 'TOP_9' (13#1) [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:4]
+WARNING: [Synth 8-3917] design TOP_9 has port LED[15] driven by constant 0
+WARNING: [Synth 8-3917] design TOP_9 has port LED[14] driven by constant 0
+WARNING: [Synth 8-3917] design TOP_9 has port LED[13] driven by constant 0
+WARNING: [Synth 8-3917] design TOP_9 has port LED[12] driven by constant 0
+WARNING: [Synth 8-3917] design TOP_9 has port LED[11] driven by constant 0
+WARNING: [Synth 8-3917] design TOP_9 has port LED[10] driven by constant 0
+WARNING: [Synth 8-3331] design TOP_9 has unconnected port SW[9]
+WARNING: [Synth 8-3331] design TOP_9 has unconnected port SW[8]
+WARNING: [Synth 8-3331] design TOP_9 has unconnected port SW[7]
+WARNING: [Synth 8-3331] design TOP_9 has unconnected port SW[6]
+WARNING: [Synth 8-3331] design TOP_9 has unconnected port SW[5]
+WARNING: [Synth 8-3331] design TOP_9 has unconnected port SW[4]
+WARNING: [Synth 8-3331] design TOP_9 has unconnected port SW[3]
+WARNING: [Synth 8-3331] design TOP_9 has unconnected port SW[2]
+WARNING: [Synth 8-3331] design TOP_9 has unconnected port SW[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 424.016 ; gain = 153.918
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin uart_basic_inst:tx_start to constant 0 [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:43]
+WARNING: [Synth 8-3295] tying undriven pin uart_basic_inst:tx_data[7] to constant 0 [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:43]
+WARNING: [Synth 8-3295] tying undriven pin uart_basic_inst:tx_data[6] to constant 0 [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:43]
+WARNING: [Synth 8-3295] tying undriven pin uart_basic_inst:tx_data[5] to constant 0 [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:43]
+WARNING: [Synth 8-3295] tying undriven pin uart_basic_inst:tx_data[4] to constant 0 [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:43]
+WARNING: [Synth 8-3295] tying undriven pin uart_basic_inst:tx_data[3] to constant 0 [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:43]
+WARNING: [Synth 8-3295] tying undriven pin uart_basic_inst:tx_data[2] to constant 0 [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:43]
+WARNING: [Synth 8-3295] tying undriven pin uart_basic_inst:tx_data[1] to constant 0 [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:43]
+WARNING: [Synth 8-3295] tying undriven pin uart_basic_inst:tx_data[0] to constant 0 [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/sources_1/new/TOP_9.sv:43]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 424.016 ; gain = 153.918
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.runs/synth_1/.Xil/Vivado-10508-Alpha-16/dcp2/clk_wiz_0_in_context.xdc] for cell 'inst'
+Finished Parsing XDC File [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.runs/synth_1/.Xil/Vivado-10508-Alpha-16/dcp2/clk_wiz_0_in_context.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.runs/synth_1/.Xil/Vivado-10508-Alpha-16/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'instamn'
+Finished Parsing XDC File [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.runs/synth_1/.Xil/Vivado-10508-Alpha-16/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'instamn'
+Parsing XDC File [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_9_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_9_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 777.805 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'instamn' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 777.805 ; gain = 507.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 777.805 ; gain = 507.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  {C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.runs/synth_1/.Xil/Vivado-10508-Alpha-16/dcp2/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  {C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.runs/synth_1/.Xil/Vivado-10508-Alpha-16/dcp2/clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for instamn. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 777.805 ; gain = 507.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-5544] ROM "rx_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clock" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RX_IDLE |                              000 |                              000
+                RX_START |                              001 |                              001
+                 RX_RECV |                              010 |                              010
+                 RX_STOP |                              011 |                              011
+                RX_READY |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 777.805 ; gain = 507.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input     18 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 4     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               19 Bit    Registers := 2     
+	               18 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 5     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 11    
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 11    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TOP_9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+Module uart_baud_tick_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+Module data_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+Module uart_baud_tick_gen__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module uart_basic 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module color_byte 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module display_s6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 1     
+Module driver_vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 5     
+Module color_scrambler 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 3     
+Module gray_scale 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "nolabel_line77/clock" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design TOP_9 has port LED[15] driven by constant 0
+WARNING: [Synth 8-3917] design TOP_9 has port LED[14] driven by constant 0
+WARNING: [Synth 8-3917] design TOP_9 has port LED[13] driven by constant 0
+WARNING: [Synth 8-3917] design TOP_9 has port LED[12] driven by constant 0
+WARNING: [Synth 8-3917] design TOP_9 has port LED[11] driven by constant 0
+WARNING: [Synth 8-3917] design TOP_9 has port LED[10] driven by constant 0
+WARNING: [Synth 8-3331] design TOP_9 has unconnected port SW[9]
+WARNING: [Synth 8-3331] design TOP_9 has unconnected port SW[8]
+WARNING: [Synth 8-3331] design TOP_9 has unconnected port SW[7]
+WARNING: [Synth 8-3331] design TOP_9 has unconnected port SW[6]
+WARNING: [Synth 8-3331] design TOP_9 has unconnected port SW[5]
+WARNING: [Synth 8-3331] design TOP_9 has unconnected port SW[4]
+WARNING: [Synth 8-3331] design TOP_9 has unconnected port SW[3]
+WARNING: [Synth 8-3331] design TOP_9 has unconnected port SW[2]
+WARNING: [Synth 8-3331] design TOP_9 has unconnected port SW[0]
+WARNING: [Synth 8-3332] Sequential element (uart_basic_inst/uart_tx_blk/tx_data_reg_reg[7]) is unused and will be removed from module TOP_9.
+WARNING: [Synth 8-3332] Sequential element (uart_basic_inst/uart_tx_blk/tx_data_reg_reg[6]) is unused and will be removed from module TOP_9.
+WARNING: [Synth 8-3332] Sequential element (uart_basic_inst/uart_tx_blk/tx_data_reg_reg[5]) is unused and will be removed from module TOP_9.
+WARNING: [Synth 8-3332] Sequential element (uart_basic_inst/uart_tx_blk/tx_data_reg_reg[4]) is unused and will be removed from module TOP_9.
+WARNING: [Synth 8-3332] Sequential element (uart_basic_inst/uart_tx_blk/tx_data_reg_reg[3]) is unused and will be removed from module TOP_9.
+WARNING: [Synth 8-3332] Sequential element (uart_basic_inst/uart_tx_blk/tx_data_reg_reg[2]) is unused and will be removed from module TOP_9.
+WARNING: [Synth 8-3332] Sequential element (uart_basic_inst/uart_tx_blk/tx_data_reg_reg[1]) is unused and will be removed from module TOP_9.
+WARNING: [Synth 8-3332] Sequential element (uart_basic_inst/uart_tx_blk/tx_data_reg_reg[0]) is unused and will be removed from module TOP_9.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 777.805 ; gain = 507.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/clk_out1' to pin 'inst/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 777.805 ; gain = 507.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 792.398 ; gain = 522.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (uart_basic_inst/uart_tx_blk/counter_reg[2]) is unused and will be removed from module TOP_9.
+WARNING: [Synth 8-3332] Sequential element (uart_basic_inst/uart_tx_blk/counter_reg[1]) is unused and will be removed from module TOP_9.
+WARNING: [Synth 8-3332] Sequential element (uart_basic_inst/uart_tx_blk/counter_reg[0]) is unused and will be removed from module TOP_9.
+WARNING: [Synth 8-3332] Sequential element (uart_basic_inst/uart_tx_blk/state_reg[1]) is unused and will be removed from module TOP_9.
+WARNING: [Synth 8-3332] Sequential element (uart_basic_inst/uart_tx_blk/state_reg[0]) is unused and will be removed from module TOP_9.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 799.059 ; gain = 528.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 799.059 ; gain = 528.961
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 799.059 ; gain = 528.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 799.059 ; gain = 528.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 799.059 ; gain = 528.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 799.059 ; gain = 528.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 799.059 ; gain = 528.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |clk_wiz_0     |     1|
+|3     |CARRY4        |    24|
+|4     |LUT1          |    13|
+|5     |LUT2          |    37|
+|6     |LUT3          |    42|
+|7     |LUT4          |    37|
+|8     |LUT5          |    45|
+|9     |LUT6          |    86|
+|10    |MUXF7         |    12|
+|11    |FDCE          |     3|
+|12    |FDRE          |   151|
+|13    |FDSE          |     5|
+|14    |IBUF          |     9|
+|15    |OBUF          |    45|
++------+--------------+------+
+
+Report Instance Areas: 
++------+-------------------+-----------------------------------+------+
+|      |Instance           |Module                             |Cells |
++------+-------------------+-----------------------------------+------+
+|1     |top                |                                   |   535|
+|2     |  insta            |color_byte                         |    92|
+|3     |  m_driver         |driver_vga                         |   176|
+|4     |  nolabel_line77   |display_s6                         |    84|
+|5     |  uart_basic_inst  |uart_basic                         |   103|
+|6     |    baud8_tick_blk |uart_baud_tick_gen                 |    29|
+|7     |    baud_tick_blk  |uart_baud_tick_gen__parameterized0 |    29|
+|8     |    uart_rx_blk    |uart_rx                            |    43|
+|9     |      rx_sync_inst |data_sync                          |     9|
++------+-------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 799.059 ; gain = 528.961
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:53 . Memory (MB): peak = 799.059 ; gain = 175.172
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 799.059 ; gain = 528.961
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+56 Infos, 61 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:12 . Memory (MB): peak = 799.059 ; gain = 540.434
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fgarrido/Desktop/sesion 9_SEN/sesion 9_SEN/sesion 9/sesion 9.runs/synth_1/TOP_9.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_9_utilization_synth.rpt -pb TOP_9_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 799.059 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 22 12:26:23 2018...

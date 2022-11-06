@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Oct 24 14:29:52 2022
+# Process ID: 7132
+# Current directory: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/VIVADO/CA_test/CA_test.runs/synth_1
+# Command line: vivado.exe -log Grid_load.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Grid_load.tcl
+# Log file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/VIVADO/CA_test/CA_test.runs/synth_1/Grid_load.vds
+# Journal file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/VIVADO/CA_test/CA_test.runs/synth_1\vivado.jou
+# Running On: Richi-PC, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 12730 MB
+#-----------------------------------------------------------
+source Grid_load.tcl -notrace
