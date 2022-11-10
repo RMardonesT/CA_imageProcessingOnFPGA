@@ -84,7 +84,7 @@ module sim_LOAD_GRID( );
     #4 trigger = 1;
     #2 trigger = 0;
     
-    
+    load = 1;
     
     //tercera copia
     data_in = 'd3;    
@@ -130,7 +130,8 @@ module sim_LOAD_GRID( );
     #2 trigger = 0;
     
     #10
-    load = 1;
+    load = 0;
+    
     
     // SECOND LOAD
    

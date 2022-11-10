@@ -123,7 +123,7 @@ module FSM_LOAD   #(parameter  M = 5, N = 3)(
                                 end
                                 
                                 
-                            else if (row == N-1  & col == M ) begin                                                            
+                            else if (row == N-1  & col == M -1 ) begin                                                            
                                     next_state = LOAD_CELL;
                                     next_shift = 'd3;
                                     

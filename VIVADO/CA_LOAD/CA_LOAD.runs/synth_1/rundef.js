@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log GRID.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source GRID.tcl" );
+         "-log GRID_SCRIPT.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source GRID_SCRIPT.tcl" );
 
 
 

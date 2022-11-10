@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log GRID.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source GRID.tcl
+EAStep vivado -log GRID_SCRIPT.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source GRID_SCRIPT.tcl

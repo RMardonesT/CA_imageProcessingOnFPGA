@@ -3,8 +3,8 @@ from pprint import pprint
 
 
 #tamanno de la grilla
-M = 4
-N = 5
+M = 3
+N = 3
 
 
 dimensions = (M,N)
@@ -74,9 +74,12 @@ for row in grid:
 print()
 
 
+
 #LINEAS INSTANCIA
 
-mod_param = '/******************* CELL {celda} ***************/  \n\n\tCELDA   #(.ic(0), .top_row(1), .load_cell(1))\n\n\t\tcell0 (\n '
+mod_param_corner = '/******************* CELL {celda} ***************/  \n\n\tCELDA   #(.ic(0), .top_row({top}), .load_cell(1))\n\n\t\tcell{celda} (\n '
+mod_param = '/******************* CELL {celda} ***************/  \n\n\tCELDA   #(.ic(0), .top_row({top}))\n\n\t\tcell{celda} (\n '
+
 inst = '\t\t\t.clk(clk),\n\t\t\t.reset(reset),\n\n\t\t\t.shift(shift),\n\n'
 
 
@@ -87,9 +90,9 @@ south = '\t\t\t.SO({SO}),\n\t\t\t.S({S}),\n\t\t\t.SE({SE}),\n\n'
 self = '\t\t\t.SELF({SELF}),\n\t\t\t.cell_state({SELF})\n\t\t); \n\n'
 
 
-instancia = mod_param + inst + north + sides + self
 
-print(instancia)
+
+
 
 #generacion en formato packed array de SystemVerilog
 gen = [0]*(M*N)
@@ -105,22 +108,54 @@ for row in range(N):
         
         neighborhood = find_neighborhood(col,row,grid)
         NO,N,NE, O,MAIN,E, SO,S,SE = neighborhood
-        
+
+        if grid[row][col] < M:
+          top = '1'
+        else:
+          top = '0'
 
 
-        'gen[' +str(NO)+']'
+        print(row*col)
+      
         
-        print(instancia.format(celda = grid[row][col],  NO = 'gen[' +str(NO)+']', N = 'gen[' +str(N)+']', NE = 'gen[' +str(NE)+']', O = 'gen[' +str(O)+']', E = 'gen[' +str(E)+']', SO = 'gen[' +str(SO)+']', S = 'gen[' +str(S)+']', SE = 'gen[' +str(SE)+']', SELF = 'gen[' +str(MAIN)+']'))
-        archSV.write(instancia.format(celda = grid[row][col],
+        if row == 0 and col ==0:
+          instancia = mod_param_corner + inst + north + sides +  south  + self
+          
+
+          celda_inst =      instancia.format(celda = grid[row][col],
+                                      top = top,
+                                             
                                       NO = 'gen[' +str(NO)+']',
                                       N = 'gen[' +str(N)+']',
                                       NE = 'gen[' +str(NE)+']',
-                                      O = 'gen[' +str(O)+']',
+                                      O = 'data_in',
                                       E = 'gen[' +str(E)+']',
                                       SO = 'gen[' +str(SO)+']',
                                       S = 'gen[' +str(S)+']',
                                       SE = 'gen[' +str(SE)+']',
-                                      SELF = 'gen[' +str(MAIN)+']'))
+                                      SELF = 'gen[' +str(MAIN)+']')
+          
+          
+          
+        else:
+          instancia = mod_param + inst + north +   sides +  south + self
+
+        
+          celda_inst =      instancia.format(celda = grid[row][col],
+                                        top = top,
+                                        NO = 'gen[' +str(NO)+']',
+                                        N = 'gen[' +str(N)+']',
+                                        NE = 'gen[' +str(NE)+']',
+                                        O = 'gen[' +str(O)+']',
+                                        E = 'gen[' +str(E)+']',
+                                        SO = 'gen[' +str(SO)+']',
+                                        S = 'gen[' +str(S)+']',
+                                        SE = 'gen[' +str(SE)+']',
+                                        SELF = 'gen[' +str(MAIN)+']')
+        
+        print(grid[row][col] , '<' ,M)
+        print(celda_inst)
+        archSV.write(celda_inst)
         cont +=1
 
 

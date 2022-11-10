@@ -118,6 +118,14 @@ module sim_GRID( );
         shift = 'd1;
         #2
         shift = 'd3;
+        
+        
+        //novena  copia
+        data_in = 'd10;
+        #5 
+        shift = 'd1;
+        #2
+        shift = 'd3;
 
         
    

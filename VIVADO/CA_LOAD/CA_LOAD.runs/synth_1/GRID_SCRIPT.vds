@@ -2,29 +2,31 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Thu Nov 10 09:57:21 2022
-# Process ID: 12924
+# Start of session at: Thu Nov 10 12:34:49 2022
+# Process ID: 15860
 # Current directory: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.runs/synth_1
-# Command line: vivado.exe -log GRID.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source GRID.tcl
-# Log file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.runs/synth_1/GRID.vds
+# Command line: vivado.exe -log GRID_SCRIPT.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source GRID_SCRIPT.tcl
+# Log file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.runs/synth_1/GRID_SCRIPT.vds
 # Journal file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.runs/synth_1\vivado.jou
 # Running On: Richi-PC, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 12730 MB
 #-----------------------------------------------------------
-source GRID.tcl -notrace
+source GRID_SCRIPT.tcl -notrace
 Command: read_checkpoint -auto_incremental -incremental C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/VIVADO/CA_LOAD/CA_LOAD.srcs/utils_1/imports/synth_1/CELDA.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/VIVADO/CA_LOAD/CA_LOAD.srcs/utils_1/imports/synth_1/CELDA.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
-Command: synth_design -top GRID -part xc7a100tcsg324-1
+Command: synth_design -top GRID_SCRIPT -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8200
+INFO: [Synth 8-7075] Helper process launched with PID 1888
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1280.195 ; gain = 0.000
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1279.652 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'GRID' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.srcs/sources_1/new/GRID.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'GRID_SCRIPT' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.srcs/sources_1/new/GRID_SCRIPT.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'CELDA' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.srcs/sources_1/new/CELDA.sv:23]
 	Parameter ic bound to: 0 - type: integer 
 	Parameter top_row bound to: 1 - type: integer 
@@ -34,48 +36,25 @@ INFO: [Synth 8-6157] synthesizing module 'CELDA__parameterized0' [C:/Users/ricar
 	Parameter ic bound to: 0 - type: integer 
 	Parameter top_row bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'CELDA__parameterized0' (0#1) [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.srcs/sources_1/new/CELDA.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'CELDA__parameterized1' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.srcs/sources_1/new/CELDA.sv:23]
-	Parameter ic bound to: 0 - type: integer 
-	Parameter top_row bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'CELDA__parameterized1' (0#1) [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.srcs/sources_1/new/CELDA.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'GRID' (0#1) [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.srcs/sources_1/new/GRID.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'GRID_SCRIPT' (0#1) [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.srcs/sources_1/new/GRID_SCRIPT.sv:23]
+WARNING: [Synth 8-7129] Port load in module GRID_SCRIPT is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1280.195 ; gain = 0.000
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1279.652 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1280.195 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1279.652 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1279.652 ; gain = 0.000
+---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1280.195 ; gain = 0.000
 ---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1279.652 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Start Preparing Guide Design
----------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/VIVADO/CA_LOAD/CA_LOAD.srcs/utils_1/imports/synth_1/CELDA.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
----------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1280.195 ; gain = 0.000
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1280.195 ; gain = 0.000
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1280.195 ; gain = 0.000
----------------------------------------------------------------------------------
-
-
-Incremental Synthesis Report Summary:
-
-1. Incremental synthesis run: no
-
-   Reason for not running incremental synthesis : 
-
-
-INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -86,8 +65,8 @@ Detailed RTL Component Info :
 +---Registers : 
 	                8 Bit    Registers := 9     
 +---Muxes : 
-	   2 Input    8 Bit        Muxes := 23    
-	   4 Input    8 Bit        Muxes := 7     
+	   2 Input    8 Bit        Muxes := 26    
+	   4 Input    8 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -105,21 +84,22 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port load in module GRID_SCRIPT is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1280.195 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1279.652 ; gain = 0.000
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1280.195 ; gain = 0.000
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1279.652 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1280.195 ; gain = 0.000
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1279.652 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -137,37 +117,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 1280.195 ; gain = 0.000
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1279.652 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 1280.195 ; gain = 0.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1279.652 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1280.195 ; gain = 0.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1279.652 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1280.195 ; gain = 0.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1279.652 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1280.195 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1279.652 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1280.195 ; gain = 0.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1279.652 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -186,11 +166,11 @@ Report Cell Usage:
 |1     |BUFG   |     1|
 |2     |CARRY4 |    72|
 |3     |LUT1   |     4|
-|4     |LUT2   |    33|
-|5     |LUT3   |   215|
-|6     |LUT4   |   244|
-|7     |LUT5   |    13|
-|8     |LUT6   |   102|
+|4     |LUT2   |    29|
+|5     |LUT3   |   216|
+|6     |LUT4   |   251|
+|7     |LUT5   |    19|
+|8     |LUT6   |    90|
 |9     |FDRE   |    72|
 |10    |IBUF   |    12|
 |11    |OBUF   |    72|
@@ -200,39 +180,38 @@ Report Instance Areas:
 +------+---------+------------------------+------+
 |      |Instance |Module                  |Cells |
 +------+---------+------------------------+------+
-|1     |top      |                        |   840|
-|2     |  cell0  |CELDA                   |    67|
-|3     |  cell1  |CELDA__parameterized0   |   127|
-|4     |  cell2  |CELDA__parameterized0_0 |    86|
-|5     |  cell3  |CELDA__parameterized1   |    60|
-|6     |  cell4  |CELDA__parameterized1_1 |    80|
-|7     |  cell5  |CELDA__parameterized1_2 |    68|
-|8     |  cell6  |CELDA__parameterized1_3 |    85|
-|9     |  cell7  |CELDA__parameterized1_4 |    97|
-|10    |  cell8  |CELDA__parameterized1_5 |    85|
+|1     |top      |                        |   838|
+|2     |  cell0  |CELDA                   |    60|
+|3     |  cell1  |CELDA_0                 |   100|
+|4     |  cell2  |CELDA_1                 |    86|
+|5     |  cell3  |CELDA_2                 |    70|
+|6     |  cell4  |CELDA__parameterized0   |   116|
+|7     |  cell5  |CELDA__parameterized0_3 |    69|
+|8     |  cell6  |CELDA_4                 |    87|
+|9     |  cell7  |CELDA__parameterized0_5 |    92|
+|10    |  cell8  |CELDA__parameterized0_6 |    73|
 +------+---------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1280.195 ; gain = 0.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1279.652 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 1 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1280.195 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1280.195 ; gain = 0.000
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1279.652 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1279.652 ; gain = 0.000
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1280.195 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1279.652 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 72 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1280.195 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1279.652 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 6e6932b1
+Synth Design complete, checksum: 2cdf24ab
 INFO: [Common 17-83] Releasing license: Synthesis
-23 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+22 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 1280.195 ; gain = 0.000
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-INFO: [Common 17-1381] The checkpoint 'C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.runs/synth_1/GRID.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file GRID_utilization_synth.rpt -pb GRID_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 10 09:58:04 2022...
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1279.652 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.runs/synth_1/GRID_SCRIPT.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file GRID_SCRIPT_utilization_synth.rpt -pb GRID_SCRIPT_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 10 12:35:32 2022...

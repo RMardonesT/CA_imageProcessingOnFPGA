@@ -1,14 +1,14 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Thu Nov 10 09:58:04 2022
+| Date         : Thu Nov 10 12:35:32 2022
 | Host         : Richi-PC running 64-bit major release  (build 9200)
-| Command      : report_utilization -file GRID_utilization_synth.rpt -pb GRID_utilization_synth.pb
-| Design       : GRID
+| Command      : report_utilization -file GRID_SCRIPT_utilization_synth.rpt -pb GRID_SCRIPT_utilization_synth.pb
+| Design       : GRID_SCRIPT
 | Device       : xc7a100tcsg324-1
 | Speed File   : -1
 | Design State : Synthesized
----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
 
 Utilization Design Information
 
@@ -147,14 +147,14 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT4     |  244 |                 LUT |
-| LUT3     |  215 |                 LUT |
-| LUT6     |  102 |                 LUT |
+| LUT4     |  251 |                 LUT |
+| LUT3     |  216 |                 LUT |
+| LUT6     |   90 |                 LUT |
 | OBUF     |   72 |                  IO |
 | FDRE     |   72 |        Flop & Latch |
 | CARRY4   |   72 |          CarryLogic |
-| LUT2     |   33 |                 LUT |
-| LUT5     |   13 |                 LUT |
+| LUT2     |   29 |                 LUT |
+| LUT5     |   19 |                 LUT |
 | IBUF     |   12 |                  IO |
 | LUT1     |    4 |                 LUT |
 | BUFG     |    1 |               Clock |
