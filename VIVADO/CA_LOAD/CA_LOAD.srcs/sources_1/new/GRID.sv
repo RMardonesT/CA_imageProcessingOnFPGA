@@ -37,7 +37,7 @@ module GRID(
     
     /******************* CELL 0 ***************/  
     
-     CELDA   #(.ic(0), .top_row(1))
+     CELDA   #(.ic(0), .top_row(1), .load_cell(1))
             
             cell0 (
                     .clk(clk),

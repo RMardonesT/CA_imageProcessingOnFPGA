@@ -57,80 +57,68 @@ module sim_GRID( );
         shift = 1;
         #2
         shift = 'd3;
-        data_in = 'd2;
+        
+        
         
         //segunda copia
-        #5
-        shift = 'd1;
+        data_in = 'd2;
+        #5 
+        shift = 1;
         #2
         shift = 'd3;
-        data_in = 'd3;
+        
         
         //tercera copia
-        #5
+        data_in = 'd3;
+        #5 
+        shift = 1;
+        #2
+        shift = 'd3;
+        
+        
+        //shift vertical - cuarta copia
+        data_in = 'd4;
+        #5 
+        shift = 'd2;
+        #2
+        shift = 'd3;
+        
+        //quinta  copia
+        data_in = 'd5;
+        #5 
         shift = 'd1;
         #2
         shift = 'd3;
-        data_in = 'd4;
         
-        //shift vertical
-        #5
-        shift = 'd2;
-        #2
-        shift = 'd3;
-        
-        
-        /******** SEGUNDA FILA *****************************/
-         //primera copia
-        #5 
-        shift = 1;
-        #2
-        shift = 'd3;
-        data_in = 'd5;
-        
-         //segunda  copia
-        #5 
-        shift = 1;
-        #2
-        shift = 'd3;
+        //sexta  copia
         data_in = 'd6;
-        
-        //tercera  copia
         #5 
-        shift = 1;
+        shift = 'd1;
         #2
         shift = 'd3;
-        data_in = 'd7;
         
-        //shift vertical
-        #5
+        
+        //shift vertical - septima copia
+        data_in = 'd7;
+        #5 
         shift = 'd2;
         #2
         shift = 'd3;
         
-        
-        /******** TERCERA FILA *****************************/
-        
-         //primera copia
-        #5 
-        shift = 1;
-        #2
-        shift = 'd3;
+        //sexta  copia
         data_in = 'd8;
-        
-         //segunda  copia
         #5 
-        shift = 1;
+        shift = 'd1;
         #2
         shift = 'd3;
+        
+        //sexta  copia
         data_in = 'd9;
-        
-        //tercera  copia
         #5 
-        shift = 1;
+        shift = 'd1;
         #2
         shift = 'd3;
-        data_in = 'd10;
+
         
    
     end

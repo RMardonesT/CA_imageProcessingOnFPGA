@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/VIVADO/CA_LOAD/CA_LOAD.runs/synth_1'
+HD_PWD='C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log GRID.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source GRID.tcl
+EAStep vivado -log FSM_LOAD.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FSM_LOAD.tcl

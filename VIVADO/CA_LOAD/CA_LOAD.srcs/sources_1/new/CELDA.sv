@@ -24,7 +24,8 @@ module CELDA
     
     #(parameter 
         ic = 0,
-        top_row = 0)
+        top_row = 0,
+        load_cell = 0)
     (        
     
     input logic clk, reset,
@@ -77,13 +78,25 @@ module CELDA
                 next_cell_state = SELF;
                 
         //VERTICAL SHIFT                
-        else if (shift == 2)
+        else if (shift == 2) 
+                                    
+            //copy state from northern neighbor
             if (top_row == 0)
                 next_cell_state = N;
-            else
-                next_cell_state = SELF;
+                             
+            else 
+                //corner cell gets new data_in from uart
+                if (load_cell)
+                    next_cell_state = O;
+                    
+                //cell manteins its current state                    
+                else     
+                    next_cell_state = SELF;                             
+       
+       //ANY OTHER CASE OF SHIFT SIGNAL, PREFERENTLY 3            
        else
             next_cell_state = SELF;
+            
                 
         
         

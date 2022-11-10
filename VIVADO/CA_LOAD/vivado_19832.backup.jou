@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Nov  6 13:59:55 2022
+# Process ID: 19832
+# Current directory: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23764 C:\Users\ricar\OneDrive\Escritorio\MEMORIA\CA_imageProcessingOnFPGA\VIVADO\CA_LOAD\CA_LOAD.xpr
+# Log file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/vivado.log
+# Journal file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD\vivado.jou
+# Running On: Richi-PC, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 12730 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/sim_GRID_behav.wcfg
+source sim_GRID.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top CELDA [current_fileset]
+set_property top_lib xil_defaultlib [current_fileset]
+set_property top_file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.srcs/sources_1/new/CELDA.sv [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top GRID [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+relaunch_sim
+save_wave_config {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/sim_GRID_behav.wcfg}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+restart
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close [ open C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.srcs/sources_1/new/FSM_LOAD.sv w ]
+add_files C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.srcs/sources_1/new/FSM_LOAD.sv
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FSM_LOAD [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
