@@ -1,14 +1,15 @@
-
-*** Running vivado
-    with args -log GRID.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source GRID.tcl
-
-
-
-****** Vivado v2022.1 (64-bit)
-  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
-  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Nov 10 09:57:21 2022
+# Process ID: 12924
+# Current directory: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.runs/synth_1
+# Command line: vivado.exe -log GRID.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source GRID.tcl
+# Log file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.runs/synth_1/GRID.vds
+# Journal file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.runs/synth_1\vivado.jou
+# Running On: Richi-PC, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 12730 MB
+#-----------------------------------------------------------
 source GRID.tcl -notrace
 Command: read_checkpoint -auto_incremental -incremental C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/VIVADO/CA_LOAD/CA_LOAD.srcs/utils_1/imports/synth_1/CELDA.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/VIVADO/CA_LOAD/CA_LOAD.srcs/utils_1/imports/synth_1/CELDA.dcp for incremental synthesis

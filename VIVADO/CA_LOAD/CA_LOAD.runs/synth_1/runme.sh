@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log FSM_LOAD.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FSM_LOAD.tcl
+EAStep vivado -log GRID.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source GRID.tcl

@@ -56,6 +56,7 @@ module sim_LOAD_GRID( );
             .clk(clk),
             .reset(reset),
             .shift(shift),
+            .load(load),
             .data_in(data_in),
             .out(out)
         );                   
@@ -73,46 +74,57 @@ module sim_LOAD_GRID( );
     
     #6 reset = 0;
     
+    
+    //primera copia
     #5 trigger = 1;
     #2 trigger = 0;
     
-    data_in = 'd2;
+    //segunda copia
+    data_in = 'd2;    
     #4 trigger = 1;
     #2 trigger = 0;
     
-    load = 0;
     
-    data_in = 'd3;
+    
+    //tercera copia
+    data_in = 'd3;    
     #4 trigger = 1;
     #2 trigger = 0;
     
+    //shift vertical - cuarta copia
     data_in = 'd4;
     #4 trigger = 1;
     #2 trigger = 0;
     
+    
+    //quinta  copia
     data_in = 'd5;
     #4 trigger = 1;
     #2 trigger = 0;
     
     
-    
+    //sexta  copia
     data_in = 'd6;
     #4 trigger = 1;
     #2 trigger = 0;
     
+    //shift vertical - septima copia
     data_in = 'd7;
     #4 trigger = 1;
     #2 trigger = 0;
     
+    //sexta  copia
     data_in = 'd8;
     #4 trigger = 1;
     #2 trigger = 0;
     
+    
+    //octava  copia
     data_in = 'd9;
     #4 trigger = 1;
     #2 trigger = 0;
     
-    
+    //novena  y ultima copia
     data_in = 'd10;
     #4 trigger = 1;
     #2 trigger = 0;
@@ -167,6 +179,7 @@ module sim_LOAD_GRID( );
     #4 trigger = 1;
     #2 trigger = 0;
     
+    load = 0;
   
     
     

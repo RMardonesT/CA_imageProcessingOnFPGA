@@ -2,12 +2,12 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Mon Nov  7 12:23:51 2022
-# Process ID: 13024
+# Start of session at: Thu Nov 10 09:57:21 2022
+# Process ID: 12924
 # Current directory: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.runs/synth_1
-# Command line: vivado.exe -log FSM_LOAD.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FSM_LOAD.tcl
-# Log file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.runs/synth_1/FSM_LOAD.vds
+# Command line: vivado.exe -log GRID.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source GRID.tcl
+# Log file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.runs/synth_1/GRID.vds
 # Journal file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.runs/synth_1\vivado.jou
 # Running On: Richi-PC, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 12730 MB
 #-----------------------------------------------------------
-source FSM_LOAD.tcl -notrace
+source GRID.tcl -notrace

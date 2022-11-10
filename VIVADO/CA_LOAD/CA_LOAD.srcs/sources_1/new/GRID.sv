@@ -26,6 +26,8 @@ module GRID(
     
     input logic [1:0] shift,
     
+    input logic load,
+    
     input logic [7:0] data_in,
     
     output logic [7:0] out [8:0] 
@@ -35,14 +37,16 @@ module GRID(
     logic  [7:0] C0,C1,C2,C3,C4,C5,C6,C7,C8; //coregir el tamanno de la sennal
     
     
+    
+    
     /******************* CELL 0 ***************/  
     
      CELDA   #(.ic(0), .top_row(1), .load_cell(1))
             
-            cell0 (
+            cell0 ( 
                     .clk(clk),
                     .reset(reset),
-                    
+			                    
                     .shift(shift),
                     
                      .NO(C4),

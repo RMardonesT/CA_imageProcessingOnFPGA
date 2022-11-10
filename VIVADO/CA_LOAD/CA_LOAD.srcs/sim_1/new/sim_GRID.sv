@@ -105,14 +105,14 @@ module sim_GRID( );
         #2
         shift = 'd3;
         
-        //sexta  copia
+        //octava  copia
         data_in = 'd8;
         #5 
         shift = 'd1;
         #2
         shift = 'd3;
         
-        //sexta  copia
+        //novena  copia
         data_in = 'd9;
         #5 
         shift = 'd1;
