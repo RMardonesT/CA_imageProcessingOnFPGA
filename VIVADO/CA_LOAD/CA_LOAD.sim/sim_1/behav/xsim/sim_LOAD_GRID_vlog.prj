@@ -1,7 +1,9 @@
 # compile verilog/system verilog design source files
 sv xil_defaultlib  \
+"../../../../CA_LOAD.srcs/sources_1/new/CELDA.sv" \
 "../../../../CA_LOAD.srcs/sources_1/new/FMS_LOAD.sv" \
-"../../../../CA_LOAD.srcs/sim_1/new/sim_FSM_LOAD.sv" \
+"../../../../CA_LOAD.srcs/sources_1/new/GRID.sv" \
+"../../../../CA_LOAD.srcs/sim_1/new/sim_LOAD_GRID.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

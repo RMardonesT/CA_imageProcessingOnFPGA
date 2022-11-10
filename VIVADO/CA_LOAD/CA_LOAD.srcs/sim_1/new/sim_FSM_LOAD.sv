@@ -30,7 +30,7 @@ logic [1:0] shift;
 logic [1:0] state;
 
 
-FSM_LOAD   # (.M(3), .N(3))
+FSM_LOAD   # (.M(6), .N(4))
         inst (.clk(clk),
                .reset(reset),
                
@@ -62,6 +62,54 @@ initial begin
     #2 trigger = 0;
     
     load = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
     
     #5 trigger = 1;
     #2 trigger = 0;

@@ -90,7 +90,7 @@ module FSM_LOAD   #(parameter  M = 5, N = 3)(
                   end
                   
             LOADING: begin
-                            if (trigger & col < M & row < N) begin
+                            if (trigger & col < M -1 & row < N) begin
                                 next_state = LOAD_CELL;                                
                                 next_col = col +1;                                                                
                                 next_shift = 'd1;                                
@@ -98,7 +98,7 @@ module FSM_LOAD   #(parameter  M = 5, N = 3)(
                                 
                             else if (trigger   & row < N) begin
                                 next_row = row +1;
-                                next_col = 1;                                                                
+                                next_col = 0;                                                                
                                 next_shift = 'd2;  
                                 next_state = LOAD_CELL;  
                                 end
@@ -113,9 +113,12 @@ module FSM_LOAD   #(parameter  M = 5, N = 3)(
             
       
                             
-                            if (row == N-1  & col == M & load == 0) begin                                                            
+                            if (row == N-1  & col == M -1 & load == 0) begin                                                            
                                     next_state = IDLE;
                                     next_shift = 'd0;
+                                    
+                                    next_row = 0;
+                                    next_col = 0;
                                     
                                 end
                                 
@@ -123,6 +126,8 @@ module FSM_LOAD   #(parameter  M = 5, N = 3)(
                             else if (row == N-1  & col == M ) begin                                                            
                                     next_state = LOAD_CELL;
                                     next_shift = 'd3;
+                                    
+                                    
                                     
                                 end
                                 
