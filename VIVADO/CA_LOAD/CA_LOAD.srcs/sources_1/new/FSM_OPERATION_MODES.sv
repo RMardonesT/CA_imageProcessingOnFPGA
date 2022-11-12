@@ -32,8 +32,8 @@ module FSM_OPERATION_MODES
       input logic download, //enable download of processed image
       input logic evolve,   // start normal evolution of the grid    
       
-      output logic [2:0] operation //signal of control to cells behavior    
-              
+      output logic [2:0] operation, //signal of control to cells behavior    
+      output logic [2:0] state             
     );
     
     //FSM states type:
@@ -87,6 +87,7 @@ module FSM_OPERATION_MODES
                         else if (~load & download & ~evolve)  begin
                             next_state = DOWN_WAIT;
                             next_operation = 0;
+                            next_col = 1;
                             end    
                             
                         else if (~load & ~download & evolve)   begin

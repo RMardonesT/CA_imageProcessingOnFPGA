@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1668206747" LaunchIncrCheckpoint="$PPRDIR/../../../CODIGOS/VIVADO/CA_LOAD/CA_LOAD.srcs/utils_1/imports/synth_1/CELDA.dcp">
-  <File Type="PA-TCL" Name="FSM_OPERATION_MODES.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="FSM_OPERATION_MODES_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="FSM_OPERATION_MODES_reports.tcl"/>
-  <File Type="RDS-RDS" Name="FSM_OPERATION_MODES.vds"/>
-  <File Type="RDS-UTIL" Name="FSM_OPERATION_MODES_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="FSM_OPERATION_MODES_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="FSM_OPERATION_MODES.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="FSM_OPERATION_MODES_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="FSM_OPERATION_MODES_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1668269473" LaunchIncrCheckpoint="$PPRDIR/../../../CODIGOS/VIVADO/CA_LOAD/CA_LOAD.srcs/utils_1/imports/synth_1/CELDA.dcp">
+  <File Type="PA-TCL" Name="sim_GRID.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="sim_GRID_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="sim_GRID_reports.tcl"/>
+  <File Type="RDS-RDS" Name="sim_GRID.vds"/>
+  <File Type="RDS-UTIL" Name="sim_GRID_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="sim_GRID_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="sim_GRID.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="sim_GRID_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="sim_GRID_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/FSM_OPERATION_MODES.sv">
+    <File Path="$PSRCDIR/sources_1/new/CELDA.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/CELDA.sv">
+    <File Path="$PSRCDIR/sources_1/new/GRID.sv">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sim_1/new/sim_GRID.sv">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -34,7 +40,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/GRID.sv">
+    <File Path="$PSRCDIR/sources_1/new/FSM_OPERATION_MODES.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -50,17 +56,10 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sim_1/new/sim_GRID.sv">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="FSM_OPERATION_MODES"/>
+      <Option Name="TopModule" Val="sim_GRID"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

@@ -3,8 +3,8 @@ from pprint import pprint
 
 
 #tamanno de la grilla
-M = 3
-N = 3
+M = 4
+N = 4
 
 
 dimensions = (M,N)
@@ -78,7 +78,8 @@ print()
 #LINEAS INSTANCIA
 
 mod_param_corner = '/******************* CELL {celda} ***************/  \n\n\tCELDA   #(.ic(0), .top_row({top}), .load_cell(1))\n\n\t\tcell{celda} (\n '
-mod_param = '/******************* CELL {celda} ***************/  \n\n\tCELDA   #(.ic(0), .top_row({top}))\n\n\t\tcell{celda} (\n '
+
+mod_param = '/******************* CELL {celda} ***************/  \n\n\tCELDA   #(.ic(0), .top_row({top}), .bottom_row({bot}))\n\n\t\tcell{celda} (\n '
 
 inst = '\t\t\t.clk(clk),\n\t\t\t.reset(reset),\n\n\t\t\t.shift(shift),\n\n'
 
@@ -114,9 +115,12 @@ for row in range(N):
         else:
           top = '0'
 
-
-        print(row*col)
-      
+        
+        if row == M-1:
+          bot = 1
+        else:
+          bot = 0
+                    
         
         if row == 0 and col ==0:
           instancia = mod_param_corner + inst + north + sides +  south  + self
@@ -124,6 +128,7 @@ for row in range(N):
 
           celda_inst =      instancia.format(celda = grid[row][col],
                                       top = top,
+                                      bot = bot,
                                              
                                       NO = 'gen[' +str(NO)+']',
                                       N = 'gen[' +str(N)+']',
@@ -140,9 +145,10 @@ for row in range(N):
         else:
           instancia = mod_param + inst + north +   sides +  south + self
 
-        
+          
           celda_inst =      instancia.format(celda = grid[row][col],
                                         top = top,
+                                        bot = bot,     
                                         NO = 'gen[' +str(NO)+']',
                                         N = 'gen[' +str(N)+']',
                                         NE = 'gen[' +str(NE)+']',
@@ -153,13 +159,14 @@ for row in range(N):
                                         SE = 'gen[' +str(SE)+']',
                                         SELF = 'gen[' +str(MAIN)+']')
         
-        print(grid[row][col] , '<' ,M)
+        
         print(celda_inst)
         archSV.write(celda_inst)
         cont +=1
 
 
-        
+print('\n\n assign data_out = gen[' + str(cont-1) + '];')      
+archSV.write('\n\n assign data_out = gen[' + str(cont-1) + '];')     
        
 archSV.close()
 

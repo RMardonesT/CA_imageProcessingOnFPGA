@@ -25,6 +25,8 @@ module sim_GRID_MODES(  );
       //COMMON SIGNALS          
       logic clk, reset;
      
+      localparam M = 4;
+      localparam N = 4;
      
       /******* FSM LOAD *********/
       logic trigger;  // to load or download a new cell      
@@ -35,24 +37,27 @@ module sim_GRID_MODES(  );
       logic [2:0] operation; //signal of control to cells behavior
       
       //INSTANCE OF FSM
-      FSM_OPERATION_MODES 
-                fsm_inst (
-                            .clk(clk),
-                            .reset(reset),
-                            
-                            .trigger(trigger),
-                            .load(load),
-                            .download(download),
-                            .evolve(evolve),
-                            
-                            .operation(operation)                                                        
-                             ) ; 
+      FSM_OPERATION_MODES  #(.M(M), .N(N)) 
+      
+                            fsm_inst (
+                                        .clk(clk),
+                                        .reset(reset),
+                                        
+                                        .trigger(trigger),
+                                        .load(load),
+                                        .download(download),
+                                        .evolve(evolve),
+                                        
+                                        .operation(operation)                                                        
+                                         ) ; 
                              
     /******* GRID *********/
     logic [7:0] data_in; //state of cell on loading
     logic [7:0] data_out; //state of cell on loading
         
-    logic [7:0] out [8:0]; // state of neightborhood
+    logic [7:0] out [M*N-1:0]; // state of neightborhood
+    
+    /*
          GRID inst_grid(
             .clk(clk),
             .reset(reset),
@@ -63,6 +68,18 @@ module sim_GRID_MODES(  );
             .out(out)
         );   
         
+        */
+        
+     GRID_SCRIPT    #(.M(M), .N(N))
+                    inst_grid(
+                        .clk(clk),
+                        .reset(reset),
+                        .shift(operation),            
+                        .data_in(data_in),
+                        .data_out(data_out),
+                        .gen(out)
+        ); 
+    
         
    always #1 clk = ~clk;
    
@@ -132,20 +149,51 @@ module sim_GRID_MODES(  );
     #5 trigger = 1;
     #2 trigger = 0;
     
-    //novena  y ultima copia
-    #1 data_in = 'd2;
+    //decima  y ultima copia
+    #1 data_in = 'd11;
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    //11ava  y ultima copia
+    #1 data_in = 'd12;
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    //doceava  y ultima copia
+    #1 data_in = 'd13;
     #5 trigger = 1;
     #2 trigger = 0;
     
     #10
     load = 0;
-    download = 1;
+    
+    //13ava  y ultima copia
+    #1 data_in = 'd14;
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    //14ava  y ultima copia
+    #1 data_in = 'd15;
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    //15ava  y ultima copia
+    #1 data_in = 'd16;
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    
+    
     
     trigger = 1;
+    
+    
+    #10 download = 1;
     
     #10 download = 0;
     
     evolve = 1;
+    
     
     
    end                        
