@@ -24,7 +24,7 @@ module GRID(
 
     input logic clk, reset,
     
-    input logic [2:0] shift,
+    input logic [2:0] operation,
     
     input logic load,
     
@@ -47,7 +47,7 @@ module GRID(
                     .clk(clk),
                     .reset(reset),
 			                    
-                    .shift(shift),
+                    .operation(operation),
                     
                      .NO(C4),
                      .N(C3),
@@ -72,7 +72,7 @@ module GRID(
                     .clk(clk),
                     .reset(reset),
                     
-                    .shift(shift),
+                    .operation(operation),
                     
                      .NO(C3),
                      .N(C4),
@@ -95,7 +95,7 @@ module GRID(
                     .clk(clk),
                     .reset(reset),
                     
-                    .shift(shift),
+                    .operation(operation),
                     
                      .NO(C4),
                      .N(C5),
@@ -119,7 +119,7 @@ module GRID(
                     .clk(clk),
                     .reset(reset),
                     
-                    .shift(shift),
+                    .operation(operation),
                     
                      .NO(C1),
                      .N(C0),
@@ -143,7 +143,7 @@ module GRID(
                     .clk(clk),
                     .reset(reset),
                     
-                    .shift(shift),
+                    .operation(operation),
                     
                     .NO(C0),
                     .N(C1),
@@ -168,7 +168,7 @@ module GRID(
                     .clk(clk),
                     .reset(reset),
                     
-                    .shift(shift),
+                    .operation(operation),
                     
                     .NO(C1),
                     .N(C2),
@@ -194,7 +194,7 @@ module GRID(
                     .clk(clk),
                     .reset(reset),
                     
-                    .shift(shift),
+                    .operation(operation),
                     
                     .NO(C4),
                     .N(C3),
@@ -219,7 +219,7 @@ module GRID(
                     .clk(clk),
                     .reset(reset),
                     
-                    .shift(shift),
+                    .operation(operation),
                     
                     .NO(C3),
                     .N(C4),
@@ -245,7 +245,7 @@ module GRID(
                     .clk(clk),
                     .reset(reset),
                     
-                    .shift(shift),
+                    .operation(operation),
                     
                     .NO(C4),
                     .N(C5),

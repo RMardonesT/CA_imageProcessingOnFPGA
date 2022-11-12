@@ -25,8 +25,8 @@ module sim_GRID_MODES(  );
       //COMMON SIGNALS          
       logic clk, reset;
      
-      localparam M = 4;
-      localparam N = 4;
+      localparam M = 3;
+      localparam N = 3;
      
       /******* FSM LOAD *********/
       logic trigger;  // to load or download a new cell      
@@ -61,7 +61,7 @@ module sim_GRID_MODES(  );
          GRID inst_grid(
             .clk(clk),
             .reset(reset),
-            .shift(operation),
+            .operation(operation),
             .load(load),
             .data_in(data_in),
             .data_out(data_out),
@@ -74,7 +74,7 @@ module sim_GRID_MODES(  );
                     inst_grid(
                         .clk(clk),
                         .reset(reset),
-                        .shift(operation),            
+                        .operation(operation),            
                         .data_in(data_in),
                         .data_out(data_out),
                         .gen(out)
@@ -111,7 +111,7 @@ module sim_GRID_MODES(  );
     #5 trigger = 1;
     #2 trigger = 0;
     
-    //shift vertical - cuarta copia
+    //operation vertical - cuarta copia
     #1 data_in = 'd4;
     #5 trigger = 1;
     #2 trigger = 0;
@@ -128,7 +128,7 @@ module sim_GRID_MODES(  );
     #5 trigger = 1;
     #2 trigger = 0;
     
-    //shift vertical - septima copia
+    //operation vertical - septima copia
     #1 data_in = 'd7;
     #5 trigger = 1;
     #2 trigger = 0;
@@ -192,7 +192,7 @@ module sim_GRID_MODES(  );
     
     #10 download = 0;
     
-    evolve = 1;
+//    evolve = 1;
     
     
     

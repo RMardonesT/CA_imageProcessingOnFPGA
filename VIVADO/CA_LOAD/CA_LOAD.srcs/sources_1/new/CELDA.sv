@@ -33,7 +33,7 @@ module CELDA
     
     input logic clk, reset,
     
-    input logic [2:0] shift,  //0: no shift i.e normal evolution , 1 :horizontal shift (top row only) , 2 : vertical shift
+    input logic [2:0] operation,  //0: no operation i.e normal evolution , 1 :horizontal operation (top row only) , 2 : vertical operation
     
     
         // RECORDAR CAMBIAR EL TAMANO DE LA SENNAL
@@ -65,7 +65,7 @@ module CELDA
     always_comb begin
         
         //NORMAL EVOLUTINO        
-        if (shift == 4) 
+        if (operation == 4) 
         
             if (sum_neighborhod < 30)
                 next_cell_state = sum_neighborhod;            
@@ -73,16 +73,16 @@ module CELDA
                 next_cell_state = 1;   
                   //next_cell_state = SELF;
                 
-        // HORIZONTAL SHIFT ON TOP ROW     
-        else if (shift == 1)  
+        // HORIZONTAL operation ON TOP ROW     
+        else if (operation == 1)  
             if(top_row)
                 next_cell_state = O;
             
             else 
                 next_cell_state = SELF;
                 
-        //VERTICAL SHIFT                
-        else if (shift == 2) 
+        //VERTICAL operation                
+        else if (operation == 2) 
                                     
             //copy state from northern neighbor
             if (top_row == 0)
@@ -97,13 +97,13 @@ module CELDA
                 else     
                     next_cell_state = SELF;                             
        
-       //ANY OTHER CASE OF SHIFT SIGNAL, PREFERENTLY 3            
-       else if (shift == 'd0)
+       //ANY OTHER CASE OF operation SIGNAL, PREFERENTLY 3            
+       else if (operation == 'd0)
             next_cell_state = SELF;
        
        
-       // HORIZONTAL SHIFT ON BOTTOM ROW     
-       else if (shift == 'd3)
+       // HORIZONTAL operation ON BOTTOM ROW     
+       else if (operation == 'd3)
             if (bottom_row)                
                 next_cell_state = O;
             else

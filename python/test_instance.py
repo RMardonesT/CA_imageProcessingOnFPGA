@@ -3,8 +3,8 @@ from pprint import pprint
 
 
 #tamanno de la grilla
-M = 4
-N = 4
+M = 3
+N = 3
 
 
 dimensions = (M,N)
@@ -81,7 +81,7 @@ mod_param_corner = '/******************* CELL {celda} ***************/  \n\n\tCE
 
 mod_param = '/******************* CELL {celda} ***************/  \n\n\tCELDA   #(.ic(0), .top_row({top}), .bottom_row({bot}))\n\n\t\tcell{celda} (\n '
 
-inst = '\t\t\t.clk(clk),\n\t\t\t.reset(reset),\n\n\t\t\t.shift(shift),\n\n'
+inst = '\t\t\t.clk(clk),\n\t\t\t.reset(reset),\n\n\t\t\t.operation(operation),\n\n'
 
 
 north = '\t\t\t.NO({NO}),\n\t\t\t.N({N}),\n\t\t\t.NE({NE}),\n\n'
