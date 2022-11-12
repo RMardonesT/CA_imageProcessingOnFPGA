@@ -25,12 +25,15 @@ module CELDA
     #(parameter 
         ic = 0,
         top_row = 0,
-        load_cell = 0)
+        bottom_row = 0,
+        
+        load_cell = 0,
+        download_cell = 0)
     (        
     
     input logic clk, reset,
     
-    input logic [1:0] shift,  //0: no shift i.e normal evolution , 1 :horizontal shift (top row only) , 2 : vertical shift
+    input logic [2:0] shift,  //0: no shift i.e normal evolution , 1 :horizontal shift (top row only) , 2 : vertical shift
     
     
         // RECORDAR CAMBIAR EL TAMANO DE LA SENNAL
@@ -62,12 +65,13 @@ module CELDA
     always_comb begin
         
         //NORMAL EVOLUTINO        
-        if (shift == 0) 
+        if (shift == 4) 
         
             if (sum_neighborhod < 30)
                 next_cell_state = sum_neighborhod;            
             else 
-                next_cell_state = 1;     
+                next_cell_state = 1;   
+                  //next_cell_state = SELF;
                 
         // HORIZONTAL SHIFT ON TOP ROW     
         else if (shift == 1)  
@@ -94,9 +98,16 @@ module CELDA
                     next_cell_state = SELF;                             
        
        //ANY OTHER CASE OF SHIFT SIGNAL, PREFERENTLY 3            
-       else
+       else if (shift == 'd0)
             next_cell_state = SELF;
-            
+       
+       
+       // HORIZONTAL SHIFT ON BOTTOM ROW     
+       else if (shift == 'd3)
+            if (bottom_row)                
+                next_cell_state = O;
+            else
+                next_cell_state = SELF;
                 
         
         

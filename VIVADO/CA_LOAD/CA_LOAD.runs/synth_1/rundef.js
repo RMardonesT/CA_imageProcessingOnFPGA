@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log GRID_SCRIPT.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source GRID_SCRIPT.tcl" );
+         "-log FSM_OPERATION_MODES.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FSM_OPERATION_MODES.tcl" );
 
 
 

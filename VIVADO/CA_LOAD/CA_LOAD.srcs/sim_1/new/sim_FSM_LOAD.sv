@@ -24,17 +24,19 @@ module sim_FSM_LOAD();
 
 logic clk,reset;
 
-logic load, trigger;
+logic load,download;
+logic  trigger;
 
-logic [1:0] shift;
-logic [1:0] state;
+logic [2:0] shift;
+logic [2:0] state;
 
 
-FSM_LOAD   # (.M(6), .N(4))
+FSM_LOAD   # (.M(3), .N(3))
         inst (.clk(clk),
                .reset(reset),
                
                .load(load),
+               .download(download),
                .trigger(trigger),
                
                .shift(shift),
@@ -49,6 +51,7 @@ initial begin
     clk = 0;
     reset = 1;
     load = 1;
+    download = 0;
     trigger = 0;
     
     #5 reset = 0;
@@ -61,8 +64,97 @@ initial begin
     #5 trigger = 1;
     #2 trigger = 0;
     
+    
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    
     load = 0;
+    //BEGINS TO DOWNLOAD DATA
+    #10
+    download = 1;
     
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+        
     #5 trigger = 1;
     #2 trigger = 0;
     
@@ -132,11 +224,13 @@ initial begin
     #5 trigger = 1;
     #2 trigger = 0;
     
+    #5 trigger = 1;
+    #2 trigger = 0;
     
+    #5 trigger = 1;
+    #2 trigger = 0;
     
- 
-    
- 
+    download = 0;
 end               
 
 

@@ -24,14 +24,14 @@ module GRID(
 
     input logic clk, reset,
     
-    input logic [1:0] shift,
+    input logic [2:0] shift,
     
     input logic load,
     
     input logic [7:0] data_in,
     
-    output logic [7:0] out [8:0] 
-        
+    output logic [7:0] out [8:0],
+    output logic [7:0] data_out    
     );
     
     logic  [7:0] C0,C1,C2,C3,C4,C5,C6,C7,C8; //coregir el tamanno de la sennal
@@ -188,7 +188,7 @@ module GRID(
                                
                                 
 /******************* CELL 6 ***************/  
-     CELDA   #(.ic(0), .top_row(0))
+     CELDA   #(.ic(0),.bottom_row(1))
             
             cell6 (
                     .clk(clk),
@@ -213,7 +213,7 @@ module GRID(
                 
             
  /******************* CELL 7 ***************/  
-     CELDA   #(.ic(0), .top_row(0))
+     CELDA   #(.ic(0), .bottom_row(1))
             
             cell7 (
                     .clk(clk),
@@ -239,7 +239,7 @@ module GRID(
                 
             
  /******************* CELL 8 ***************/  
-     CELDA   #(.ic(0), .top_row(0))
+     CELDA   #(.ic(0), .bottom_row(1))
             
             cell8 (
                     .clk(clk),
@@ -274,5 +274,6 @@ module GRID(
     assign out[7] = C7;
     assign out[8] = C8;
 
+    assign data_out = C8;
 
 endmodule

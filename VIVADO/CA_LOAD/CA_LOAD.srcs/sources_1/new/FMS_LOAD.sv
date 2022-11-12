@@ -24,26 +24,27 @@ module FSM_LOAD   #(parameter  M = 5, N = 3)(
 
     input logic clk, reset, 
     
-    input logic load, //enable load of image 
+    input logic load, //enable load of image
+    input logic download, //enable download of image  
     
     input logic trigger, //rx_ready of the byte from uart
     
-    output logic [1:0] shift,
-    output logic [1:0] state
+    output logic [2:0] shift,
+    output logic [2:0] state
               
     );
     
      
      
    //FSM states type:
-    enum logic [1:0] {IDLE, LOADING, LOAD_CELL, LOAD_ROW}    state, next_state; 
+    enum logic [2:0] {IDLE, LOADING, LOAD_CELL, DOWNLOADING, DOWNLOAD_CELL}    state, next_state; 
 
    // counters 
    
    logic [5:0] col, next_col;
    logic [5:0] row, next_row;
     
-   logic [1:0] next_shift;
+   logic [2:0] next_shift;
     
    //SECUENTIAL SECTION
    
@@ -78,14 +79,22 @@ module FSM_LOAD   #(parameter  M = 5, N = 3)(
         case(state) 
             
             IDLE: begin
-                    if (load) begin
+                    next_col = 0;
+                    next_row = 0;
+                    
+                    if ((load == 1) & (download == 0)) begin
                         next_state = LOADING;
+                        next_shift = 'd3;
+                        end
+                        
+                    else if ((download == 1) & (load == 0)) begin
+                        next_state = DOWNLOADING;
                         next_shift = 'd3;
                         end
                     
                     else begin
                         next_state = IDLE;
-                        next_shift = 0;
+                        next_shift = 'd0;
                         end
                   end
                   
@@ -115,7 +124,9 @@ module FSM_LOAD   #(parameter  M = 5, N = 3)(
                             
                             if (row == N-1  & col == M -1 & load == 0) begin                                                            
                                     next_state = IDLE;
-                                    next_shift = 'd0;
+                                    
+                                     //CAMBIAR DESPUES, ES SOLO PARA VERIFICAR DESCARGA CORRECTAZ next_shift = 0
+                                    next_shift = 'd0; //CAMBIAR DESPUES, ES SOLO PARA VERIFICAR DESCARGA CORRECTA
                                     
                                     next_row = 0;
                                     next_col = 0;
@@ -138,7 +149,58 @@ module FSM_LOAD   #(parameter  M = 5, N = 3)(
                             
                             
                        end
-                
+                   
+            DOWNLOADING: begin
+                            if (trigger & col < M -1 & row < N) begin
+                                next_state = DOWNLOAD_CELL;                                
+                                next_col = col +1;                                                                
+                                next_shift = 'd4;                                
+                                end
+                                
+                            else if (trigger   & row < N) begin
+                                next_row = row +1;
+                                next_col = 0;                                                                
+                                next_shift = 'd2;  
+                                next_state = DOWNLOAD_CELL;  
+                                end
+                                
+                           
+                                
+                            else
+                                next_state = DOWNLOADING;
+                       end    
+                       
+                   
+            DOWNLOAD_CELL: begin
+            
+      
+                            
+                            if (row == N-1  & col == M -1 & download == 0) begin                                                            
+                                    next_state = IDLE;
+                                    next_shift = 'd0;   
+                                    
+                                    next_row = 0;
+                                    next_col = 0;
+                                    
+                                end
+                                
+                                
+                            else if (row == N-1  & col == M -1 ) begin                                                            
+                                    next_state = DOWNLOAD_CELL;
+                                    next_shift = 'd3;
+                                    
+                                    
+                                    
+                                end
+                                
+                            else begin                            
+                                next_state = DOWNLOADING;
+                                next_shift = 'd3;
+                                end
+                            
+                            
+                       end                    
+                       
         endcase
         
         

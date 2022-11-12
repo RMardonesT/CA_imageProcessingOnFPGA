@@ -28,10 +28,11 @@ module sim_LOAD_GRID( );
     
     /******* FSM LOAD *********/
     logic load;      //indicates whether data should be loaded into the grid
+    logic download;
     logic  trigger;  //trigger a load of a new single cell
 
-    logic [1:0] shift; // indicates loasgind cell, row or normal evolution
-    logic [1:0] state; // indicates the state of loading process
+    logic [2:0] shift; // indicates loasgind cell, row or normal evolution
+    logic [2:0] state; // indicates the state of loading process
     
     
     FSM_LOAD   # (.M(3), .N(3))
@@ -39,6 +40,7 @@ module sim_LOAD_GRID( );
                .reset(reset),
                
                .load(load),
+               .download(download),
                .trigger(trigger),
                
                .shift(shift),
@@ -49,6 +51,7 @@ module sim_LOAD_GRID( );
 
     /******* GRID *********/
     logic [7:0] data_in; //state of cell on loading
+    logic [7:0] data_out; //state of cell on loading
         
     logic [7:0] out [8:0]; // state of neightborhood
                    
@@ -58,6 +61,7 @@ module sim_LOAD_GRID( );
             .shift(shift),
             .load(load),
             .data_in(data_in),
+            .data_out(data_out),
             .out(out)
         );                   
                      
@@ -68,12 +72,15 @@ module sim_LOAD_GRID( );
     
     clk = 0;
     reset = 1;
+    
     load = 1;
+    download = 0;
+    
     trigger = 0;
     data_in = 'd1; 
     
     #6 reset = 0;
-    
+    #5
     
     //primera copia
     #5 trigger = 1;
@@ -84,7 +91,7 @@ module sim_LOAD_GRID( );
     #4 trigger = 1;
     #2 trigger = 0;
     
-    load = 1;
+    load = 0;
     
     //tercera copia
     data_in = 'd3;    
@@ -130,7 +137,9 @@ module sim_LOAD_GRID( );
     #2 trigger = 0;
     
     #10
-    load = 0;
+    
+    
+    load = 1;
     
     
     // SECOND LOAD
@@ -143,7 +152,7 @@ module sim_LOAD_GRID( );
     #4 trigger = 1;
     #2 trigger = 0;
     
-    load = 0;
+    load = 1;
     
     data_in = 'd3;
     #4 trigger = 1;
@@ -180,7 +189,20 @@ module sim_LOAD_GRID( );
     #4 trigger = 1;
     #2 trigger = 0;
     
+    #5
     load = 0;
+    
+    download = 1;
+    
+    #4 trigger = 1;
+    #2 trigger = 0;
+    
+    #4 trigger = 1;
+    #2 trigger = 0;
+    
+    #4 trigger = 1;
+    #2 trigger = 0;
+    
   
     
     

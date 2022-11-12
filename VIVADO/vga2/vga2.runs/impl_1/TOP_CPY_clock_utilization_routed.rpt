@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Thu Oct  6 18:28:14 2022
+| Date         : Fri Nov 11 11:23:01 2022
 | Host         : Richi-PC running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file TOP_CPY_clock_utilization_routed.rpt
 | Design       : TOP_CPY

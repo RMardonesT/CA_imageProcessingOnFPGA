@@ -24,9 +24,9 @@ module sim_GRID( );
 
     logic clk,rst;
     
-    logic [1:0] shift;
+    logic [2:0] shift;
     
-    logic [7:0] data_in;
+    logic [7:0] data_in, data_out;
     
     logic [7:0] out [8:0];
     
@@ -36,6 +36,7 @@ module sim_GRID( );
             .reset(rst),
             .shift(shift),
             .data_in(data_in),
+            .data_out(data_out),
             .out(out)
         );
     
@@ -122,10 +123,58 @@ module sim_GRID( );
         
         //novena  copia
         data_in = 'd10;
+        
+        //data_out de momento esta conectado siempre a la celda bottom corner
+        //primera descarga instantanea
+        
+        
+        //segunda descarga
         #5 
-        shift = 'd1;
+        shift = 'd4;
         #2
         shift = 'd3;
+        
+        //tercera descarga
+        #5 
+        shift = 'd4;
+        #2
+        shift = 'd3;
+        
+        //cuarta  descarga y shift vertical
+        #5 
+        shift = 'd2;
+        #2
+        shift = 'd3;
+        
+        //quinta  descarga 
+        #5 
+        shift = 'd4;
+        #2
+        shift = 'd3;
+        
+        //sexta  descarga 
+        shift = 'd4;
+        #2
+        shift = 'd3;
+        
+        
+        //septima  descarga y shift vertical
+        #5 
+        shift = 'd2;
+        #2
+        shift = 'd3;
+        
+       //octava  descarga 
+        #5 
+        shift = 'd4;
+        #2
+        shift = 'd3;
+        
+        //novena   descarga 
+        shift = 'd4;
+        #2
+        shift = 'd3;
+
 
         
    

@@ -26,10 +26,11 @@ module TOP_SEND(
     input logic CPU_RESETN,      
     
     input logic BTNC,
-
-                   
-    output logic UART_TX,
-    output logic [15:0] LED  
+                        
+    output logic [15:0] LED, 
+                       
+    output logic UART_TX
+    
     
              
     );
@@ -66,6 +67,9 @@ module TOP_SEND(
     
     
     
+ /****************************************************/
+ /*          UART TX
+ /****************************************************/
     // solo estamos usando la parte tx para este modulo.
     logic baud_tick;
     
@@ -94,5 +98,11 @@ module TOP_SEND(
 		                  .tx(UART_TX),         //input: signal with de bit transmitting
 		                  .tx_busy(tx_busy)     //output: still transmitting byte or already sent
 	);
+	
+	
+			
+	/*****************************************************************************************/
+	
+
     
 endmodule

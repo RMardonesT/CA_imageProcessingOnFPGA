@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CODIGOS/VIVADO/vga2/vga2.runs/synth_1'
+HD_PWD='C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/vga2/vga2.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
