@@ -64,7 +64,7 @@ module CELDA
     
     always_comb begin
         
-        //NORMAL EVOLUTINO        
+        //4 NORMAL EVOLUTINO       
         if (operation == 4) 
         
             if (sum_neighborhod < 30)
@@ -73,7 +73,7 @@ module CELDA
                 next_cell_state = 1;   
                   //next_cell_state = SELF;
                 
-        // HORIZONTAL operation ON TOP ROW     
+        // 1 HORIZONTAL operation ON TOP ROW     
         else if (operation == 1)  
             if(top_row)
                 next_cell_state = O;
@@ -81,8 +81,8 @@ module CELDA
             else 
                 next_cell_state = SELF;
                 
-        //VERTICAL operation                
-        else if (operation == 2) 
+        //2 VERTICAL operation                
+        else if (operation == 2)   
                                     
             //copy state from northern neighbor
             if (top_row == 0)
@@ -97,12 +97,12 @@ module CELDA
                 else     
                     next_cell_state = SELF;                             
        
-       //ANY OTHER CASE OF operation SIGNAL, PREFERENTLY 3            
+       //0 KEEP CURRENT  STATE 0             
        else if (operation == 'd0)
             next_cell_state = SELF;
        
        
-       // HORIZONTAL operation ON BOTTOM ROW     
+       //3  HORIZONTAL operation ON BOTTOM ROW     
        else if (operation == 'd3)
             if (bottom_row)                
                 next_cell_state = O;

@@ -25,8 +25,8 @@ module sim_GRID_MODES(  );
       //COMMON SIGNALS          
       logic clk, reset;
      
-      localparam M = 3;
-      localparam N = 3;
+      localparam M = 4;
+      localparam N = 5;
      
       /******* FSM LOAD *********/
       logic trigger;  // to load or download a new cell      
@@ -138,8 +138,7 @@ module sim_GRID_MODES(  );
     #5 trigger = 1;
     #2 trigger = 0;
     
-    
-    //octava  copia
+        //octava  copia
     #1 data_in = 'd9;
     #5 trigger = 1;
     #2 trigger = 0;
@@ -182,10 +181,54 @@ module sim_GRID_MODES(  );
     #5 trigger = 1;
     #2 trigger = 0;
     
+    //15ava  y ultima copia
+    #1 data_in = 'd17;
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    //15ava  y ultima copia
+    #1 data_in = 'd18;
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    //15ava  y ultima copia
+    #1 data_in = 'd19;
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    //15ava  y ultima copia
+    #1 data_in = 'd20;
+    #5 trigger = 1;
+    #2 trigger = 0;
     
     
+    //15ava  y ultima copia
+    #1 data_in = 'd21;
+    #5 trigger = 1;
+    #2 trigger = 0;
     
-    trigger = 1;
+    //15ava  y ultima copia
+    #1 data_in = 'd22;
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    //15ava  y ultima copia
+    #1 data_in = 'd23;
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    //15ava  y ultima copia
+    #1 data_in = 'd24;
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    //15ava  y ultima copia
+    #1 data_in = 'd25;
+    #5 trigger = 1;
+    #2 trigger = 0;
+    
+    
+        trigger = 1;
     
     
     #10 download = 1;
@@ -193,7 +236,6 @@ module sim_GRID_MODES(  );
     #10 download = 0;
     
 //    evolve = 1;
-    
     
     
    end                        

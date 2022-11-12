@@ -1,4 +1,4 @@
-Running: xsim.dir/sim_GRID_MODES_behav/xsimk.exe -simmode gui -wdb sim_GRID_MODES_behav.wdb -simrunnum 0 -socket 62221
+Running: xsim.dir/sim_GRID_MODES_behav/xsimk.exe -simmode gui -wdb sim_GRID_MODES_behav.wdb -simrunnum 0 -socket 55771
 Design successfully loaded
-Design Loading Memory Usage: 7324 KB (Peak: 7324 KB)
-Design Loading CPU Usage: 15 ms
+Design Loading Memory Usage: 7352 KB (Peak: 7352 KB)
+Design Loading CPU Usage: 61 ms

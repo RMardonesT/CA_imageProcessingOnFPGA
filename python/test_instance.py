@@ -3,8 +3,9 @@ from pprint import pprint
 
 
 #tamanno de la grilla
-M = 3
-N = 3
+M = 4
+
+N = 5
 
 
 dimensions = (M,N)
@@ -75,6 +76,8 @@ print()
 
 
 
+
+
 #LINEAS INSTANCIA
 
 mod_param_corner = '/******************* CELL {celda} ***************/  \n\n\tCELDA   #(.ic(0), .top_row({top}), .load_cell(1))\n\n\t\tcell{celda} (\n '
@@ -103,20 +106,32 @@ cont = 0
 
 archSV = open('grid.sv', 'w')
 
+
+
+template = open('template_mod.txt')
+
+
+for linea in template:
+  archSV.write(linea)
+
+template.close()
+
 for row in range(N):
     for col in range(M):
         
         
         neighborhood = find_neighborhood(col,row,grid)
-        NO,N,NE, O,MAIN,E, SO,S,SE = neighborhood
+
+        #print(grid[row][col], neighborhood)
+        NO,North,NE, O,MAIN,E, SO,S,SE = neighborhood
 
         if grid[row][col] < M:
           top = '1'
         else:
           top = '0'
 
-        
-        if row == M-1:
+        print(row, N)
+        if row == N-1:
           bot = 1
         else:
           bot = 0
@@ -131,7 +146,7 @@ for row in range(N):
                                       bot = bot,
                                              
                                       NO = 'gen[' +str(NO)+']',
-                                      N = 'gen[' +str(N)+']',
+                                      N = 'gen[' +str(North)+']',
                                       NE = 'gen[' +str(NE)+']',
                                       O = 'data_in',
                                       E = 'gen[' +str(E)+']',
@@ -150,7 +165,7 @@ for row in range(N):
                                         top = top,
                                         bot = bot,     
                                         NO = 'gen[' +str(NO)+']',
-                                        N = 'gen[' +str(N)+']',
+                                        N = 'gen[' +str(North)+']',
                                         NE = 'gen[' +str(NE)+']',
                                         O = 'gen[' +str(O)+']',
                                         E = 'gen[' +str(E)+']',
@@ -160,14 +175,14 @@ for row in range(N):
                                         SELF = 'gen[' +str(MAIN)+']')
         
         
-        print(celda_inst)
+        #print(celda_inst)
         archSV.write(celda_inst)
         cont +=1
 
 
-print('\n\n assign data_out = gen[' + str(cont-1) + '];')      
-archSV.write('\n\n assign data_out = gen[' + str(cont-1) + '];')     
-       
+#print('\n\n assign data_out = gen[' + str(cont-1) + '];')      
+archSV.write('\n\n assign data_out = gen[' + str(cont-1) + '];\n\n')     
+archSV.write('endmodule')     
 archSV.close()
 
 
