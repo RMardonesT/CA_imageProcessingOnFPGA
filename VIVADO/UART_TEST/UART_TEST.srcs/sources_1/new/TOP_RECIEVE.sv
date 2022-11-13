@@ -45,20 +45,43 @@ module TOP_RECIEVE(
     logic [7:0] rx_data;
     logic rx_ready;
     
-    
-     
-    
-    uart_basic     uart_basic_inst (.clk(CLK100MHZ),
-                  .reset(~CPU_RESETN),
-                  .rx(uart_rx),
-                  .rx_data(rx_data),
-                  .rx_ready(rx_ready),
-                  .tx(),
-                  .tx_start(),
-                  .tx_data(),
-                  .tx_busy()
-                  );
-                  
+    localparam CLK_FREQUENCY = 100000000;
+    localparam BAUD_RATE = 115200;    									
+
+
+	wire baud8_tick;
+	
+
+	reg rx_ready_sync;
+	wire rx_ready_pre;
+
+  /*This instance is used to generate the RX tick clock with 8 oversampling*/
+	uart_baud_tick_gen #(
+		              .CLK_FREQUENCY(CLK_FREQUENCY),
+		              .BAUD_RATE(BAUD_RATE),
+		              .OVERSAMPLING(8)
+		              )
+		     baud8_tick_blk (
+		              .clk(CLK100MHZ),
+		              .enable(1'b1),
+		              .tick(baud8_tick)
+	                   );
+
+  /*This instance implements the uart reception*/
+	uart_rx uart_rx_blk (
+		              .clk(CLK100MHZ),
+		              .reset(0),
+		              .baud8_tick(baud8_tick),
+		              .rx(uart_rx),
+		              .rx_data(rx_data),
+		              .rx_ready(rx_ready_pre)
+	               );
+
+  /*To generate a pulse when the rx_ready_pre is triggered*/
+	always @(posedge CLK100MHZ) begin
+		rx_ready_sync <= rx_ready_pre;
+		rx_ready <= ~rx_ready_sync & rx_ready_pre;
+	end
 
   /************************
  * INTERFACE USER CHECK LEDS and DISOLAY 7S*

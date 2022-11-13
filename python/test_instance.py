@@ -3,9 +3,8 @@ from pprint import pprint
 
 
 #tamanno de la grilla
-M = 4
-
-N = 5
+M = 2
+N = 4
 
 
 dimensions = (M,N)

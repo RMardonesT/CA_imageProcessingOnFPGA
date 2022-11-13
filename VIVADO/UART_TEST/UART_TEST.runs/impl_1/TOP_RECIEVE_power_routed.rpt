@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date             : Fri Nov 11 11:41:15 2022
+| Date             : Sat Nov 12 20:17:59 2022
 | Host             : Richi-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file TOP_RECIEVE_power_routed.rpt -pb TOP_RECIEVE_power_summary_routed.pb -rpx TOP_RECIEVE_power_routed.rpx
 | Design           : TOP_RECIEVE
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.122        |
+| Total On-Chip Power (W)  | 0.121        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.024        |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      179 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       54 |     63400 |            0.09 |
+| Clocks         |    <0.001 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      178 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       52 |     63400 |            0.08 |
 |   CARRY4       |    <0.001 |       11 |     15850 |            0.07 |
 |   Register     |    <0.001 |       77 |    126800 |            0.06 |
 |   Others       |     0.000 |       10 |       --- |             --- |
-| Signals        |    <0.001 |      150 |       --- |             --- |
+| Signals        |    <0.001 |      149 |       --- |             --- |
 | I/O            |     0.022 |       35 |       210 |           16.67 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.122 |          |           |                 |
+| Total          |     0.121 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -141,7 +141,7 @@ Table of Contents
 | Name             | Power (W) |
 +------------------+-----------+
 | TOP_RECIEVE      |     0.024 |
-|   nolabel_line69 |     0.001 |
+|   nolabel_line92 |     0.001 |
 +------------------+-----------+
 
 

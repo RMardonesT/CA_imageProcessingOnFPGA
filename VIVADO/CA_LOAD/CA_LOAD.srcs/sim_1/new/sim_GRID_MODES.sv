@@ -25,8 +25,8 @@ module sim_GRID_MODES(  );
       //COMMON SIGNALS          
       logic clk, reset;
      
-      localparam M = 4;
-      localparam N = 5;
+      localparam M = 2;
+      localparam N = 4;
      
       /******* FSM LOAD *********/
       logic trigger;  // to load or download a new cell      

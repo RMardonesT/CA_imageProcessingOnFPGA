@@ -1,0 +1,87 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Nov 13 11:17:29 2022
+| Host         : Richi-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file GRID_SCRIPT_control_sets_placed.rpt
+| Design       : GRID_SCRIPT
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     9 |
+|    Minimum number of control sets                        |     9 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     0 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     9 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     8 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             128 |           48 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------+-----------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  | Enable Signal |             Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------+-----------------------------------------+------------------+----------------+--------------+
+|  n_0_80_BUFG   |               | cell6/next_cell_state_reg[7]_i_2__5_n_1 |                2 |              8 |         4.00 |
+|  n_0_80_BUFG   |               | cell7/next_cell_state_reg[7]_i_2__6_n_1 |                4 |              8 |         2.00 |
+|  n_0_80_BUFG   |               | cell4/next_cell_state_reg[7]_i_2__3_n_1 |                2 |              8 |         4.00 |
+|  n_0_80_BUFG   |               | cell5/next_cell_state_reg[7]_i_2__4_n_1 |                4 |              8 |         2.00 |
+|  n_0_80_BUFG   |               | cell1/next_cell_state_reg[7]_i_2__0_n_1 |                3 |              8 |         2.67 |
+|  n_0_80_BUFG   |               | cell2/next_cell_state_reg[7]_i_2__1_n_1 |                4 |              8 |         2.00 |
+|  n_0_80_BUFG   |               | cell3/next_cell_state_reg[7]_i_2__2_n_1 |                4 |              8 |         2.00 |
+|  n_0_80_BUFG   |               | cell0/next_cell_state_reg[7]_i_2_n_1    |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG |               | reset_IBUF                              |               21 |             64 |         3.05 |
++----------------+---------------+-----------------------------------------+------------------+----------------+--------------+
+
+

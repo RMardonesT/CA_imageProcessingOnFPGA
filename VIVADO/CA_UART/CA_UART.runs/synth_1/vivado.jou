@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Nov 13 12:55:12 2022
+# Process ID: 2840
+# Current directory: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1
+# Command line: vivado.exe -log TOP_CA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_CA.tcl
+# Log file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP_CA.vds
+# Journal file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1\vivado.jou
+# Running On: Richi-PC, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 12730 MB
+#-----------------------------------------------------------
+source TOP_CA.tcl -notrace

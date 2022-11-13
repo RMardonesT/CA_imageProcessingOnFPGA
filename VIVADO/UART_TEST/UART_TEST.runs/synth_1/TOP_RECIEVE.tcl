@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
 set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
@@ -92,10 +91,8 @@ read_verilog -library xil_defaultlib -sv {
 }
 read_verilog -library xil_defaultlib {
   C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/test_vga/test_vga.srcs/sources_1/new/data_sync.v
-  C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/test_vga/test_vga.srcs/sources_1/new/uart_basic.v
   C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/UART_TEST/UART_TEST.srcs/sources_1/new/uart_baud_tick_gen.v
   C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/test_vga/test_vga.srcs/sources_1/new/uart_rx.v
-  C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/UART_TEST/UART_TEST.srcs/sources_1/new/uart_tx.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

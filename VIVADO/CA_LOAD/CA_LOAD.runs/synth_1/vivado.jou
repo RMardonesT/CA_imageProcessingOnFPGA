@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Sat Nov 12 15:29:21 2022
-# Process ID: 54008
+# Start of session at: Sun Nov 13 11:15:45 2022
+# Process ID: 10904
 # Current directory: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.runs/synth_1
 # Command line: vivado.exe -log GRID_SCRIPT.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source GRID_SCRIPT.tcl
 # Log file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.runs/synth_1/GRID_SCRIPT.vds

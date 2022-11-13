@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1668277758" LaunchIncrCheckpoint="$PPRDIR/../../../CODIGOS/VIVADO/CA_LOAD/CA_LOAD.srcs/utils_1/imports/synth_1/CELDA.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1668348942" LaunchIncrCheckpoint="$PPRDIR/../../../CODIGOS/VIVADO/CA_LOAD/CA_LOAD.srcs/utils_1/imports/synth_1/CELDA.dcp">
   <File Type="PA-TCL" Name="GRID_SCRIPT.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="GRID_SCRIPT_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="GRID_SCRIPT_reports.tcl"/>
   <File Type="RDS-RDS" Name="GRID_SCRIPT.vds"/>
   <File Type="RDS-UTIL" Name="GRID_SCRIPT_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="GRID_SCRIPT_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="GRID_SCRIPT.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="GRID_SCRIPT_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="GRID_SCRIPT_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/CELDA.sv">

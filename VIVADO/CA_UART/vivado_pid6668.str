@@ -1,0 +1,2541 @@
+/*
+
+Xilinx Vivado v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:48:16 MDT 2022
+IP Build: 3524634 on Mon Apr 18 20:55:01 MDT 2022
+
+Process ID (PID): 6668
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sun Nov 13 10:40:46 CLST 2022
+Time zone: 	Chile Standard Time (America/Santiago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	C:/Xilinx/Vivado/2022.1/tps/win64/jre11.0.11_9
+Java executable: 	C:/Xilinx/Vivado/2022.1/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ricar
+User home directory: C:/Users/ricar
+User working directory: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2022.1
+RDI_DATADIR: C:/Xilinx/Vivado/2022.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2022.1/bin
+
+Vivado preferences file: C:/Users/ricar/AppData/Roaming/Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: C:/Users/ricar/AppData/Roaming/Xilinx/Vivado/2022.1/
+Vivado layouts directory: C:/Users/ricar/AppData/Roaming/Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/vivado.log
+Vivado journal file: 	C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/vivado.jou
+Engine tmp dir: 	C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/.Xil/Vivado-6668-Richi-PC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2022.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2022.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2022.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,410 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\ricar\OneDrive\Escritorio\MEMORIA\CA_imageProcessingOnFPGA\VIVADO\CA_UART\CA_UART.xpr. Version: Vivado v2022.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART' 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,410 MB. GUI used memory: 58 MB. Current time: 11/13/22, 10:40:47 AM CLST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART' 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 77 MB (+77930kb) [00:00:18]
+// [Engine Memory]: 1,410 MB (+1326664kb) [00:00:18]
+// [GUI Memory]: 86 MB (+5278kb) [00:00:19]
+// WARNING: HEventQueue.dispatchEvent() is taking  3425 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'. 
+// [GUI Memory]: 120 MB (+31659kb) [00:00:20]
+// Tcl Message: open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:12 . Memory (MB): peak = 1600.305 ; gain = 0.000 
+// Project name: CA_UART; location: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bA
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 132 MB (+6503kb) [00:00:41]
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP.dcp 
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cW' command handler elapsed time: 20 seconds
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Nov 13 10:41:34 2022] Launched synth_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log [Sun Nov 13 10:41:34 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 55 seconds
+closeMainWindow("CA_UART - [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.xpr] - Vivado 2022.1"); // bb
+// Run Command: PAResourceCommand.PACommandNames_EXIT
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Exit Vivado"); // A
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 58 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cW' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Nov 13 10:43:33 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 91 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1013 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ar
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2022.1   **** Build date : Apr 18 2022 at 16:02:36     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.1.0   ****** Build date   : Apr 12 2022-15:12:08     **** Build number : 2022.1.1649790728       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1600.305 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  6583 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FCF3A 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,024 MB. GUI used memory: 77 MB. Current time: 11/13/22, 10:45:23 AM CLST
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3212.973 ; gain = 1612.668 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Elapsed time: 14 seconds
+dismissDialog("Auto Connect"); // bA
+// [Engine Memory]: 3,041 MB (+1636507kb) [00:04:49]
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 53 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Confirm Close"); // A
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_OPERATION_MODES (FSM_OPERATION_MODES.sv)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FSM_OPERATION_MODES (FSM_OPERATION_MODES.sv)]", 3, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1212 ms.
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("FSM_OPERATION_MODES.sv", 190, 351); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 190, 351, false, false, false, false, true); // be - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1091 ms.
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("TOP.sv", 153, 432); // be
+selectCodeEditor("TOP.sv", 220, 265); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP.sv", 177, 444); // be
+typeControlKey((HResource) null, "TOP.sv", 'v'); // be
+selectCodeEditor("TOP.sv", 37, 410); // be
+selectCodeEditor("TOP.sv", 310, 427); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("TOP.sv", 471, 283); // be
+selectCodeEditor("TOP.sv", 291, 430); // be
+// HMemoryUtils.trashcanNow. Engine heap size: 3,066 MB. GUI used memory: 80 MB. Current time: 11/13/22, 10:47:07 AM CLST
+// Elapsed time: 33 seconds
+selectCodeEditor("TOP.sv", 107, 320); // be
+selectCodeEditor("TOP.sv", 401, 175); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP.sv", 24, 173); // be
+typeControlKey((HResource) null, "TOP.sv", 'v'); // be
+selectCodeEditor("TOP.sv", 33, 179); // be
+selectCodeEditor("TOP.sv", 203, 189); // be
+selectCodeEditor("TOP.sv", 654, 92); // be
+selectCodeEditor("TOP.sv", 555, 189); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP.sv", 189, 332); // be
+typeControlKey((HResource) null, "TOP.sv", 'v'); // be
+selectCodeEditor("TOP.sv", 254, 416); // be
+// Elapsed time: 49 seconds
+typeControlKey((HResource) null, "TOP.sv", 'v'); // be
+selectCodeEditor("TOP.sv", 46, 278, false, true, false, false, false); // be - Control Key
+selectCodeEditor("TOP.sv", 287, 205); // be
+selectCodeEditor("TOP.sv", 199, 339); // be
+selectCodeEditor("TOP.sv", 79, 199); // be
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+typeControlKey((HResource) null, "TOP.sv", 'v'); // be
+// Elapsed time: 22 seconds
+selectCodeEditor("TOP.sv", 100, 243); // be
+selectCodeEditor("TOP.sv", 282, 265); // be
+selectCodeEditor("TOP.sv", 350, 451); // be
+selectCodeEditor("TOP.sv", 404, 454); // be
+selectCodeEditor("TOP.sv", 490, 440); // be
+selectCodeEditor("TOP.sv", 356, 468); // be
+selectCodeEditor("TOP.sv", 326, 465); // be
+selectCodeEditor("TOP.sv", 326, 465, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 359, 471); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("TOP.sv", 143, 237); // be
+selectCodeEditor("TOP.sv", 395, 449); // be
+selectCodeEditor("TOP.sv", 408, 455); // be
+selectCodeEditor("TOP.sv", 160, 252); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("TOP.sv", 304, 251); // be
+selectCodeEditor("TOP.sv", 304, 251, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 299, 244); // be
+selectCodeEditor("TOP.sv", 299, 243, false, false, false, false, true); // be - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("TOP.sv", 323, 274); // be
+selectCodeEditor("TOP.sv", 323, 265); // be
+selectCodeEditor("TOP.sv", 323, 265, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 342, 299); // be
+selectCodeEditor("TOP.sv", 342, 298, false, false, false, false, true); // be - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("TOP.sv", 303, 312); // be
+selectCodeEditor("TOP.sv", 303, 312, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 194, 176); // be
+// Elapsed time: 17 seconds
+selectCodeEditor("TOP.sv", 353, 299); // be
+selectCodeEditor("TOP.sv", 353, 299, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 310, 317); // be
+selectCodeEditor("TOP.sv", 310, 317, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 345, 330); // be
+selectCodeEditor("TOP.sv", 345, 330, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 334, 346); // be
+selectCodeEditor("TOP.sv", 334, 346, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 357, 382); // be
+selectCodeEditor("TOP.sv", 357, 382, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 253, 164); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("TOP.sv", 313, 265); // be
+selectCodeEditor("TOP.sv", 313, 265, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 349, 316); // be
+selectCodeEditor("TOP.sv", 349, 316, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 312, 334); // be
+selectCodeEditor("TOP.sv", 312, 334, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 395, 313); // be
+selectCodeEditor("TOP.sv", 375, 397); // be
+selectCodeEditor("TOP.sv", 375, 397, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 322, 413); // be
+selectCodeEditor("TOP.sv", 322, 413, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 322, 167); // be
+selectCodeEditor("TOP.sv", 142, 127); // be
+selectCodeEditor("TOP.sv", 186, 180); // be
+typeControlKey((HResource) null, "TOP.sv", 'v'); // be
+selectCodeEditor("TOP.sv", 46, 129); // be
+selectCodeEditor("TOP.sv", 253, 156); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP.dcp 
+// [GUI Memory]: 140 MB (+1620kb) [00:11:19]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Sun Nov 13 10:51:55 2022] Launched synth_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 60 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Synthesis Completed"); // ag
+selectCodeEditor("TOP.sv", 194, 206); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("TOP.sv", 153, 214); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+// 'cW' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cZ
+selectCodeEditor("TOP.sv", 294, 433); // be
+selectCodeEditor("TOP.sv", 170, 288); // be
+selectCodeEditor("TOP.sv", 33, 430); // be
+typeControlKey((HResource) null, "TOP.sv", 'v'); // be
+selectCodeEditor("TOP.sv", 177, 332); // be
+selectCodeEditor("TOP.sv", 177, 332, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 258, 322); // be
+selectCodeEditor("TOP.sv", 180, 334); // be
+selectCodeEditor("TOP.sv", 180, 334, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 231, 401); // be
+selectCodeEditor("TOP.sv", 231, 401, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 294, 398); // be
+selectCodeEditor("TOP.sv", 228, 395); // be
+selectCodeEditor("TOP.sv", 228, 395, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 370, 367); // be
+selectCodeEditor("TOP.sv", 227, 285); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectCodeEditor("TOP.sv", 90, 345); // be
+// Elapsed time: 13 seconds
+selectCodeEditor("TOP.sv", 464, 305); // be
+selectCodeEditor("TOP.sv", 387, 352); // be
+selectCodeEditor("TOP.sv", 479, 320); // be
+selectCodeEditor("TOP.sv", 410, 358); // be
+selectCodeEditor("TOP.sv", 220, 455); // be
+selectCodeEditor("TOP.sv", 121, 280); // be
+selectCodeEditor("TOP.sv", 580, 348); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("TOP.sv", 355, 279); // be
+selectCodeEditor("TOP.sv", 444, 294); // be
+selectCodeEditor("TOP.sv", 161, 216); // be
+selectCodeEditor("TOP.sv", 62, 174); // be
+selectCodeEditor("TOP.sv", 236, 218); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+typeControlKey((HResource) null, "TOP.sv", 'v'); // be
+typeControlKey((HResource) null, "TOP.sv", 'v'); // be
+selectCodeEditor("TOP.sv", 78, 262); // be
+selectCodeEditor("TOP.sv", 77, 262, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 69, 262); // be
+selectCodeEditor("TOP.sv", 278, 254); // be
+selectCodeEditor("TOP.sv", 172, 264); // be
+selectCodeEditor("TOP.sv", 185, 215); // be
+selectCodeEditor("TOP.sv", 185, 215, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP.sv", 82, 277); // be
+selectCodeEditor("TOP.sv", 82, 277, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "TOP.sv", 'v'); // be
+selectCodeEditor("TOP.sv", 162, 277); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TOP.sv", 83, 242); // be
+selectCodeEditor("TOP.sv", 83, 242, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 178, 280); // be
+selectCodeEditor("TOP.sv", 180, 280, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 376, 277); // be
+selectCodeEditor("TOP.sv", 383, 292); // be
+selectCodeEditor("TOP.sv", 521, 343); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("No Implementation Results Available"); // A
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Nov 13 10:55:39 2022] Launched synth_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log [Sun Nov 13 10:55:39 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 25 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-36] 'SW' is not declared [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/sources_1/new/TOP.sv:109]. ]", 1, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\ricar\OneDrive\Escritorio\MEMORIA\CA_imageProcessingOnFPGA\VIVADO\CA_UART\CA_UART.srcs\sources_1\new\TOP.sv;-;;-;16;-;line;-;109;-;;-;16;-;"); // ah
+selectCodeEditor("TOP.sv", 205, 362); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Sun Nov 13 10:56:29 2022] Launched synth_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 78 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Sun Nov 13 10:57:52 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 100 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Nov 13 10:59:34 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 82 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1032 ms.
+// Tcl Message: open_hw_manager 
+dismissDialog("Open Hardware Manager"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ar
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2022.1   **** Build date : Apr 18 2022 at 16:02:36     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.1.0   ****** Build date   : Apr 12 2022-15:12:08     **** Build number : 2022.1.1649790728       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 3268.512 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FCF3A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Elapsed time: 10 seconds
+dismissDialog("Auto Connect"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 100 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TOP.sv", 1); // m
+selectCodeEditor("TOP.sv", 245, 348); // be
+selectCodeEditor("TOP.sv", 245, 347, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 376, 349); // be
+selectCodeEditor("TOP.sv", 376, 280); // be
+selectCodeEditor("TOP.sv", 355, 198); // be
+selectCodeEditor("TOP.sv", 355, 198, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 294, 333); // be
+selectCodeEditor("TOP.sv", 286, 348); // be
+selectCodeEditor("TOP.sv", 445, 299); // be
+selectCodeEditor("TOP.sv", 474, 220); // be
+selectCodeEditor("TOP.sv", 145, 43); // be
+selectCodeEditor("TOP.sv", 181, 47); // be
+selectCodeEditor("TOP.sv", 19, 109); // be
+// Elapsed time: 47 seconds
+selectCodeEditor("TOP.sv", 375, 270); // be
+selectCodeEditor("TOP.sv", 119, 283); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TOP.sv", 332, 295); // be
+selectCodeEditor("TOP.sv", 343, 288); // be
+selectCodeEditor("TOP.sv", 339, 277); // be
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "15", true); // k
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "15"); // k
+selectCodeEditor("TOP.sv", 194, 317); // be
+selectCodeEditor("TOP.sv", 194, 317, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 147, 128); // be
+// Elapsed time: 19 seconds
+selectCodeEditor("TOP.sv", 111, 401); // be
+selectCodeEditor("TOP.sv", 111, 401, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 53, 386); // be
+// Elapsed time: 17 seconds
+selectCodeEditor("TOP.sv", 229, 400); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP.sv", 259, 381); // be
+typeControlKey((HResource) null, "TOP.sv", 'v'); // be
+selectCodeEditor("TOP.sv", 426, 359); // be
+selectCodeEditor("TOP.sv", 301, 385); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TOP.sv", 251, 285); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+typeControlKey((HResource) null, "TOP.sv", 'v'); // be
+selectCodeEditor("TOP.sv", 123, 291); // be
+selectCodeEditor("TOP.sv", 130, 400); // be
+selectCodeEditor("TOP.sv", 130, 400, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP.sv", 198, 278); // be
+selectCodeEditor("TOP.sv", 196, 298); // be
+selectCodeEditor("TOP.sv", 196, 298, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "TOP.sv", 'v'); // be
+selectCodeEditor("TOP.sv", 383, 296); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Nov 13 11:05:52 2022] Launched synth_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log [Sun Nov 13 11:05:52 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 99 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Confirm Close"); // A
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: close_hw_manager 
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+dismissDialog("Close Hardware Manager"); // bA
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 98 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+// [GUI Memory]: 148 MB (+32kb) [00:28:39]
+// Tcl Message: open_hw_manager 
+dismissDialog("Open Hardware Manager"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ar
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2022.1   **** Build date : Apr 18 2022 at 16:02:36     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.1.0   ****** Build date   : Apr 12 2022-15:12:08     **** Build number : 2022.1.1649790728       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 3282.055 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FCF3A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 60 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TOP.sv", 1); // m
+selectCodeEditor("TOP.sv", 117, 263); // be
+selectCodeEditor("TOP.sv", 117, 263, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 208, 263); // be
+selectCodeEditor("TOP.sv", 208, 263, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 224, 262); // be
+selectCodeEditor("TOP.sv", 203, 264); // be
+selectCodeEditor("TOP.sv", 203, 264, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 207, 261); // be
+selectCodeEditor("TOP.sv", 207, 261, false, false, false, false, true); // be - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("TOP.sv", 374, 260); // be
+selectCodeEditor("TOP.sv", 252, 160); // be
+selectCodeEditor("TOP.sv", 263, 146); // be
+selectCodeEditor("TOP.sv", 252, 159); // be
+selectCodeEditor("TOP.sv", 123, 205); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP.sv", 144, 252); // be
+typeControlKey((HResource) null, "TOP.sv", 'v'); // be
+selectCodeEditor("TOP.sv", 400, 262); // be
+selectCodeEditor("TOP.sv", 175, 155); // be
+selectCodeEditor("TOP.sv", 248, 231); // be
+selectCodeEditor("TOP.sv", 224, 259); // be
+typeControlKey((HResource) null, "TOP.sv", 'v'); // be
+selectCodeEditor("TOP.sv", 56, 78); // be
+selectCodeEditor("TOP.sv", 125, 179); // be
+selectCodeEditor("TOP.sv", 555, 128); // be
+selectCodeEditor("TOP.sv", 445, 239); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TOP.sv", 113, 245); // be
+selectCodeEditor("TOP.sv", 113, 245, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP.sv", 192, 180); // be
+selectCodeEditor("TOP.sv", 192, 180, false, false, false, false, true); // be - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+typeControlKey((HResource) null, "TOP.sv", 'v'); // be
+selectCodeEditor("TOP.sv", 443, 247); // be
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Invalid Top Module"); // I
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("TOP.sv", 121, 108); // be
+selectCodeEditor("TOP.sv", 121, 108, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 119, 131); // be
+selectCodeEditor("TOP.sv", 191, 127); // be
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Invalid Top Module"); // I
+selectCodeEditor("TOP.sv", 207, 129); // be
+selectCodeEditor("TOP.sv", 273, 133); // be
+selectCodeEditor("TOP.sv", 60, 165); // be
+selectCodeEditor("TOP.sv", 147, 168); // be
+selectCodeEditor("TOP.sv", 49, 160); // be
+selectCodeEditor("TOP.sv", 127, 163); // be
+selectCodeEditor("TOP.sv", 193, 122); // be
+selectCodeEditor("TOP.sv", 278, 194); // be
+selectCodeEditor("TOP.sv", 186, 106); // be
+selectCodeEditor("TOP.sv", 131, 158); // be
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Sun Nov 13 11:12:17 2022] Launched synth_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 14 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bA
+// Elapsed time: 66 seconds
+selectCodeEditor("TOP.sv", 105, 258); // be
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Nov 13 11:13:55 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 3,070 MB. GUI used memory: 86 MB. Current time: 11/13/22, 11:17:08 AM CLST
+// Elapsed time: 284 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Nov 13 11:18:45 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 77 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+selectCodeEditor("TOP.sv", 314, 450); // be
+// Elapsed time: 98 seconds
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g: FALSE
+selectCodeEditor("TOP.sv", 464, 213); // be
+selectCodeEditor("TOP.sv", 129, 147); // be
+selectCodeEditor("TOP.sv", 129, 147, false, false, false, false, true); // be - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv)]", 2, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ar
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top TOP [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/GRID_SCRIPT.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cW' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Nov 13 11:22:29 2022] Launched synth_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log [Sun Nov 13 11:22:29 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 172 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1287 ms.
+// Tcl Message: open_hw_manager 
+dismissDialog("Open Hardware Manager"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ar
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2022.1   **** Build date : Apr 18 2022 at 16:02:36     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.1.0   ****** Build date   : Apr 12 2022-15:12:08     **** Build number : 2022.1.1649790728       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 3305.797 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FCF3A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Elapsed time: 10 seconds
+dismissDialog("Auto Connect"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 40 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TOP.sv", 1); // m
+selectCodeEditor("TOP.sv", 125, 239); // be
+selectCodeEditor("TOP.sv", 206, 200); // be
+selectCodeEditor("TOP.sv", 132, 245); // be
+selectCodeEditor("TOP.sv", 40, 177); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("TOP.sv", 132, 298); // be
+selectCodeEditor("TOP.sv", 177, 214); // be
+// Elapsed time: 60 seconds
+selectCodeEditor("TOP.sv", 175, 282); // be
+selectCodeEditor("TOP.sv", 266, 296); // be
+selectCodeEditor("TOP.sv", 261, 297); // be
+selectCodeEditor("TOP.sv", 89, 297); // be
+selectCodeEditor("TOP.sv", 91, 294); // be
+selectCodeEditor("TOP.sv", 272, 301); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_OPERATION_MODES.sv", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TOP.sv", 1); // m
+selectCodeEditor("TOP.sv", 190, 259); // be
+selectCodeEditor("TOP.sv", 191, 275); // be
+selectCodeEditor("TOP.sv", 96, 298); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_OPERATION_MODES.sv", 0); // m
+selectCodeEditor("FSM_OPERATION_MODES.sv", 23, 110); // be
+typeControlKey((HResource) null, "FSM_OPERATION_MODES.sv", 'c'); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TOP.sv", 1); // m
+selectCodeEditor("TOP.sv", 28, 263); // be
+typeControlKey((HResource) null, "TOP.sv", 'v'); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_OPERATION_MODES.sv", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TOP.sv", 1); // m
+selectCodeEditor("TOP.sv", 260, 220); // be
+selectCodeEditor("TOP.sv", 153, 248); // be
+selectCodeEditor("TOP.sv", 189, 184); // be
+selectCodeEditor("TOP.sv", 147, 228); // be
+selectCodeEditor("TOP.sv", 138, 255); // be
+selectCodeEditor("TOP.sv", 132, 242); // be
+// Elapsed time: 79 seconds
+selectCodeEditor("TOP.sv", 414, 297); // be
+selectCodeEditor("TOP.sv", 347, 256); // be
+selectCodeEditor("TOP.sv", 342, 253); // be
+selectCodeEditor("TOP.sv", 337, 255); // be
+// Elapsed time: 13 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("TOP.sv", 329, 311); // be
+selectCodeEditor("TOP.sv", 286, 297); // be
+selectCodeEditor("TOP.sv", 279, 276); // be
+selectCodeEditor("TOP.sv", 294, 262); // be
+selectCodeEditor("TOP.sv", 278, 267); // be
+selectCodeEditor("TOP.sv", 409, 307); // be
+selectCodeEditor("TOP.sv", 408, 312); // be
+selectCodeEditor("TOP.sv", 408, 318); // be
+selectCodeEditor("TOP.sv", 377, 328); // be
+// Elapsed time: 13 seconds
+selectCodeEditor("TOP.sv", 467, 320); // be
+selectCodeEditor("TOP.sv", 434, 330); // be
+// Elapsed time: 25 seconds
+selectCodeEditor("TOP.sv", 394, 241); // be
+selectCodeEditor("TOP.sv", 184, 255); // be
+selectCodeEditor("TOP.sv", 210, 296); // be
+selectCodeEditor("TOP.sv", 210, 296, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 294, 325); // be
+selectCodeEditor("TOP.sv", 193, 299); // be
+selectCodeEditor("TOP.sv", 193, 298, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 450, 357); // be
+selectCodeEditor("TOP.sv", 352, 111); // be
+selectCodeEditor("TOP.sv", 352, 111, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 605, 141); // be
+// Elapsed time: 57 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Run Synthesis"); // A
+selectButton(PAResourceQtoS.SaveProjectUtils_CANCEL, "Cancel"); // a
+dismissDialog("Save Project"); // al
+selectCodeEditor("TOP.sv", 507, 128); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Run Synthesis"); // A
+selectCodeEditor("TOP.sv", 266, 151); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Sun Nov 13 11:33:56 2022] Launched synth_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 60 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Sun Nov 13 11:34:58 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 96 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Nov 13 11:36:37 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 51 seconds
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 69 seconds
+selectCodeEditor("TOP.sv", 91, 224); // be
+selectCodeEditor("TOP.sv", 375, 280); // be
+selectCodeEditor("TOP.sv", 110, 241); // be
+selectCodeEditor("TOP.sv", 205, 197); // be
+selectCodeEditor("TOP.sv", 205, 197, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 441, 185); // be
+selectCodeEditor("TOP.sv", 440, 192); // be
+selectCodeEditor("TOP.sv", 427, 200); // be
+selectCodeEditor("TOP.sv", 438, 202); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectCodeEditor("TOP.sv", 128, 228); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Nov 13 11:39:38 2022] Launched synth_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log [Sun Nov 13 11:39:38 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 147 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 15 seconds
+selectCodeEditor("TOP.sv", 135, 230); // be
+// Elapsed time: 13 seconds
+selectCodeEditor("TOP.sv", 150, 194); // be
+selectCodeEditor("TOP.sv", 150, 194, false, false, false, false, true); // be - Double Click
+// Elapsed time: 43 seconds
+selectCodeEditor("TOP.sv", 320, 209); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("TOP.sv", 224, 210); // be
+selectCodeEditor("TOP.sv", 224, 210, false, false, false, false, true); // be - Double Click
+// Elapsed time: 41 seconds
+selectCodeEditor("TOP.sv", 303, 315); // be
+selectCodeEditor("TOP.sv", 303, 314, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 295, 160); // be
+selectCodeEditor("TOP.sv", 295, 160, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 407, 180); // be
+selectCodeEditor("TOP.sv", 221, 173); // be
+selectCodeEditor("TOP.sv", 221, 173, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 227, 188); // be
+selectCodeEditor("TOP.sv", 227, 181); // be
+selectCodeEditor("TOP.sv", 227, 181, false, false, false, false, true); // be - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cW' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 155 MB (+487kb) [01:04:06]
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Nov 13 11:44:41 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 37 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset to Previous Step"); // bA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Sun Nov 13 11:45:24 2022] Launched synth_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 49 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Sun Nov 13 11:46:15 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 3,070 MB. GUI used memory: 81 MB. Current time: 11/13/22, 11:47:08 AM CLST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 91 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Nov 13 11:47:49 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 58 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// Tcl Message: open_run impl_1 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// 'eq' command handler elapsed time: 3 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: DESIGN_CLOSE
+// TclEventType: DESIGN_NEW_FAILED
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3685.801 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2022.1 INFO: [Common 17-344] 'open_run' was cancelled 
+dismissDialog("Open Implemented Design"); // bA
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 155 seconds
+selectCodeEditor("TOP.sv", 126, 250); // be
+selectCodeEditor("TOP.sv", 98, 248); // be
+selectCodeEditor("TOP.sv", 336, 248); // be
+selectCodeEditor("TOP.sv", 367, 256); // be
+selectCodeEditor("TOP.sv", 307, 243); // be
+selectCodeEditor("TOP.sv", 318, 263); // be
+selectCodeEditor("TOP.sv", 325, 244); // be
+selectCodeEditor("TOP.sv", 343, 244); // be
+selectCodeEditor("TOP.sv", 337, 249); // be
+selectCodeEditor("TOP.sv", 380, 249); // be
+selectCodeEditor("TOP.sv", 332, 251); // be
+selectCodeEditor("TOP.sv", 345, 252); // be
+selectCodeEditor("TOP.sv", 358, 247); // be
+// Elapsed time: 86 seconds
+selectCodeEditor("TOP.sv", 376, 214); // be
+// Elapsed time: 49 seconds
+selectCodeEditor("TOP.sv", 289, 244); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP.sv", 217, 73); // be
+selectCodeEditor("TOP.sv", 217, 73, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "TOP.sv", 'v'); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TOP.sv", 327, 77); // be
+selectCodeEditor("TOP.sv", 581, 123); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TOP.sv", 326, 70); // be
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cW' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Nov 13 11:54:36 2022] Launched synth_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log [Sun Nov 13 11:54:36 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 131 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 138 seconds
+selectCodeEditor("TOP.sv", 38, 173); // be
+selectCodeEditor("TOP.sv", 198, 433); // be
+selectCodeEditor("TOP.sv", 613, 306); // be
+selectCodeEditor("TOP.sv", 416, 222); // be
+selectCodeEditor("TOP.sv", 407, 340); // be
+selectCodeEditor("TOP.sv", 470, 446); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_OPERATION_MODES.sv", 0); // m
+// Elapsed time: 23 seconds
+selectCodeEditor("FSM_OPERATION_MODES.sv", 319, 352); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 404, 350); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 407, 262); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 373, 175); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 448, 183); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 522, 177); // be
+// Elapsed time: 59 seconds
+selectCodeEditor("FSM_OPERATION_MODES.sv", 399, 264); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 317, 262); // be
+// Elapsed time: 114 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Confirm Close"); // A
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// Tcl Message: close_hw_manager 
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+dismissDialog("Close Hardware Manager"); // bA
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // D
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "TOP_CA"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 13 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/sources_1/new/TOP_CA.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/sources_1/new/TOP_CA.sv 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP_CA (TOP_CA.sv)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP_CA (TOP_CA.sv)]", 3, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1108 ms.
+dismissDialog("Opening Editor"); // bA
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TOP_CA.sv", 2); // m
+selectCodeEditor("TOP.sv", 89, 476); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 113, 402); // be
+selectCodeEditor("TOP_CA.sv", 52, 423); // be
+selectCodeEditor("TOP_CA.sv", 47, 418); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP_CA.sv", 54, 418); // be
+selectCodeEditor("TOP_CA.sv", 231, 620); // be
+selectCodeEditor("TOP_CA.sv", 116, 645); // be
+selectCodeEditor("TOP_CA.sv", 129, 678); // be
+// Elapsed time: 244 seconds
+selectCodeEditor("TOP_CA.sv", 134, 338); // be
+selectCodeEditor("TOP.sv", 175, 438); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 39, 304); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP_CA.sv", 204, 229); // be
+selectCodeEditor("TOP_CA.sv", 162, 461); // be
+selectCodeEditor("TOP_CA.sv", 298, 416); // be
+selectCodeEditor("TOP_CA.sv", 298, 416, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 160, 161); // be
+selectCodeEditor("TOP_CA.sv", 156, 178); // be
+selectCodeEditor("TOP_CA.sv", 156, 177, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 284, 437); // be
+selectCodeEditor("TOP_CA.sv", 284, 437, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 265, 504); // be
+selectCodeEditor("TOP.sv", 245, 259); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 3, 496); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("TOP.sv", 519, 256); // be
+selectCodeEditor("TOP.sv", 20, 143); // be
+selectCodeEditor("TOP.sv", 188, 175); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 34, 521); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP.sv", 110, 142); // be
+selectCodeEditor("TOP.sv", 13, 92); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 155, 386); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP_CA.sv", 145, 109); // be
+selectCodeEditor("TOP_CA.sv", 86, 155); // be
+selectCodeEditor("TOP_CA.sv", 86, 155, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 300, 199); // be
+selectCodeEditor("TOP_CA.sv", 300, 199, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 30, 346); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 144, 599); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP_CA.sv", 139, 519); // be
+selectCodeEditor("TOP_CA.sv", 146, 622); // be
+selectCodeEditor("TOP_CA.sv", 224, 110); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 40, 580); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP_CA.sv", 79, 553); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TOP.sv", 117, 518); // be
+selectCodeEditor("TOP.sv", 117, 518, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 211, 521); // be
+selectCodeEditor("TOP.sv", 211, 521, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 373, 513); // be
+selectCodeEditor("TOP.sv", 375, 517); // be
+selectCodeEditor("TOP.sv", 101, 500); // be
+selectCodeEditor("TOP.sv", 101, 501, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 14, 567); // be
+// Elapsed time: 23 seconds
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP_CA.sv", 212, 231); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 203, 408); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP_CA.sv", 205, 412); // be
+selectCodeEditor("TOP_CA.sv", 132, 311); // be
+selectCodeEditor("TOP_CA.sv", 132, 311, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 365, 311); // be
+selectCodeEditor("TOP_CA.sv", 150, 264); // be
+selectCodeEditor("TOP_CA.sv", 150, 264, false, false, false, false, true); // be - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("TOP_CA.sv", 143, 245); // be
+selectCodeEditor("TOP_CA.sv", 143, 245, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "TOP_CA.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 111, 266); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP_CA.sv", 389, 275); // be
+selectCodeEditor("TOP_CA.sv", 389, 263); // be
+selectCodeEditor("TOP_CA.sv", 388, 266); // be
+selectCodeEditor("TOP_CA.sv", 25, 264); // be
+selectCodeEditor("TOP_CA.sv", 185, 262); // be
+selectCodeEditor("TOP_CA.sv", 162, 261); // be
+selectCodeEditor("TOP_CA.sv", 162, 261, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 249, 221); // be
+selectCodeEditor("TOP_CA.sv", 197, 262); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("TOP_CA.sv", 472, 229); // be
+selectCodeEditor("TOP_CA.sv", 27, 280); // be
+selectCodeEditor("TOP_CA.sv", 196, 278); // be
+selectCodeEditor("TOP_CA.sv", 91, 498); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TOP_CA.sv", 233, 371); // be
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("TOP_CA.sv", 181, 365); // be
+selectCodeEditor("TOP_CA.sv", 219, 398); // be
+selectCodeEditor("TOP_CA.sv", 219, 397, false, false, false, false, true); // be - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("TOP_CA.sv", 306, 329); // be
+selectCodeEditor("TOP_CA.sv", 306, 329, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "TOP_CA.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 214, 503); // be
+selectCodeEditor("TOP_CA.sv", 214, 503, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP_CA.sv", 225, 513); // be
+selectCodeEditor("TOP_CA.sv", 225, 513, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 158, 226); // be
+selectCodeEditor("TOP_CA.sv", 158, 226, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "TOP_CA.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 72, 465); // be
+selectCodeEditor("TOP_CA.sv", 33, 359); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP_CA.sv", 245, 182); // be
+selectCodeEditor("TOP_CA.sv", 245, 182, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 232, 198); // be
+selectCodeEditor("TOP_CA.sv", 232, 198, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 284, 217); // be
+selectCodeEditor("TOP_CA.sv", 284, 217, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 474, 193); // be
+selectCodeEditor("TOP_CA.sv", 358, 208); // be
+selectCodeEditor("TOP_CA.sv", 358, 213); // be
+selectCodeEditor("TOP_CA.sv", 339, 214); // be
+selectCodeEditor("TOP_CA.sv", 329, 214); // be
+selectCodeEditor("TOP_CA.sv", 324, 214); // be
+selectCodeEditor("TOP_CA.sv", 414, 219); // be
+selectCodeEditor("TOP_CA.sv", 323, 212); // be
+selectCodeEditor("TOP_CA.sv", 260, 233); // be
+selectCodeEditor("TOP_CA.sv", 260, 233, false, false, false, false, true); // be - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("TOP_CA.sv", 267, 247); // be
+selectCodeEditor("TOP_CA.sv", 267, 247, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 268, 247); // be
+selectCodeEditor("TOP_CA.sv", 268, 247, false, false, false, false, true); // be - Double Click
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TOP_CA.sv", 198, 289); // be
+selectCodeEditor("TOP_CA.sv", 366, 358); // be
+selectCodeEditor("TOP_CA.sv", 273, 434); // be
+selectCodeEditor("TOP_CA.sv", 51, 480); // be
+selectCodeEditor("TOP_CA.sv", 128, 464); // be
+selectCodeEditor("TOP_CA.sv", 122, 464); // be
+selectCodeEditor("TOP_CA.sv", 294, 444); // be
+selectCodeEditor("TOP_CA.sv", 258, 470); // be
+// Elapsed time: 13 seconds
+selectCodeEditor("TOP.sv", 198, 195); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 55, 514); // be
+selectCodeEditor("TOP_CA.sv", 39, 493); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP_CA.sv", 44, 538); // be
+selectCodeEditor("TOP_CA.sv", 303, 549); // be
+selectCodeEditor("TOP.sv", 170, 656); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 331, 563); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP_CA.sv", 221, 523); // be
+// Elapsed time: 24 seconds
+selectCodeEditor("TOP.sv", 327, 635); // be
+selectCodeEditor("TOP.sv", 179, 661); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 126, 614); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+typeControlKey(null, null, 'z');
+selectCodeEditor("TOP_CA.sv", 246, 432); // be
+selectCodeEditor("TOP_CA.sv", 246, 432, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 270, 434); // be
+selectCodeEditor("TOP_CA.sv", 105, 383); // be
+// Elapsed time: 20 seconds
+selectCodeEditor("TOP_CA.sv", 156, 397); // be
+selectCodeEditor("TOP_CA.sv", 156, 397, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "TOP_CA.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 93, 429); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("TOP_CA.sv", 170, 435); // be
+selectCodeEditor("TOP_CA.sv", 124, 298); // be
+selectCodeEditor("TOP_CA.sv", 124, 298, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "TOP_CA.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 174, 581); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("TOP_CA.sv", 126, 589); // be
+selectCodeEditor("TOP_CA.sv", 126, 589, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "TOP_CA.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 239, 676); // be
+selectCodeEditor("TOP_CA.sv", 239, 675, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+typeControlKey(null, null, 'z');
+selectCodeEditor("TOP_CA.sv", 231, 668); // be
+selectCodeEditor("TOP_CA.sv", 359, 680); // be
+selectCodeEditor("TOP_CA.sv", 248, 670); // be
+selectCodeEditor("TOP_CA.sv", 248, 670, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Run Synthesis"); // A
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Nov 13 12:16:25 2022] Launched synth_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,070 MB. GUI used memory: 78 MB. Current time: 11/13/22, 12:17:09 PM CLST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 74 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// Elapsed time: 55 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Sun Nov 13 12:18:36 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 56 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 80 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Nov 13 12:20:03 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 48 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+dismissDialog("Open Hardware Manager"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ar
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2022.1   **** Build date : Apr 18 2022 at 16:02:36     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.1.0   ****** Build date   : Apr 12 2022-15:12:08     **** Build number : 2022.1.1649790728       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3700.668 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FCF3A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bA
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Confirm Close"); // A
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bA
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+selectCodeEditor("TOP.sv", 336, 516); // be
+selectCodeEditor("TOP.sv", 355, 531); // be
+selectCodeEditor("TOP.sv", 346, 523); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 56, 213); // be
+selectCodeEditor("TOP_CA.sv", 89, 349); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TOP.sv", 371, 449); // be
+selectCodeEditor("TOP_CA.sv", 222, 409); // be
+selectCodeEditor("TOP.sv", 372, 449); // be
+selectCodeEditor("TOP.sv", 373, 450); // be
+selectCodeEditor("TOP.sv", 116, 253); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 211, 166); // be
+selectCodeEditor("TOP_CA.sv", 196, 399); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP_CA.sv", 56, 420); // be
+// Elapsed time: 12 seconds
+selectCodeEditor("TOP.sv", 370, 552); // be
+selectCodeEditor("TOP.sv", 23, 564); // be
+selectCodeEditor("TOP.sv", 160, 503); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("TOP.sv", 126, 449); // be
+selectCodeEditor("TOP.sv", 126, 449, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP.sv", 160, 200); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 34, 510); // be
+selectCodeEditor("TOP_CA.sv", 49, 219); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP.sv", 380, 451); // be
+typeControlKey((HResource) null, "TOP.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 110, 241); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP_CA.sv", 180, 484); // be
+selectCodeEditor("TOP_CA.sv", 180, 484, false, false, false, false, true); // be - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP_CA (TOP_CA.sv)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP_CA (TOP_CA.sv)]", 2, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ar
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top TOP_CA [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cW' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Nov 13 12:23:02 2022] Launched synth_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log [Sun Nov 13 12:23:02 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 31 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3892] undeclared type 'lodig'  [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/sources_1/new/TOP_CA.sv:50]. ]", 1, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\ricar\OneDrive\Escritorio\MEMORIA\CA_imageProcessingOnFPGA\VIVADO\CA_UART\CA_UART.srcs\sources_1\new\TOP_CA.sv;-;;-;16;-;line;-;50;-;;-;16;-;"); // ah
+unMinimizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // aA
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3892] undeclared type 'lodig'  [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/sources_1/new/TOP_CA.sv:50]. ]", 1, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\ricar\OneDrive\Escritorio\MEMORIA\CA_imageProcessingOnFPGA\VIVADO\CA_UART\CA_UART.srcs\sources_1\new\TOP_CA.sv;-;;-;16;-;line;-;50;-;;-;16;-;"); // ah
+selectCodeEditor("TOP_CA.sv", 194, 223); // be
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "loding", true); // k
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "loding"); // k
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'TOP_CA' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/sources_1/new/TOP_CA.sv:23]. ]", 2, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\ricar\OneDrive\Escritorio\MEMORIA\CA_imageProcessingOnFPGA\VIVADO\CA_UART\CA_UART.srcs\sources_1\new\TOP_CA.sv;-;;-;16;-;line;-;23;-;;-;16;-;"); // ah
+selectCodeEditor("TOP_CA.sv", 295, 325); // be
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "lodi"); // k
+selectCodeEditor("TOP_CA.sv", 42, 90); // be
+selectCodeEditor("TOP_CA.sv", 43, 79); // be
+selectCodeEditor("TOP_CA.sv", 43, 79, false, false, false, false, true); // be - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TOP_CA.sv", 257, 143); // be
+selectCodeEditor("TOP_CA.sv", 141, 130); // be
+selectCodeEditor("TOP_CA.sv", 141, 130, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 117, 144); // be
+selectCodeEditor("TOP_CA.sv", 117, 144, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 152, 74); // be
+selectCodeEditor("TOP_CA.sv", 152, 74, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 86, 59); // be
+selectCodeEditor("TOP_CA.sv", 86, 59, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 149, 180); // be
+selectCodeEditor("TOP_CA.sv", 149, 180, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 136, 284); // be
+selectCodeEditor("TOP_CA.sv", 136, 284, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 109, 146); // be
+selectCodeEditor("TOP_CA.sv", 109, 146, false, false, false, false, true); // be - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Sun Nov 13 12:24:45 2022] Launched synth_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 73 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Sun Nov 13 12:26:00 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 100 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Nov 13 12:27:43 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 57 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+dismissDialog("Open Hardware Manager"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ar
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2022.1   **** Build date : Apr 18 2022 at 16:02:36     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.1.0   ****** Build date   : Apr 12 2022-15:12:08     **** Build number : 2022.1.1649790728       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3700.668 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FCF3A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP_CA.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bA
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP_CA.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 59 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TOP_CA.sv", 2); // m
+selectCodeEditor("TOP_CA.sv", 170, 164); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'c'); // be
+selectCodeEditor("TOP_CA.sv", 262, 166); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP_CA.sv", 313, 161); // be
+selectCodeEditor("TOP_CA.sv", 362, 160); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP_CA.sv", 418, 160); // be
+selectCodeEditor("TOP_CA.sv", 462, 164); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+typeControlKey((HResource) null, "TOP_CA.sv", 'v'); // be
+selectCodeEditor("TOP_CA.sv", 249, 162); // be
+selectCodeEditor("TOP_CA.sv", 171, 160); // be
+selectCodeEditor("TOP_CA.sv", 688, 230); // be
+selectCodeEditor("TOP_CA.sv", 422, 161); // be
+selectCodeEditor("TOP_CA.sv", 519, 162); // be
+selectCodeEditor("TOP_CA.sv", 626, 167); // be
+selectCodeEditor("TOP_CA.sv", 718, 162); // be
+selectCodeEditor("TOP_CA.sv", 823, 166); // be
+selectCodeEditor("TOP_CA.sv", 914, 162); // be
+selectCodeEditor("TOP_CA.sv", 1014, 163); // be
+selectCodeEditor("TOP_CA.sv", 975, 163); // be
+selectCodeEditor("TOP_CA.sv", 220, 158); // be
+selectCodeEditor("TOP_CA.sv", 329, 159); // be
+selectCodeEditor("TOP_CA.sv", 414, 161); // be
+selectCodeEditor("TOP_CA.sv", 537, 159); // be
+selectCodeEditor("TOP_CA.sv", 628, 160); // be
+selectCodeEditor("TOP_CA.sv", 742, 154); // be
+selectCodeEditor("TOP_CA.sv", 826, 156); // be
+selectCodeEditor("TOP_CA.sv", 998, 162); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP_CA.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cW' command handler elapsed time: 6 seconds
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Nov 13 12:31:00 2022] Launched synth_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log [Sun Nov 13 12:31:00 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 186 seconds
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP_CA.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 84 seconds
+selectCodeEditor("TOP_CA.sv", 119, 292); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("TOP_CA.sv", 150, 297); // be
+selectCodeEditor("TOP_CA.sv", 150, 297, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 63, 407); // be
+selectCodeEditor("TOP_CA.sv", 50, 413); // be
+// Elapsed time: 17 seconds
+selectCodeEditor("TOP_CA.sv", 214, 240); // be
+selectCodeEditor("TOP_CA.sv", 306, 467); // be
+selectCodeEditor("TOP_CA.sv", 306, 467, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 297, 466); // be
+selectCodeEditor("TOP_CA.sv", 297, 466); // be
+selectCodeEditor("TOP_CA.sv", 297, 466, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TOP_CA.sv", 200, 231); // be
+// Elapsed time: 26 seconds
+selectCodeEditor("TOP_CA.sv", 155, 281); // be
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_OPERATION_MODES.sv", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TOP_CA.sv", 2); // m
+selectCodeEditor("TOP_CA.sv", 207, 280); // be
+selectCodeEditor("TOP_CA.sv", 250, 279); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP_CA.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Nov 13 12:37:39 2022] Launched synth_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log [Sun Nov 13 12:37:39 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("TOP_CA.sv", 115, 123); // be
+selectCodeEditor("TOP_CA.sv", 612, 231); // be
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 202 seconds
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP_CA.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 217 seconds
+selectCodeEditor("TOP_CA.sv", 354, 184); // be
+selectCodeEditor("TOP_CA.sv", 152, 180); // be
+selectCodeEditor("TOP_CA.sv", 366, 181); // be
+selectCodeEditor("TOP_CA.sv", 305, 178); // be
+selectCodeEditor("TOP_CA.sv", 226, 180); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TOP.sv", 1); // m
+selectCodeEditor("TOP.sv", 456, 283); // be
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TOP_CA.sv", 2); // m
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("TOP_CA.sv", 455, 362); // be
+// Elapsed time: 43 seconds
+selectCodeEditor("TOP_CA.sv", 231, 379); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectCodeEditor("TOP_CA.sv", 337, 315); // be
+// HMemoryUtils.trashcanNow. Engine heap size: 3,070 MB. GUI used memory: 84 MB. Current time: 11/13/22, 12:47:09 PM CLST
+// Elapsed time: 256 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_OPERATION_MODES.sv", 0); // m
+selectCodeEditor("FSM_OPERATION_MODES.sv", 312, 263); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 285, 129); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP_CA.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Nov 13 12:51:22 2022] Launched synth_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log [Sun Nov 13 12:51:22 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 140 seconds
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP_CA.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TOP_CA.sv", 2); // m
+selectCodeEditor("TOP_CA.sv", 229, 287); // be
+selectCodeEditor("TOP_CA.sv", 224, 282); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TOP.sv", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_OPERATION_MODES.sv", 0); // m
+selectCodeEditor("FSM_OPERATION_MODES.sv", 373, 59); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 371, 59); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 371, 59, false, false, false, false, true); // be - Double Click
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP_CA.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cW' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Nov 13 12:55:10 2022] Launched synth_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log [Sun Nov 13 12:55:10 2022] Launched impl_1... Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 94 seconds
+selectCodeEditor("FSM_OPERATION_MODES.sv", 333, 315); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 346, 315); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 334, 313); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 342, 311); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 334, 311); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 342, 311); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 334, 311); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 347, 302); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 334, 311); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 359, 302); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 335, 314); // be
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 38 seconds
+selectCodeEditor("FSM_OPERATION_MODES.sv", 638, 463); // be
+// Elapsed time: 14 seconds
+selectCodeEditor("FSM_OPERATION_MODES.sv", 453, 493); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 208, 448); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 461, 165); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 243, 305); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 573, 229); // be
+// Elapsed time: 34 seconds
+selectCodeEditor("FSM_OPERATION_MODES.sv", 297, 142); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("FSM_OPERATION_MODES.sv", 339, 197); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 339, 197, false, false, false, false, true); // be - Double Click
+selectCodeEditor("FSM_OPERATION_MODES.sv", 370, 213); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 396, 215); // be
+selectCodeEditor("FSM_OPERATION_MODES.sv", 388, 217); // be
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 36 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// Tcl Message: open_run impl_1 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,070 MB. GUI used memory: 84 MB. Current time: 11/13/22, 12:59:30 PM CLST
+// Xgd.load filename: C:/Xilinx/Vivado/2022.1/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 0.7s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1s
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.9s
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  4289 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 3711.094 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 84 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2022.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.151 . Memory (MB): peak = 4397.879 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.152 . Memory (MB): peak = 4397.879 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4397.879 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: open_run: Time (s): cpu = 00:00:36 ; elapsed = 00:00:24 . Memory (MB): peak = 4523.668 ; gain = 819.457 
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 165 MB (+1762kb) [02:19:07]
+// [GUI Memory]: 173 MB (+242kb) [02:19:07]
+// WARNING: HEventQueue.dispatchEvent() is taking  2209 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Elapsed time: 30 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 3,070 MB. GUI used memory: 126 MB. Current time: 11/13/22, 12:59:43 PM CLST
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  2834 ms.
+// 'eq' command handler elapsed time: 34 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1194 ms.
+dismissDialog("Open Implemented Design"); // bA
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Methodology Violations"); // aV
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 34, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ar
+// PAPropertyPanels.initPanels (xc7a100t_0) elapsed time: 0.2s
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP_CA.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bA
+// [GUI Memory]: 183 MB (+1131kb) [02:22:00]
