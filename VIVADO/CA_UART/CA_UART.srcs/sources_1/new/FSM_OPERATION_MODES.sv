@@ -142,7 +142,7 @@ module FSM_OPERATION_MODES
                       
                 DOWN_WAIT: begin
                   
-                                if (trigger & col < M +1 & row < N) begin
+                                if (trigger & col < M  & row < N) begin
                                     next_state = DOWN;
                                     next_operation = 'd3;
                                     next_col = col +1;
@@ -161,7 +161,7 @@ module FSM_OPERATION_MODES
     
                  DOWN: begin
                             
-                            if (col == M +1& row == N-1 & ~download ) begin
+                            if (col == 1 & row == N & ~download ) begin
                                 next_state = IDLE;
                                 next_operation = 0;
                                 
@@ -169,7 +169,7 @@ module FSM_OPERATION_MODES
                                 next_row = 0;
                                 end
                             
-                            else if (col == M +1 & row == N-1) begin
+                            else if (col == 1  & row == N) begin
                                 next_state = DOWN;
                                 next_operation = 0;
                                 end

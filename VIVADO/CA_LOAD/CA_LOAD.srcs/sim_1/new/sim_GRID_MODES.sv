@@ -233,7 +233,7 @@ module sim_GRID_MODES(  );
     
     #10 download = 1;
     
-    #10 download = 0;
+    #40 download = 0;
     
 //    evolve = 1;
     

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1668354909" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/UART_LOGIC.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1668405278" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/UART_LOGIC.dcp">
   <File Type="PA-TCL" Name="TOP_CA.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="TOP_CA_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="TOP_CA_reports.tcl"/>

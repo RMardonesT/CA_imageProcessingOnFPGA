@@ -74,7 +74,7 @@ module TOP_CA(
   /************************
  * INSTANCE OF FSM OP MODES
  ***********************/ 
-   localparam M = 2;
+   localparam M = 4;
    localparam N = 4;
    
    logic trigger;
@@ -174,7 +174,6 @@ module TOP_CA(
     
     
 endmodule
-
 
 
 

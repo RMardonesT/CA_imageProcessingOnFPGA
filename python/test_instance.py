@@ -3,7 +3,7 @@ from pprint import pprint
 
 
 #tamanno de la grilla
-M = 2
+M = 4
 N = 4
 
 

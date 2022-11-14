@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Sun Nov 13 12:58:48 2022
+| Date         : Mon Nov 14 02:57:49 2022
 | Host         : Richi-PC running 64-bit major release  (build 9200)
 | Command      : report_methodology -file TOP_CA_methodology_drc_routed.rpt -pb TOP_CA_methodology_drc_routed.pb -rpx TOP_CA_methodology_drc_routed.rpx
 | Design       : TOP_CA
@@ -23,14 +23,14 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 122
+             Violations found: 194
 +-----------+------------------+--------------------------------+------------+
 | Rule      | Severity         | Description                    | Violations |
 +-----------+------------------+--------------------------------+------------+
 | TIMING-17 | Critical Warning | Non-clocked sequential cell    | 3          |
-| LUTAR-1   | Warning          | LUT drives async reset alert   | 8          |
+| LUTAR-1   | Warning          | LUT drives async reset alert   | 16         |
 | TIMING-18 | Warning          | Missing input or output delay  | 42         |
-| TIMING-20 | Warning          | Non-clocked latch              | 68         |
+| TIMING-20 | Warning          | Non-clocked latch              | 132        |
 | LATCH-1   | Advisory         | Existing latches in the design | 1          |
 +-----------+------------------+--------------------------------+------------+
 
@@ -65,7 +65,7 @@ Related violations: <none>
 
 LUTAR-1#2 Warning
 LUT drives async reset alert  
-LUT cell inst_grid/cell1/next_cell_state_reg[7]_i_2__6, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell1/next_cell_state_reg[0]/PRE,
+LUT cell inst_grid/cell1/next_cell_state_reg[7]_i_2__7, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell1/next_cell_state_reg[0]/PRE,
 inst_grid/cell1/next_cell_state_reg[1]/CLR,
 inst_grid/cell1/next_cell_state_reg[2]/CLR,
 inst_grid/cell1/next_cell_state_reg[3]/CLR,
@@ -77,7 +77,79 @@ Related violations: <none>
 
 LUTAR-1#3 Warning
 LUT drives async reset alert  
-LUT cell inst_grid/cell2/next_cell_state_reg[7]_i_2__5, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell2/next_cell_state_reg[0]/PRE,
+LUT cell inst_grid/cell10/next_cell_state_reg[7]_i_2__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell10/next_cell_state_reg[0]/PRE,
+inst_grid/cell10/next_cell_state_reg[1]/CLR,
+inst_grid/cell10/next_cell_state_reg[2]/CLR,
+inst_grid/cell10/next_cell_state_reg[3]/CLR,
+inst_grid/cell10/next_cell_state_reg[4]/CLR,
+inst_grid/cell10/next_cell_state_reg[5]/CLR,
+inst_grid/cell10/next_cell_state_reg[6]/CLR
+inst_grid/cell10/next_cell_state_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell inst_grid/cell11/next_cell_state_reg[7]_i_2__12, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell11/next_cell_state_reg[0]/PRE,
+inst_grid/cell11/next_cell_state_reg[1]/CLR,
+inst_grid/cell11/next_cell_state_reg[2]/CLR,
+inst_grid/cell11/next_cell_state_reg[3]/CLR,
+inst_grid/cell11/next_cell_state_reg[4]/CLR,
+inst_grid/cell11/next_cell_state_reg[5]/CLR,
+inst_grid/cell11/next_cell_state_reg[6]/CLR
+inst_grid/cell11/next_cell_state_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell inst_grid/cell12/next_cell_state_reg[7]_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell12/next_cell_state_reg[0]/PRE,
+inst_grid/cell12/next_cell_state_reg[1]/CLR,
+inst_grid/cell12/next_cell_state_reg[2]/CLR,
+inst_grid/cell12/next_cell_state_reg[3]/CLR,
+inst_grid/cell12/next_cell_state_reg[4]/CLR,
+inst_grid/cell12/next_cell_state_reg[5]/CLR,
+inst_grid/cell12/next_cell_state_reg[6]/CLR
+inst_grid/cell12/next_cell_state_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell inst_grid/cell13/next_cell_state_reg[7]_i_2__13, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell13/next_cell_state_reg[0]/PRE,
+inst_grid/cell13/next_cell_state_reg[1]/CLR,
+inst_grid/cell13/next_cell_state_reg[2]/CLR,
+inst_grid/cell13/next_cell_state_reg[3]/CLR,
+inst_grid/cell13/next_cell_state_reg[4]/CLR,
+inst_grid/cell13/next_cell_state_reg[5]/CLR,
+inst_grid/cell13/next_cell_state_reg[6]/CLR
+inst_grid/cell13/next_cell_state_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell inst_grid/cell14/next_cell_state_reg[7]_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell14/next_cell_state_reg[0]/PRE,
+inst_grid/cell14/next_cell_state_reg[1]/CLR,
+inst_grid/cell14/next_cell_state_reg[2]/CLR,
+inst_grid/cell14/next_cell_state_reg[3]/CLR,
+inst_grid/cell14/next_cell_state_reg[4]/CLR,
+inst_grid/cell14/next_cell_state_reg[5]/CLR,
+inst_grid/cell14/next_cell_state_reg[6]/CLR
+inst_grid/cell14/next_cell_state_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell inst_grid/cell15/next_cell_state_reg[7]_i_2__14, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell15/next_cell_state_reg[0]/PRE,
+inst_grid/cell15/next_cell_state_reg[1]/CLR,
+inst_grid/cell15/next_cell_state_reg[2]/CLR,
+inst_grid/cell15/next_cell_state_reg[3]/CLR,
+inst_grid/cell15/next_cell_state_reg[4]/CLR,
+inst_grid/cell15/next_cell_state_reg[5]/CLR,
+inst_grid/cell15/next_cell_state_reg[6]/CLR
+inst_grid/cell15/next_cell_state_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell inst_grid/cell2/next_cell_state_reg[7]_i_2__6, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell2/next_cell_state_reg[0]/PRE,
 inst_grid/cell2/next_cell_state_reg[1]/CLR,
 inst_grid/cell2/next_cell_state_reg[2]/CLR,
 inst_grid/cell2/next_cell_state_reg[3]/CLR,
@@ -87,9 +159,9 @@ inst_grid/cell2/next_cell_state_reg[6]/CLR
 inst_grid/cell2/next_cell_state_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
-LUTAR-1#4 Warning
+LUTAR-1#10 Warning
 LUT drives async reset alert  
-LUT cell inst_grid/cell3/next_cell_state_reg[7]_i_2__4, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell3/next_cell_state_reg[0]/PRE,
+LUT cell inst_grid/cell3/next_cell_state_reg[7]_i_2__8, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell3/next_cell_state_reg[0]/PRE,
 inst_grid/cell3/next_cell_state_reg[1]/CLR,
 inst_grid/cell3/next_cell_state_reg[2]/CLR,
 inst_grid/cell3/next_cell_state_reg[3]/CLR,
@@ -99,9 +171,9 @@ inst_grid/cell3/next_cell_state_reg[6]/CLR
 inst_grid/cell3/next_cell_state_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
-LUTAR-1#5 Warning
+LUTAR-1#11 Warning
 LUT drives async reset alert  
-LUT cell inst_grid/cell4/next_cell_state_reg[7]_i_2__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell4/next_cell_state_reg[0]/PRE,
+LUT cell inst_grid/cell4/next_cell_state_reg[7]_i_2__5, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell4/next_cell_state_reg[0]/PRE,
 inst_grid/cell4/next_cell_state_reg[1]/CLR,
 inst_grid/cell4/next_cell_state_reg[2]/CLR,
 inst_grid/cell4/next_cell_state_reg[3]/CLR,
@@ -111,9 +183,9 @@ inst_grid/cell4/next_cell_state_reg[6]/CLR
 inst_grid/cell4/next_cell_state_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
-LUTAR-1#6 Warning
+LUTAR-1#12 Warning
 LUT drives async reset alert  
-LUT cell inst_grid/cell5/next_cell_state_reg[7]_i_2__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell5/next_cell_state_reg[0]/PRE,
+LUT cell inst_grid/cell5/next_cell_state_reg[7]_i_2__9, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell5/next_cell_state_reg[0]/PRE,
 inst_grid/cell5/next_cell_state_reg[1]/CLR,
 inst_grid/cell5/next_cell_state_reg[2]/CLR,
 inst_grid/cell5/next_cell_state_reg[3]/CLR,
@@ -123,9 +195,9 @@ inst_grid/cell5/next_cell_state_reg[6]/CLR
 inst_grid/cell5/next_cell_state_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
-LUTAR-1#7 Warning
+LUTAR-1#13 Warning
 LUT drives async reset alert  
-LUT cell inst_grid/cell6/next_cell_state_reg[7]_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell6/next_cell_state_reg[0]/PRE,
+LUT cell inst_grid/cell6/next_cell_state_reg[7]_i_2__4, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell6/next_cell_state_reg[0]/PRE,
 inst_grid/cell6/next_cell_state_reg[1]/CLR,
 inst_grid/cell6/next_cell_state_reg[2]/CLR,
 inst_grid/cell6/next_cell_state_reg[3]/CLR,
@@ -135,9 +207,9 @@ inst_grid/cell6/next_cell_state_reg[6]/CLR
 inst_grid/cell6/next_cell_state_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
-LUTAR-1#8 Warning
+LUTAR-1#14 Warning
 LUT drives async reset alert  
-LUT cell inst_grid/cell7/next_cell_state_reg[7]_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell7/next_cell_state_reg[0]/PRE,
+LUT cell inst_grid/cell7/next_cell_state_reg[7]_i_2__10, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell7/next_cell_state_reg[0]/PRE,
 inst_grid/cell7/next_cell_state_reg[1]/CLR,
 inst_grid/cell7/next_cell_state_reg[2]/CLR,
 inst_grid/cell7/next_cell_state_reg[3]/CLR,
@@ -145,6 +217,30 @@ inst_grid/cell7/next_cell_state_reg[4]/CLR,
 inst_grid/cell7/next_cell_state_reg[5]/CLR,
 inst_grid/cell7/next_cell_state_reg[6]/CLR
 inst_grid/cell7/next_cell_state_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#15 Warning
+LUT drives async reset alert  
+LUT cell inst_grid/cell8/next_cell_state_reg[7]_i_2__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell8/next_cell_state_reg[0]/PRE,
+inst_grid/cell8/next_cell_state_reg[1]/CLR,
+inst_grid/cell8/next_cell_state_reg[2]/CLR,
+inst_grid/cell8/next_cell_state_reg[3]/CLR,
+inst_grid/cell8/next_cell_state_reg[4]/CLR,
+inst_grid/cell8/next_cell_state_reg[5]/CLR,
+inst_grid/cell8/next_cell_state_reg[6]/CLR
+inst_grid/cell8/next_cell_state_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#16 Warning
+LUT drives async reset alert  
+LUT cell inst_grid/cell9/next_cell_state_reg[7]_i_2__11, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_grid/cell9/next_cell_state_reg[0]/PRE,
+inst_grid/cell9/next_cell_state_reg[1]/CLR,
+inst_grid/cell9/next_cell_state_reg[2]/CLR,
+inst_grid/cell9/next_cell_state_reg[3]/CLR,
+inst_grid/cell9/next_cell_state_reg[4]/CLR,
+inst_grid/cell9/next_cell_state_reg[5]/CLR,
+inst_grid/cell9/next_cell_state_reg[6]/CLR
+inst_grid/cell9/next_cell_state_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 TIMING-18#1 Warning
@@ -454,252 +550,572 @@ Related violations: <none>
 
 TIMING-20#20 Warning
 Non-clocked latch  
-The latch inst_grid/cell2/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell2/next_cell_state_reg[0]/G is not reached by a timing clock
+The latch inst_grid/cell10/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell10/next_cell_state_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#21 Warning
 Non-clocked latch  
-The latch inst_grid/cell2/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell2/next_cell_state_reg[1]/G is not reached by a timing clock
+The latch inst_grid/cell10/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell10/next_cell_state_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#22 Warning
 Non-clocked latch  
-The latch inst_grid/cell2/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell2/next_cell_state_reg[2]/G is not reached by a timing clock
+The latch inst_grid/cell10/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell10/next_cell_state_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#23 Warning
 Non-clocked latch  
-The latch inst_grid/cell2/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell2/next_cell_state_reg[3]/G is not reached by a timing clock
+The latch inst_grid/cell10/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell10/next_cell_state_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#24 Warning
 Non-clocked latch  
-The latch inst_grid/cell2/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell2/next_cell_state_reg[4]/G is not reached by a timing clock
+The latch inst_grid/cell10/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell10/next_cell_state_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#25 Warning
 Non-clocked latch  
-The latch inst_grid/cell2/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell2/next_cell_state_reg[5]/G is not reached by a timing clock
+The latch inst_grid/cell10/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell10/next_cell_state_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#26 Warning
 Non-clocked latch  
-The latch inst_grid/cell2/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell2/next_cell_state_reg[6]/G is not reached by a timing clock
+The latch inst_grid/cell10/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell10/next_cell_state_reg[6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#27 Warning
 Non-clocked latch  
-The latch inst_grid/cell2/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell2/next_cell_state_reg[7]/G is not reached by a timing clock
+The latch inst_grid/cell10/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell10/next_cell_state_reg[7]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#28 Warning
 Non-clocked latch  
-The latch inst_grid/cell3/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell3/next_cell_state_reg[0]/G is not reached by a timing clock
+The latch inst_grid/cell11/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell11/next_cell_state_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#29 Warning
 Non-clocked latch  
-The latch inst_grid/cell3/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell3/next_cell_state_reg[1]/G is not reached by a timing clock
+The latch inst_grid/cell11/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell11/next_cell_state_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#30 Warning
 Non-clocked latch  
-The latch inst_grid/cell3/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell3/next_cell_state_reg[2]/G is not reached by a timing clock
+The latch inst_grid/cell11/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell11/next_cell_state_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#31 Warning
 Non-clocked latch  
-The latch inst_grid/cell3/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell3/next_cell_state_reg[3]/G is not reached by a timing clock
+The latch inst_grid/cell11/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell11/next_cell_state_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#32 Warning
 Non-clocked latch  
-The latch inst_grid/cell3/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell3/next_cell_state_reg[4]/G is not reached by a timing clock
+The latch inst_grid/cell11/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell11/next_cell_state_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#33 Warning
 Non-clocked latch  
-The latch inst_grid/cell3/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell3/next_cell_state_reg[5]/G is not reached by a timing clock
+The latch inst_grid/cell11/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell11/next_cell_state_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#34 Warning
 Non-clocked latch  
-The latch inst_grid/cell3/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell3/next_cell_state_reg[6]/G is not reached by a timing clock
+The latch inst_grid/cell11/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell11/next_cell_state_reg[6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#35 Warning
 Non-clocked latch  
-The latch inst_grid/cell3/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell3/next_cell_state_reg[7]/G is not reached by a timing clock
+The latch inst_grid/cell11/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell11/next_cell_state_reg[7]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#36 Warning
 Non-clocked latch  
-The latch inst_grid/cell4/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell4/next_cell_state_reg[0]/G is not reached by a timing clock
+The latch inst_grid/cell12/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell12/next_cell_state_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#37 Warning
 Non-clocked latch  
-The latch inst_grid/cell4/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell4/next_cell_state_reg[1]/G is not reached by a timing clock
+The latch inst_grid/cell12/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell12/next_cell_state_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#38 Warning
 Non-clocked latch  
-The latch inst_grid/cell4/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell4/next_cell_state_reg[2]/G is not reached by a timing clock
+The latch inst_grid/cell12/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell12/next_cell_state_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#39 Warning
 Non-clocked latch  
-The latch inst_grid/cell4/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell4/next_cell_state_reg[3]/G is not reached by a timing clock
+The latch inst_grid/cell12/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell12/next_cell_state_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#40 Warning
 Non-clocked latch  
-The latch inst_grid/cell4/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell4/next_cell_state_reg[4]/G is not reached by a timing clock
+The latch inst_grid/cell12/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell12/next_cell_state_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#41 Warning
 Non-clocked latch  
-The latch inst_grid/cell4/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell4/next_cell_state_reg[5]/G is not reached by a timing clock
+The latch inst_grid/cell12/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell12/next_cell_state_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#42 Warning
 Non-clocked latch  
-The latch inst_grid/cell4/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell4/next_cell_state_reg[6]/G is not reached by a timing clock
+The latch inst_grid/cell12/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell12/next_cell_state_reg[6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#43 Warning
 Non-clocked latch  
-The latch inst_grid/cell4/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell4/next_cell_state_reg[7]/G is not reached by a timing clock
+The latch inst_grid/cell12/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell12/next_cell_state_reg[7]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#44 Warning
 Non-clocked latch  
-The latch inst_grid/cell5/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell5/next_cell_state_reg[0]/G is not reached by a timing clock
+The latch inst_grid/cell13/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell13/next_cell_state_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#45 Warning
 Non-clocked latch  
-The latch inst_grid/cell5/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell5/next_cell_state_reg[1]/G is not reached by a timing clock
+The latch inst_grid/cell13/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell13/next_cell_state_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#46 Warning
 Non-clocked latch  
-The latch inst_grid/cell5/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell5/next_cell_state_reg[2]/G is not reached by a timing clock
+The latch inst_grid/cell13/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell13/next_cell_state_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#47 Warning
 Non-clocked latch  
-The latch inst_grid/cell5/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell5/next_cell_state_reg[3]/G is not reached by a timing clock
+The latch inst_grid/cell13/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell13/next_cell_state_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#48 Warning
 Non-clocked latch  
-The latch inst_grid/cell5/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell5/next_cell_state_reg[4]/G is not reached by a timing clock
+The latch inst_grid/cell13/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell13/next_cell_state_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#49 Warning
 Non-clocked latch  
-The latch inst_grid/cell5/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell5/next_cell_state_reg[5]/G is not reached by a timing clock
+The latch inst_grid/cell13/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell13/next_cell_state_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#50 Warning
 Non-clocked latch  
-The latch inst_grid/cell5/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell5/next_cell_state_reg[6]/G is not reached by a timing clock
+The latch inst_grid/cell13/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell13/next_cell_state_reg[6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#51 Warning
 Non-clocked latch  
-The latch inst_grid/cell5/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell5/next_cell_state_reg[7]/G is not reached by a timing clock
+The latch inst_grid/cell13/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell13/next_cell_state_reg[7]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#52 Warning
 Non-clocked latch  
-The latch inst_grid/cell6/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell6/next_cell_state_reg[0]/G is not reached by a timing clock
+The latch inst_grid/cell14/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell14/next_cell_state_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#53 Warning
 Non-clocked latch  
-The latch inst_grid/cell6/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell6/next_cell_state_reg[1]/G is not reached by a timing clock
+The latch inst_grid/cell14/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell14/next_cell_state_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#54 Warning
 Non-clocked latch  
-The latch inst_grid/cell6/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell6/next_cell_state_reg[2]/G is not reached by a timing clock
+The latch inst_grid/cell14/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell14/next_cell_state_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#55 Warning
 Non-clocked latch  
-The latch inst_grid/cell6/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell6/next_cell_state_reg[3]/G is not reached by a timing clock
+The latch inst_grid/cell14/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell14/next_cell_state_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#56 Warning
 Non-clocked latch  
-The latch inst_grid/cell6/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell6/next_cell_state_reg[4]/G is not reached by a timing clock
+The latch inst_grid/cell14/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell14/next_cell_state_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#57 Warning
 Non-clocked latch  
-The latch inst_grid/cell6/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell6/next_cell_state_reg[5]/G is not reached by a timing clock
+The latch inst_grid/cell14/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell14/next_cell_state_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#58 Warning
 Non-clocked latch  
-The latch inst_grid/cell6/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell6/next_cell_state_reg[6]/G is not reached by a timing clock
+The latch inst_grid/cell14/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell14/next_cell_state_reg[6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#59 Warning
 Non-clocked latch  
-The latch inst_grid/cell6/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell6/next_cell_state_reg[7]/G is not reached by a timing clock
+The latch inst_grid/cell14/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell14/next_cell_state_reg[7]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#60 Warning
 Non-clocked latch  
-The latch inst_grid/cell7/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell7/next_cell_state_reg[0]/G is not reached by a timing clock
+The latch inst_grid/cell15/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell15/next_cell_state_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#61 Warning
 Non-clocked latch  
-The latch inst_grid/cell7/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell7/next_cell_state_reg[1]/G is not reached by a timing clock
+The latch inst_grid/cell15/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell15/next_cell_state_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#62 Warning
 Non-clocked latch  
-The latch inst_grid/cell7/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell7/next_cell_state_reg[2]/G is not reached by a timing clock
+The latch inst_grid/cell15/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell15/next_cell_state_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#63 Warning
 Non-clocked latch  
-The latch inst_grid/cell7/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell7/next_cell_state_reg[3]/G is not reached by a timing clock
+The latch inst_grid/cell15/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell15/next_cell_state_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#64 Warning
 Non-clocked latch  
-The latch inst_grid/cell7/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell7/next_cell_state_reg[4]/G is not reached by a timing clock
+The latch inst_grid/cell15/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell15/next_cell_state_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#65 Warning
 Non-clocked latch  
-The latch inst_grid/cell7/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell7/next_cell_state_reg[5]/G is not reached by a timing clock
+The latch inst_grid/cell15/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell15/next_cell_state_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#66 Warning
 Non-clocked latch  
-The latch inst_grid/cell7/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell7/next_cell_state_reg[6]/G is not reached by a timing clock
+The latch inst_grid/cell15/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell15/next_cell_state_reg[6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#67 Warning
 Non-clocked latch  
-The latch inst_grid/cell7/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell7/next_cell_state_reg[7]/G is not reached by a timing clock
+The latch inst_grid/cell15/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell15/next_cell_state_reg[7]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#68 Warning
+Non-clocked latch  
+The latch inst_grid/cell2/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell2/next_cell_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#69 Warning
+Non-clocked latch  
+The latch inst_grid/cell2/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell2/next_cell_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#70 Warning
+Non-clocked latch  
+The latch inst_grid/cell2/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell2/next_cell_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#71 Warning
+Non-clocked latch  
+The latch inst_grid/cell2/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell2/next_cell_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#72 Warning
+Non-clocked latch  
+The latch inst_grid/cell2/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell2/next_cell_state_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#73 Warning
+Non-clocked latch  
+The latch inst_grid/cell2/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell2/next_cell_state_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#74 Warning
+Non-clocked latch  
+The latch inst_grid/cell2/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell2/next_cell_state_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#75 Warning
+Non-clocked latch  
+The latch inst_grid/cell2/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell2/next_cell_state_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#76 Warning
+Non-clocked latch  
+The latch inst_grid/cell3/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell3/next_cell_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#77 Warning
+Non-clocked latch  
+The latch inst_grid/cell3/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell3/next_cell_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#78 Warning
+Non-clocked latch  
+The latch inst_grid/cell3/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell3/next_cell_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#79 Warning
+Non-clocked latch  
+The latch inst_grid/cell3/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell3/next_cell_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#80 Warning
+Non-clocked latch  
+The latch inst_grid/cell3/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell3/next_cell_state_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#81 Warning
+Non-clocked latch  
+The latch inst_grid/cell3/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell3/next_cell_state_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#82 Warning
+Non-clocked latch  
+The latch inst_grid/cell3/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell3/next_cell_state_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#83 Warning
+Non-clocked latch  
+The latch inst_grid/cell3/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell3/next_cell_state_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#84 Warning
+Non-clocked latch  
+The latch inst_grid/cell4/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell4/next_cell_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#85 Warning
+Non-clocked latch  
+The latch inst_grid/cell4/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell4/next_cell_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#86 Warning
+Non-clocked latch  
+The latch inst_grid/cell4/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell4/next_cell_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#87 Warning
+Non-clocked latch  
+The latch inst_grid/cell4/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell4/next_cell_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#88 Warning
+Non-clocked latch  
+The latch inst_grid/cell4/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell4/next_cell_state_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#89 Warning
+Non-clocked latch  
+The latch inst_grid/cell4/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell4/next_cell_state_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#90 Warning
+Non-clocked latch  
+The latch inst_grid/cell4/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell4/next_cell_state_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#91 Warning
+Non-clocked latch  
+The latch inst_grid/cell4/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell4/next_cell_state_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#92 Warning
+Non-clocked latch  
+The latch inst_grid/cell5/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell5/next_cell_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#93 Warning
+Non-clocked latch  
+The latch inst_grid/cell5/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell5/next_cell_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#94 Warning
+Non-clocked latch  
+The latch inst_grid/cell5/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell5/next_cell_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#95 Warning
+Non-clocked latch  
+The latch inst_grid/cell5/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell5/next_cell_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#96 Warning
+Non-clocked latch  
+The latch inst_grid/cell5/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell5/next_cell_state_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#97 Warning
+Non-clocked latch  
+The latch inst_grid/cell5/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell5/next_cell_state_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#98 Warning
+Non-clocked latch  
+The latch inst_grid/cell5/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell5/next_cell_state_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#99 Warning
+Non-clocked latch  
+The latch inst_grid/cell5/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell5/next_cell_state_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#100 Warning
+Non-clocked latch  
+The latch inst_grid/cell6/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell6/next_cell_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#101 Warning
+Non-clocked latch  
+The latch inst_grid/cell6/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell6/next_cell_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#102 Warning
+Non-clocked latch  
+The latch inst_grid/cell6/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell6/next_cell_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#103 Warning
+Non-clocked latch  
+The latch inst_grid/cell6/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell6/next_cell_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#104 Warning
+Non-clocked latch  
+The latch inst_grid/cell6/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell6/next_cell_state_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#105 Warning
+Non-clocked latch  
+The latch inst_grid/cell6/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell6/next_cell_state_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#106 Warning
+Non-clocked latch  
+The latch inst_grid/cell6/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell6/next_cell_state_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#107 Warning
+Non-clocked latch  
+The latch inst_grid/cell6/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell6/next_cell_state_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#108 Warning
+Non-clocked latch  
+The latch inst_grid/cell7/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell7/next_cell_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#109 Warning
+Non-clocked latch  
+The latch inst_grid/cell7/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell7/next_cell_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#110 Warning
+Non-clocked latch  
+The latch inst_grid/cell7/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell7/next_cell_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#111 Warning
+Non-clocked latch  
+The latch inst_grid/cell7/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell7/next_cell_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#112 Warning
+Non-clocked latch  
+The latch inst_grid/cell7/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell7/next_cell_state_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#113 Warning
+Non-clocked latch  
+The latch inst_grid/cell7/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell7/next_cell_state_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#114 Warning
+Non-clocked latch  
+The latch inst_grid/cell7/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell7/next_cell_state_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#115 Warning
+Non-clocked latch  
+The latch inst_grid/cell7/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell7/next_cell_state_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#116 Warning
+Non-clocked latch  
+The latch inst_grid/cell8/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell8/next_cell_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#117 Warning
+Non-clocked latch  
+The latch inst_grid/cell8/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell8/next_cell_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#118 Warning
+Non-clocked latch  
+The latch inst_grid/cell8/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell8/next_cell_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#119 Warning
+Non-clocked latch  
+The latch inst_grid/cell8/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell8/next_cell_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#120 Warning
+Non-clocked latch  
+The latch inst_grid/cell8/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell8/next_cell_state_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#121 Warning
+Non-clocked latch  
+The latch inst_grid/cell8/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell8/next_cell_state_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#122 Warning
+Non-clocked latch  
+The latch inst_grid/cell8/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell8/next_cell_state_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#123 Warning
+Non-clocked latch  
+The latch inst_grid/cell8/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell8/next_cell_state_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#124 Warning
+Non-clocked latch  
+The latch inst_grid/cell9/next_cell_state_reg[0] cannot be properly analyzed as its control pin inst_grid/cell9/next_cell_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#125 Warning
+Non-clocked latch  
+The latch inst_grid/cell9/next_cell_state_reg[1] cannot be properly analyzed as its control pin inst_grid/cell9/next_cell_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#126 Warning
+Non-clocked latch  
+The latch inst_grid/cell9/next_cell_state_reg[2] cannot be properly analyzed as its control pin inst_grid/cell9/next_cell_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#127 Warning
+Non-clocked latch  
+The latch inst_grid/cell9/next_cell_state_reg[3] cannot be properly analyzed as its control pin inst_grid/cell9/next_cell_state_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#128 Warning
+Non-clocked latch  
+The latch inst_grid/cell9/next_cell_state_reg[4] cannot be properly analyzed as its control pin inst_grid/cell9/next_cell_state_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#129 Warning
+Non-clocked latch  
+The latch inst_grid/cell9/next_cell_state_reg[5] cannot be properly analyzed as its control pin inst_grid/cell9/next_cell_state_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#130 Warning
+Non-clocked latch  
+The latch inst_grid/cell9/next_cell_state_reg[6] cannot be properly analyzed as its control pin inst_grid/cell9/next_cell_state_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#131 Warning
+Non-clocked latch  
+The latch inst_grid/cell9/next_cell_state_reg[7] cannot be properly analyzed as its control pin inst_grid/cell9/next_cell_state_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#132 Warning
 Non-clocked latch  
 The latch trigger_reg cannot be properly analyzed as its control pin trigger_reg/G is not reached by a timing clock
 Related violations: <none>
 
 LATCH-1#1 Advisory
 Existing latches in the design  
-There are 68 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+There are 132 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
 Related violations: <none>
 
 
