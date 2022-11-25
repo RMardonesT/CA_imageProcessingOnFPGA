@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jul  7 15:25:01 2021
+# Process ID: 11336
+# Current directory: C:/Users/Universidad/Desktop/GitHub/archivos_base_experiencia_VGA_2021/vivado_test_vga/nexys_vga_2020
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16476 C:\Users\Universidad\Desktop\GitHub\archivos_base_experiencia_VGA_2021\vivado_test_vga\nexys_vga_2020\nexys_vga_2020.xpr
+# Log file: C:/Users/Universidad/Desktop/GitHub/archivos_base_experiencia_VGA_2021/vivado_test_vga/nexys_vga_2020/vivado.log
+# Journal file: C:/Users/Universidad/Desktop/GitHub/archivos_base_experiencia_VGA_2021/vivado_test_vga/nexys_vga_2020\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  7 15:25:32 2021...

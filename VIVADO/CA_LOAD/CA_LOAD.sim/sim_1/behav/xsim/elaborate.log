@@ -5,13 +5,4 @@ Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.FSM_OPERATION_MODES(M=2,N=4)
-Compiling module xil_defaultlib.CELDA(load_cell=1)
-Compiling module xil_defaultlib.CELDA
-Compiling module xil_defaultlib.GRID_SCRIPT(M=2,N=4)
-Compiling module xil_defaultlib.sim_GRID_MODES
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot sim_GRID_MODES_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

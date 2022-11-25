@@ -2,10 +2,10 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Fri Nov 11 10:31:39 2022
-# Process ID: 23144
+# Start of session at: Thu Nov 17 14:58:45 2022
+# Process ID: 18904
 # Current directory: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/test_vga
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19464 C:\Users\ricar\OneDrive\Escritorio\MEMORIA\CA_imageProcessingOnFPGA\VIVADO\test_vga\test_vga.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18576 C:\Users\ricar\OneDrive\Escritorio\MEMORIA\CA_imageProcessingOnFPGA\VIVADO\test_vga\test_vga.xpr
 # Log file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/test_vga/vivado.log
 # Journal file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/test_vga\vivado.jou
 # Running On: Richi-PC, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 12730 MB
@@ -73,7 +73,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
-open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:08 . Memory (MB): peak = 1651.570 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:12 . Memory (MB): peak = 1642.605 ; gain = 0.000
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Nov 11 10:48:36 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 17 14:59:30 2022...

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Mon Nov 14 02:56:57 2022
+| Date         : Thu Nov 24 20:36:59 2022
 | Host         : Richi-PC running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file TOP_CA_control_sets_placed.rpt
 | Design       : TOP_CA
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    25 |
-|    Minimum number of control sets                        |    25 |
+| Total control sets                                       |    26 |
+|    Minimum number of control sets                        |    26 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    29 |
+| Unused register locations in slices containing registers |    30 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,11 +39,11 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    25 |
+| Total control sets |    26 |
 | >= 0 to < 4        |     3 |
 | >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     1 |
-| >= 8 to < 10       |    18 |
+| >= 8 to < 10       |    19 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
@@ -58,46 +58,47 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              31 |           11 |
-| No           | No                    | Yes                    |               3 |            3 |
-| No           | Yes                   | No                     |             323 |          118 |
+| No           | No                    | No                     |              38 |           14 |
+| No           | No                    | Yes                    |               3 |            1 |
+| No           | Yes                   | No                     |             331 |          113 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              22 |            6 |
+| Yes          | Yes                   | No                     |              22 |            8 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------------------------------------------+------------------------------------------+-----------------------------------------------------+------------------+----------------+--------------+
-|                    Clock Signal                    |               Enable Signal              |                   Set/Reset Signal                  | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------------------------------------------+------------------------------------------+-----------------------------------------------------+------------------+----------------+--------------+
-|  fsm_inst/FSM_sequential_state_reg[0]_0            |                                          |                                                     |                1 |              1 |         1.00 |
-|  nolabel_line160/clock                             |                                          | inst_grid/cell15/SR[0]                              |                3 |              3 |         1.00 |
-|  fsm_inst/FSM_sequential_next_state_reg[2]_i_2_n_1 |                                          |                                                     |                1 |              3 |         3.00 |
-|  CLK100MHZ_IBUF_BUFG                               | fsm_inst/next_row                        | inst_grid/cell15/SR[0]                              |                2 |              6 |         3.00 |
-|  CLK100MHZ_IBUF_BUFG                               | uart_inst/uart_rx_blk/rx_data[7]_i_1_n_1 | inst_grid/cell15/SR[0]                              |                2 |              8 |         4.00 |
-|  CLK100MHZ_IBUF_BUFG                               | fsm_inst/E[0]                            | inst_grid/cell15/SR[0]                              |                2 |              8 |         4.00 |
-|  n_0_1244_BUFG                                     |                                          | inst_grid/cell7/next_cell_state_reg[7]_i_2__10_n_1  |                3 |              8 |         2.67 |
-|  n_0_1244_BUFG                                     |                                          | inst_grid/cell12/next_cell_state_reg[7]_i_2__1_n_1  |                3 |              8 |         2.67 |
-|  n_0_1244_BUFG                                     |                                          | inst_grid/cell13/next_cell_state_reg[7]_i_2__13_n_1 |                5 |              8 |         1.60 |
-|  n_0_1244_BUFG                                     |                                          | inst_grid/cell14/next_cell_state_reg[7]_i_2__0_n_1  |                5 |              8 |         1.60 |
-|  n_0_1244_BUFG                                     |                                          | inst_grid/cell15/next_cell_state_reg[7]_i_2__14_n_1 |                2 |              8 |         4.00 |
-|  n_0_1244_BUFG                                     |                                          | inst_grid/cell0/next_cell_state_reg[7]_i_2_n_1      |                2 |              8 |         4.00 |
-|  n_0_1244_BUFG                                     |                                          | inst_grid/cell1/next_cell_state_reg[7]_i_2__7_n_1   |                3 |              8 |         2.67 |
-|  n_0_1244_BUFG                                     |                                          | inst_grid/cell2/next_cell_state_reg[7]_i_2__6_n_1   |                3 |              8 |         2.67 |
-|  n_0_1244_BUFG                                     |                                          | inst_grid/cell11/next_cell_state_reg[7]_i_2__12_n_1 |                2 |              8 |         4.00 |
-|  n_0_1244_BUFG                                     |                                          | inst_grid/cell8/next_cell_state_reg[7]_i_2__3_n_1   |                3 |              8 |         2.67 |
-|  n_0_1244_BUFG                                     |                                          | inst_grid/cell3/next_cell_state_reg[7]_i_2__8_n_1   |                3 |              8 |         2.67 |
-|  n_0_1244_BUFG                                     |                                          | inst_grid/cell10/next_cell_state_reg[7]_i_2__2_n_1  |                4 |              8 |         2.00 |
-|  n_0_1244_BUFG                                     |                                          | inst_grid/cell9/next_cell_state_reg[7]_i_2__11_n_1  |                3 |              8 |         2.67 |
-|  n_0_1244_BUFG                                     |                                          | inst_grid/cell4/next_cell_state_reg[7]_i_2__5_n_1   |                3 |              8 |         2.67 |
-|  n_0_1244_BUFG                                     |                                          | inst_grid/cell5/next_cell_state_reg[7]_i_2__9_n_1   |                4 |              8 |         2.00 |
-|  n_0_1244_BUFG                                     |                                          | inst_grid/cell6/next_cell_state_reg[7]_i_2__4_n_1   |                3 |              8 |         2.67 |
-|  CLK100MHZ_IBUF_BUFG                               |                                          | uart_inst/uart_tx_blk/SR[0]                         |                5 |             19 |         3.80 |
-|  CLK100MHZ_IBUF_BUFG                               |                                          |                                                     |                9 |             27 |         3.00 |
-|  CLK100MHZ_IBUF_BUFG                               |                                          | inst_grid/cell15/SR[0]                              |               62 |            176 |         2.84 |
-+----------------------------------------------------+------------------------------------------+-----------------------------------------------------+------------------+----------------+--------------+
++----------------------------------------------------+------------------------------------------+---------------------------------+------------------+----------------+--------------+
+|                    Clock Signal                    |               Enable Signal              |         Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------------------+------------------------------------------+---------------------------------+------------------+----------------+--------------+
+|  fsm_inst/FSM_sequential_state_reg[0]_0            |                                          |                                 |                1 |              1 |         1.00 |
+|  fsm_inst/FSM_sequential_next_state_reg[2]_i_2_n_1 |                                          |                                 |                1 |              3 |         3.00 |
+|  nolabel_line163/clock                             |                                          | inst_grid/cell15/SR[0]          |                1 |              3 |         3.00 |
+|  CLK100MHZ_IBUF_BUFG                               | fsm_inst/next_row                        | inst_grid/cell15/SR[0]          |                3 |              6 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG                               |                                          | BTN/delay_timer[7]_i_1_n_1      |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG                               | fsm_inst/E[0]                            | inst_grid/cell15/SR[0]          |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG                               | uart_inst/uart_rx_blk/rx_data[7]_i_1_n_1 | inst_grid/cell15/SR[0]          |                2 |              8 |         4.00 |
+|  n_0_73_BUFG                                       |                                          | fsm_inst/AS[0]                  |                3 |              8 |         2.67 |
+|  n_0_73_BUFG                                       |                                          | fsm_inst/operation_reg[1]_6[0]  |                4 |              8 |         2.00 |
+|  n_0_73_BUFG                                       |                                          | fsm_inst/operation_reg[1]_13[0] |                3 |              8 |         2.67 |
+|  n_0_73_BUFG                                       |                                          | fsm_inst/operation_reg[1]_0[0]  |                3 |              8 |         2.67 |
+|  n_0_73_BUFG                                       |                                          | fsm_inst/operation_reg[1]_1[0]  |                2 |              8 |         4.00 |
+|  n_0_73_BUFG                                       |                                          | fsm_inst/operation_reg[1]_10[0] |                3 |              8 |         2.67 |
+|  n_0_73_BUFG                                       |                                          | fsm_inst/operation_reg[1]_14[0] |                3 |              8 |         2.67 |
+|  n_0_73_BUFG                                       |                                          | fsm_inst/operation_reg[1]_5[0]  |                3 |              8 |         2.67 |
+|  n_0_73_BUFG                                       |                                          | fsm_inst/operation_reg[1]_8[0]  |                3 |              8 |         2.67 |
+|  n_0_73_BUFG                                       |                                          | fsm_inst/operation_reg[1]_9[0]  |                3 |              8 |         2.67 |
+|  n_0_73_BUFG                                       |                                          | fsm_inst/operation_reg[1]_7[0]  |                3 |              8 |         2.67 |
+|  n_0_73_BUFG                                       |                                          | fsm_inst/operation_reg[1]_11[0] |                5 |              8 |         1.60 |
+|  n_0_73_BUFG                                       |                                          | fsm_inst/operation_reg[1]_12[0] |                2 |              8 |         4.00 |
+|  n_0_73_BUFG                                       |                                          | fsm_inst/operation_reg[1]_3[0]  |                3 |              8 |         2.67 |
+|  n_0_73_BUFG                                       |                                          | fsm_inst/operation_reg[1]_2[0]  |                3 |              8 |         2.67 |
+|  n_0_73_BUFG                                       |                                          | fsm_inst/operation_reg[1]_4[0]  |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG                               |                                          | uart_inst/uart_tx_blk/SR[0]     |                5 |             19 |         3.80 |
+|  CLK100MHZ_IBUF_BUFG                               |                                          |                                 |               12 |             34 |         2.83 |
+|  CLK100MHZ_IBUF_BUFG                               |                                          | inst_grid/cell15/SR[0]          |               56 |            176 |         3.14 |
++----------------------------------------------------+------------------------------------------+---------------------------------+------------------+----------------+--------------+
 
 

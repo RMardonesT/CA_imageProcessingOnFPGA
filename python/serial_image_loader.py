@@ -14,8 +14,6 @@ import argparse
 from PIL import Image
 
 DEFAULT_IMAGE_SIZE = (512, 384)
-#DEFAULT_IMAGE_SIZE = (128, 192)
-#DEFAULT_IMAGE_SIZE = (1024, 768)
 
 # Parse command line arguments. At least a serial port name is needed
 parser = argparse.ArgumentParser(
@@ -46,7 +44,7 @@ def load_img(filename, size=DEFAULT_IMAGE_SIZE):
     """
     # Prepare data to send.
     image = Image.open(filename)
-    #image = image.convert('RGB')
+    image = image.convert('RGB')
     image = image.resize(size)
 
     data = bytes([byte for pixel in image.getdata() for byte in pixel])

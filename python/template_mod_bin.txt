@@ -1,0 +1,40 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 11/10/2022 12:12:04 PM
+// Design Name: 
+// Module Name: GRID_SCRIPT
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module GRID_SCRIPT
+    #(parameter M = 3, N = 3)
+
+    (
+
+
+    input logic clk, reset,
+    
+    input logic [2:0] operation,       
+    
+    input logic [0:0] data_in,
+    
+    
+    
+    output logic [0:0] gen [M*N -1 :0] ,
+    output logic [7:0] data_out    
+        
+    );

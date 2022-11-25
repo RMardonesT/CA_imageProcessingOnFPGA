@@ -3,10 +3,9 @@ from pprint import pprint
 
 
 #tamanno de la grilla
-M = 4
-N = 4
 
 
+M, N = (4, 4)
 dimensions = (M,N)
 
 #encuentra la celda manteniendo la coordenada con condicion de borde adiabatica
@@ -129,7 +128,7 @@ for row in range(N):
         else:
           top = '0'
 
-        print(row, N)
+        
         if row == N-1:
           bot = 1
         else:

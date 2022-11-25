@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../CA_BIN.srcs/sources_1/new/CELDA.sv" \
+"../../../../CA_BIN.srcs/sources_1/new/FSM_OPERATION_MODES.sv" \
+"../../../../CA_BIN.srcs/sources_1/new/GRID_SCRIPT.sv" \
+"../../../../CA_BIN.srcs/sim_1/new/sim_GRID_BIN.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

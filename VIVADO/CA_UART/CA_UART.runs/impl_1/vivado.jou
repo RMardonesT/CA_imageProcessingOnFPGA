@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Mon Nov 14 03:15:10 2022
-# Process ID: 10268
+# Start of session at: Thu Nov 24 20:36:23 2022
+# Process ID: 11476
 # Current directory: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1
 # Command line: vivado.exe -log TOP_CA.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TOP_CA.tcl -notrace
 # Log file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP_CA.vdi

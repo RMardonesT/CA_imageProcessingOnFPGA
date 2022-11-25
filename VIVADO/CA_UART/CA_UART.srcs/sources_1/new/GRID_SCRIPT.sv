@@ -239,7 +239,7 @@ module GRID_SCRIPT
 
 /******************* CELL 8 ***************/  
 
-	CELDA   #(.ic(0), .top_row(0), .bottom_row(0))
+	CELDA   #(.ic(0), .top_row(0), .bottom_row(1))
 
 		cell8 (
  			.clk(clk),
@@ -254,9 +254,9 @@ module GRID_SCRIPT
 			.O(gen[9]),
 			.E(gen[9]),
 
-			.SO(gen[13]),
-			.S(gen[12]),
-			.SE(gen[13]),
+			.SO(gen[5]),
+			.S(gen[4]),
+			.SE(gen[5]),
 
 			.SELF(gen[8]),
 			.cell_state(gen[8])
@@ -264,7 +264,7 @@ module GRID_SCRIPT
 
 /******************* CELL 9 ***************/  
 
-	CELDA   #(.ic(0), .top_row(0), .bottom_row(0))
+	CELDA   #(.ic(0), .top_row(0), .bottom_row(1))
 
 		cell9 (
  			.clk(clk),
@@ -279,9 +279,9 @@ module GRID_SCRIPT
 			.O(gen[8]),
 			.E(gen[10]),
 
-			.SO(gen[12]),
-			.S(gen[13]),
-			.SE(gen[14]),
+			.SO(gen[4]),
+			.S(gen[5]),
+			.SE(gen[6]),
 
 			.SELF(gen[9]),
 			.cell_state(gen[9])
@@ -289,7 +289,7 @@ module GRID_SCRIPT
 
 /******************* CELL 10 ***************/  
 
-	CELDA   #(.ic(0), .top_row(0), .bottom_row(0))
+	CELDA   #(.ic(0), .top_row(0), .bottom_row(1))
 
 		cell10 (
  			.clk(clk),
@@ -304,9 +304,9 @@ module GRID_SCRIPT
 			.O(gen[9]),
 			.E(gen[11]),
 
-			.SO(gen[13]),
-			.S(gen[14]),
-			.SE(gen[15]),
+			.SO(gen[5]),
+			.S(gen[6]),
+			.SE(gen[7]),
 
 			.SELF(gen[10]),
 			.cell_state(gen[10])
@@ -314,7 +314,7 @@ module GRID_SCRIPT
 
 /******************* CELL 11 ***************/  
 
-	CELDA   #(.ic(0), .top_row(0), .bottom_row(0))
+	CELDA   #(.ic(0), .top_row(0), .bottom_row(1))
 
 		cell11 (
  			.clk(clk),
@@ -329,116 +329,16 @@ module GRID_SCRIPT
 			.O(gen[10]),
 			.E(gen[10]),
 
-			.SO(gen[14]),
-			.S(gen[15]),
-			.SE(gen[14]),
+			.SO(gen[6]),
+			.S(gen[7]),
+			.SE(gen[6]),
 
 			.SELF(gen[11]),
 			.cell_state(gen[11])
 		); 
 
-/******************* CELL 12 ***************/  
-
-	CELDA   #(.ic(0), .top_row(0), .bottom_row(1))
-
-		cell12 (
- 			.clk(clk),
-			.reset(reset),
-
-			.operation(operation),
-
-			.NO(gen[9]),
-			.N(gen[8]),
-			.NE(gen[9]),
-
-			.O(gen[13]),
-			.E(gen[13]),
-
-			.SO(gen[9]),
-			.S(gen[8]),
-			.SE(gen[9]),
-
-			.SELF(gen[12]),
-			.cell_state(gen[12])
-		); 
-
-/******************* CELL 13 ***************/  
-
-	CELDA   #(.ic(0), .top_row(0), .bottom_row(1))
-
-		cell13 (
- 			.clk(clk),
-			.reset(reset),
-
-			.operation(operation),
-
-			.NO(gen[8]),
-			.N(gen[9]),
-			.NE(gen[10]),
-
-			.O(gen[12]),
-			.E(gen[14]),
-
-			.SO(gen[8]),
-			.S(gen[9]),
-			.SE(gen[10]),
-
-			.SELF(gen[13]),
-			.cell_state(gen[13])
-		); 
-
-/******************* CELL 14 ***************/  
-
-	CELDA   #(.ic(0), .top_row(0), .bottom_row(1))
-
-		cell14 (
- 			.clk(clk),
-			.reset(reset),
-
-			.operation(operation),
-
-			.NO(gen[9]),
-			.N(gen[10]),
-			.NE(gen[11]),
-
-			.O(gen[13]),
-			.E(gen[15]),
-
-			.SO(gen[9]),
-			.S(gen[10]),
-			.SE(gen[11]),
-
-			.SELF(gen[14]),
-			.cell_state(gen[14])
-		); 
-
-/******************* CELL 15 ***************/  
-
-	CELDA   #(.ic(0), .top_row(0), .bottom_row(1))
-
-		cell15 (
- 			.clk(clk),
-			.reset(reset),
-
-			.operation(operation),
-
-			.NO(gen[10]),
-			.N(gen[11]),
-			.NE(gen[10]),
-
-			.O(gen[14]),
-			.E(gen[14]),
-
-			.SO(gen[10]),
-			.S(gen[11]),
-			.SE(gen[10]),
-
-			.SELF(gen[15]),
-			.cell_state(gen[15])
-		); 
 
 
-
- assign data_out = gen[15];
+ assign data_out = gen[11];
 
 endmodule

@@ -17,6 +17,7 @@
   <File Type="BITSTR-MMI" Name="GRID_SCRIPT.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="GRID_SCRIPT_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="GRID_SCRIPT.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="GRID_SCRIPT_methodology_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="GRID_SCRIPT.ltx"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
@@ -25,8 +26,11 @@
   <File Type="PLACE-IO" Name="GRID_SCRIPT_io_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="GRID_SCRIPT_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="GRID_SCRIPT_utilization_placed.pb"/>
+  <File Type="ROUTE-RQS" Name="GRID_SCRIPT_routed.rqs"/>
   <File Type="PLACE-CTRL" Name="GRID_SCRIPT_control_sets_placed.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="GRID_SCRIPT_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <File Type="ROUTE-DRC" Name="GRID_SCRIPT_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="GRID_SCRIPT_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="GRID_SCRIPT_power_routed.rpx"/>
@@ -48,7 +52,6 @@
   <File Type="PHYSOPT-DCP" Name="GRID_SCRIPT_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="GRID_SCRIPT_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="GRID_SCRIPT_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="GRID_SCRIPT_methodology_drc_routed.pb"/>
   <File Type="ROUTE-DRC-RPX" Name="GRID_SCRIPT_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="GRID_SCRIPT_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="GRID_SCRIPT.pdi"/>
@@ -57,10 +60,7 @@
   <File Type="RNPI_FILE" Name="GRID_SCRIPT.rnpi"/>
   <File Type="NPI_FILE" Name="GRID_SCRIPT.npi"/>
   <File Type="RBD_FILE" Name="GRID_SCRIPT.rbd"/>
-  <File Type="ROUTE-RQS" Name="GRID_SCRIPT_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="GRID_SCRIPT_postroute_physopted.rqs"/>
-  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/CELDA.sv">

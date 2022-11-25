@@ -2,10 +2,10 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Mon Nov 14 02:29:42 2022
-# Process ID: 8648
+# Start of session at: Thu Nov 24 19:22:04 2022
+# Process ID: 27576
 # Current directory: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12588 C:\Users\ricar\OneDrive\Escritorio\MEMORIA\CA_imageProcessingOnFPGA\VIVADO\CA_UART\CA_UART.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29304 C:\Users\ricar\OneDrive\Escritorio\MEMORIA\CA_imageProcessingOnFPGA\VIVADO\CA_UART\CA_UART.xpr
 # Log file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/vivado.log
 # Journal file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART\vivado.jou
 # Running On: Richi-PC, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 12730 MB
@@ -73,24 +73,8 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
-open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:08 . Memory (MB): peak = 1625.883 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 1589.172 ; gain = 0.000
 update_compile_order -fileset sources_1
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP_CA.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Mon Nov 14 02:31:31 2022] Launched synth_1...
-Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log
-[Mon Nov 14 02:31:32 2022] Launched impl_1...
-Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log
-open_hw_manager
-close_hw_manager
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP_CA.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Mon Nov 14 02:45:09 2022] Launched synth_1...
-Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log
-[Mon Nov 14 02:45:09 2022] Launched impl_1...
-Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log
 open_hw_manager
 connect_hw_server -allow_non_jtag
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
@@ -114,10 +98,55 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1625.883 ; gain = 0.000
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1589.172 ; gain = 0.000
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FCF3A
-open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3236.129 ; gain = 1610.246
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3164.891 ; gain = 1575.719
+set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP_CA.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP_CA.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FCF3A
+set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP_CA.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP_CA.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP_CA.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Nov 24 20:24:22 2022] Launched synth_1...
+Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log
+[Thu Nov 24 20:24:22 2022] Launched impl_1...
+Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FCF3A
 set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP_CA.bit} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
@@ -131,10 +160,10 @@ refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 reset_run synth_1
 INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/utils_1/imports/synth_1/UART_LOGIC.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/TOP_CA.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Mon Nov 14 02:54:38 2022] Launched synth_1...
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Nov 24 20:35:25 2022] Launched synth_1...
 Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/synth_1/runme.log
-[Mon Nov 14 02:54:38 2022] Launched impl_1...
+[Thu Nov 24 20:35:25 2022] Launched impl_1...
 Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
@@ -143,135 +172,17 @@ program_hw_devices [get_hw_devices xc7a100t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-open_run impl_1
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 3650.348 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 148 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2022.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.138 . Memory (MB): peak = 4351.938 ; gain = 0.000
-Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.138 . Memory (MB): peak = 4351.938 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4351.938 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:29 ; elapsed = 00:00:22 . Memory (MB): peak = 4483.633 ; gain = 1220.605
-report_utilization -name utilization_1
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7a100tcsg324-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 4537.344 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 148 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2022.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'LED16_B'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:50]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:50]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED16_G'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:51]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:51]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED16_R'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:52]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:52]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED17_B'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:53]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:53]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED17_G'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:54]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED17_R'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:55]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:55]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'DP'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:68]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:68]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'VGA_R[0]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:156]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:156]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'VGA_R[1]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:157]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:157]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'VGA_R[2]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:158]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:158]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'VGA_R[3]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:159]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:159]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'VGA_G[0]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:161]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:161]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'VGA_G[1]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:162]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:162]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'VGA_G[2]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:163]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:163]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'VGA_G[3]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:164]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:164]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'VGA_B[0]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:166]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:166]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'VGA_B[1]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:167]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:167]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'VGA_B[2]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:168]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:168]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'VGA_B[3]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:169]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:169]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'VGA_HS'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:171]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:171]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'VGA_VS'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:172]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:172]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4568.566 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-report_utilization -name utilization_1
-current_design impl_1
-report_utilization -name utilization_2
-report_utilization -name utilization_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Mon Nov 14 03:14:56 2022] Launched impl_1...
-Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/runme.log
-close_design
-close_design
-open_run impl_1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 4744.172 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 148 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2022.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.117 . Memory (MB): peak = 4744.172 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.117 . Memory (MB): peak = 4744.172 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4744.172 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-report_utilization -name utilization_1
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A3FCF3A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FCF3A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.runs/impl_1/TOP_CA.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 24 22:57:51 2022...

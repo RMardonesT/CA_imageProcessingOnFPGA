@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Nov 23 21:15:18 2022
+# Process ID: 18132
+# Current directory: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20828 C:\Users\ricar\OneDrive\Escritorio\MEMORIA\CA_imageProcessingOnFPGA\VIVADO\CA_LOAD\CA_LOAD.xpr
+# Log file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/vivado.log
+# Journal file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD\vivado.jou
+# Running On: Richi-PC, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 12730 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_LOAD/CA_LOAD.xpr
+update_compile_order -fileset sources_1

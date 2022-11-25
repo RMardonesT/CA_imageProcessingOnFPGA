@@ -1,0 +1,9 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sim_1/new/sim_GRID_BIN.sv,1669344098,systemVerilog,,,,sim_GRID_BIN,,uvm,,,,,,
+C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/CELDA.sv,1669343931,systemVerilog,,C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/FSM_OPERATION_MODES.sv,,CELDA,,uvm,,,,,,
+C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/FSM_OPERATION_MODES.sv,1668404646,systemVerilog,,C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/GRID_SCRIPT.sv,,FSM_OPERATION_MODES,,uvm,,,,,,
+C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/GRID_SCRIPT.sv,1669344070,systemVerilog,,C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sim_1/new/sim_GRID_BIN.sv,,GRID_SCRIPT,,uvm,,,,,,

@@ -91,6 +91,7 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/sources_1/new/FSM_OPERATION_MODES.sv
   C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/sources_1/new/GRID_SCRIPT.sv
   C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/sources_1/new/UART_LOGIC.sv
+  C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/sources_1/new/debouncer.sv
   C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/sources_1/new/display_7s.sv
   C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_UART/CA_UART.srcs/sources_1/new/TOP_CA.sv
 }
