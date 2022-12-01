@@ -5,7 +5,7 @@ from pprint import pprint
 #tamanno de la grilla
 
 
-M, N = (50, 50)
+M, N = (60,60)
 dimensions = (M,N)
 
 #encuentra la celda manteniendo la coordenada con condicion de borde adiabatica

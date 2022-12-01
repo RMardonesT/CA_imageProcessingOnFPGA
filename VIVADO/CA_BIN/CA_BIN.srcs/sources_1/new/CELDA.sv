@@ -66,10 +66,12 @@ module CELDA
         //4 NORMAL EVOLUTINO       
         if (operation == 4) 
         
-            if (sum_neighborhod >= 1)
-                next_cell_state = 'd1;            
+            if  (  (sum_neighborhod == 'd3) | (sum_neighborhod == 'd4) ) // ((sum_neighborhod == 'd4) & (SELF == 'd1)) |
+                next_cell_state = 'd1;
+            
+                     
             else 
-                next_cell_state = cell_state;   
+                next_cell_state = 0;   
                   //next_cell_state = SELF;
                 
         // 1 HORIZONTAL operation ON TOP ROW     

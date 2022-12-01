@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Fri Nov 25 00:17:02 2022
-# Process ID: 17692
+# Start of session at: Wed Nov 30 23:48:54 2022
+# Process ID: 972
 # Current directory: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/impl_1
 # Command line: vivado.exe -log TOP_BIN.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TOP_BIN.tcl -notrace
 # Log file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/impl_1/TOP_BIN.vdi

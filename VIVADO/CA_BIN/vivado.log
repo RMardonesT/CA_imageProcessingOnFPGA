@@ -2,10 +2,10 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Thu Nov 24 23:59:47 2022
-# Process ID: 37760
+# Start of session at: Wed Nov 30 22:55:38 2022
+# Process ID: 15372
 # Current directory: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36936 C:\Users\ricar\OneDrive\Escritorio\MEMORIA\CA_imageProcessingOnFPGA\VIVADO\CA_BIN\CA_BIN.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent580 C:\Users\ricar\OneDrive\Escritorio\MEMORIA\CA_imageProcessingOnFPGA\VIVADO\CA_BIN\CA_BIN.xpr
 # Log file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/vivado.log
 # Journal file: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN\vivado.jou
 # Running On: Richi-PC, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 12730 MB
@@ -73,43 +73,14 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
-open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 1632.145 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 1220.586 ; gain = 0.000
 update_compile_order -fileset sources_1
 reset_run synth_1
-launch_runs synth_1 -jobs 8
-[Fri Nov 25 00:01:32 2022] Launched synth_1...
-Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 8
-[Fri Nov 25 00:02:28 2022] Launched impl_1...
-Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/impl_1/runme.log
-reset_run impl_1 -prev_step 
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
-INFO: [Common 17-344] 'reset_runs' was cancelled
-reset_run synth_1
 INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/utils_1/imports/synth_1/TOP_BIN.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/synth_1/TOP_BIN.dcp
-launch_runs synth_1 -jobs 8
-[Fri Nov 25 00:03:08 2022] Launched synth_1...
-Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 8
-[Fri Nov 25 00:08:24 2022] Launched impl_1...
-Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/impl_1/runme.log
-reset_run impl_1 -prev_step 
 launch_runs impl_1 -to_step write_bitstream -jobs 8
-[Fri Nov 25 00:11:35 2022] Launched impl_1...
-Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/impl_1/runme.log
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/utils_1/imports/synth_1/TOP_BIN.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/synth_1/TOP_BIN.dcp
-launch_runs synth_1 -jobs 8
-[Fri Nov 25 00:12:44 2022] Launched synth_1...
+[Wed Nov 30 22:57:21 2022] Launched synth_1...
 Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/synth_1/runme.log
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-[Fri Nov 25 00:12:55 2022] Launched synth_1...
-Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/synth_1/runme.log
-[Fri Nov 25 00:12:56 2022] Launched impl_1...
+[Wed Nov 30 22:57:21 2022] Launched impl_1...
 Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/impl_1/runme.log
 open_hw_manager
 connect_hw_server -allow_non_jtag
@@ -134,37 +105,14 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1632.145 ; gain = 0.000
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1220.586 ; gain = 0.000
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FCF3A
-open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3220.980 ; gain = 1588.836
+open_hw_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3291.234 ; gain = 2070.648
 set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/impl_1/TOP_BIN.bit} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-open_run impl_1
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.218 . Memory (MB): peak = 3670.242 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2022.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.942 . Memory (MB): peak = 4421.387 ; gain = 0.000
-Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.944 . Memory (MB): peak = 4421.387 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 4421.387 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:30 ; elapsed = 00:00:26 . Memory (MB): peak = 4560.754 ; gain = 1328.816
-close_design
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/impl_1/TOP_BIN.bit} [get_hw_devices xc7a100t_0]
@@ -172,5 +120,62 @@ program_hw_devices [get_hw_devices xc7a100t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-exit
-INFO: [Common 17-206] Exiting Vivado at Fri Nov 25 00:28:12 2022...
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/utils_1/imports/synth_1/TOP_BIN.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/synth_1/TOP_BIN.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Nov 30 23:14:23 2022] Launched synth_1...
+Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/synth_1/runme.log
+[Wed Nov 30 23:14:23 2022] Launched impl_1...
+Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.1
+  **** Build date : Apr 18 2022 at 16:02:36
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.1.0
+  ****** Build date   : Apr 12 2022-15:12:08
+    **** Build number : 2022.1.1649790728
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3328.941 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A3FCF3A
+set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/impl_1/TOP_BIN.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/impl_1/TOP_BIN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/utils_1/imports/synth_1/TOP_BIN.dcp with file C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/synth_1/TOP_BIN.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Nov 30 23:32:22 2022] Launched synth_1...
+Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/synth_1/runme.log
+[Wed Nov 30 23:32:22 2022] Launched impl_1...
+Run output will be captured here: C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/impl_1/TOP_BIN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
