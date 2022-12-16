@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date             : Thu Dec 15 23:36:13 2022
+| Date             : Fri Dec 16 01:13:40 2022
 | Host             : Richi-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file TOP_BIN_power_routed.rpt -pb TOP_BIN_power_summary_routed.pb -rpx TOP_BIN_power_routed.rpx
 | Design           : TOP_BIN
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.214        |
+| Total On-Chip Power (W)  | 0.281        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.117        |
-| Device Static (W)        | 0.097        |
+| Dynamic (W)              | 0.184        |
+| Device Static (W)        | 0.098        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 84.0         |
-| Junction Temperature (C) | 26.0         |
+| Max Ambient (C)          | 83.7         |
+| Junction Temperature (C) | 26.3         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.047 |        3 |       --- |             --- |
-| Slice Logic    |     0.041 |    24109 |       --- |             --- |
-|   LUT as Logic |     0.040 |    13289 |     63400 |           20.96 |
-|   Register     |    <0.001 |     2607 |    126800 |            2.06 |
+| Clocks         |     0.172 |        3 |       --- |             --- |
+| Slice Logic    |     0.006 |    49843 |       --- |             --- |
+|   LUT as Logic |     0.005 |    34720 |     63400 |           54.76 |
+|   Register     |    <0.001 |    10108 |    126800 |            7.97 |
 |   CARRY4       |    <0.001 |        9 |     15850 |            0.06 |
 |   Others       |     0.000 |       15 |       --- |             --- |
-| Signals        |     0.029 |    21545 |       --- |             --- |
+| Signals        |     0.006 |    39776 |       --- |             --- |
 | I/O            |    <0.001 |       16 |       210 |            7.62 |
-| Static Power   |     0.097 |          |           |                 |
-| Total          |     0.214 |          |           |                 |
+| Static Power   |     0.098 |          |           |                 |
+| Total          |     0.281 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.132 |       0.117 |      0.015 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.199 |       0.183 |      0.015 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -140,9 +140,9 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
-| TOP_BIN     |     0.117 |
-|   fsm_inst  |     0.006 |
-|   inst_grid |     0.109 |
+| TOP_BIN     |     0.184 |
+|   fsm_inst  |     0.003 |
+|   inst_grid |     0.178 |
 |   uart_inst |     0.001 |
 +-------------+-----------+
 

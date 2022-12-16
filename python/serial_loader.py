@@ -80,7 +80,7 @@ serial_port.parity = serial.PARITY_NONE                                     #
  # Create image to send as initial value of CA                               #
  #############################################################################    
                                                                             #
-DEFAULT_IMAGE_SIZE = (50, 50)                                               #
+DEFAULT_IMAGE_SIZE = (100, 100)                                               #
 M,N = DEFAULT_IMAGE_SIZE                                                    #  
                  
                  
@@ -88,7 +88,7 @@ M,N = DEFAULT_IMAGE_SIZE                                                    #
 #original.show()     
 
                                                                             #
-pil_im = Image.open('lena.jpg', 'r')   
+pil_im = Image.open('preprocess.jpg', 'r')   
 
                            #
                                                                          #
@@ -112,7 +112,7 @@ newdata[length//2-1 + 25 ] = 255                                            #
 pil_im.putdata(newdata)                                                     #
 pil_im.show()                                                               #
  """                                                                  #
-lista = list(pil_im.getdata())  #variable container of pixel data           #
+lista = list( np.array(pil_im.getdata()))  #variable container of pixel data           #
                                                       #
 #############################################################################
 #############################################################################
