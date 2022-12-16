@@ -80,7 +80,7 @@ serial_port.parity = serial.PARITY_NONE                                     #
  # Create image to send as initial value of CA                               #
  #############################################################################    
                                                                             #
-DEFAULT_IMAGE_SIZE = (100, 100)                                               #
+DEFAULT_IMAGE_SIZE = (95, 95)                                               #
 M,N = DEFAULT_IMAGE_SIZE                                                    #  
                  
                  
@@ -169,7 +169,7 @@ while True:
             
             
             pil_im.show()
-            
+            #im1 = pil_im.save("erdoe_result.jpg")
 
             
 

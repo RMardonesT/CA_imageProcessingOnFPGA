@@ -37,7 +37,7 @@ module FSM_OPERATION_MODES
     );
     
     //FSM states type:
-    enum logic [2:0] {IDLE, LOAD_WAIT, LOAD, DOWN_WAIT, DOWN, PROCESS}    state, next_state; 
+    enum logic [2:0] {IDLE, LOAD_WAIT, LOAD, DOWN_WAIT, DOWN, ERODE, EDGES}    state, next_state; 
     
     //COUNTERS    
     logic [7:0] col, next_col;
@@ -91,7 +91,7 @@ module FSM_OPERATION_MODES
                             end    
                             
                         else if (~load & ~download & evolve)   begin
-                            next_state = PROCESS;
+                            next_state = ERODE;
                             next_operation = 'd4;
                             end  
                         else begin
@@ -179,24 +179,24 @@ module FSM_OPERATION_MODES
                                 next_operation = 0;
                                 end
                        end                      
-                PROCESS: begin
-                            if (evolve) begin
-                                next_state = PROCESS;
-                                next_operation = 'd4;
-                                end
+                ERODE: begin
                             
-                            else begin
-                                next_state = IDLE;
-                                next_operation = 0;
-                                end                                
+                                next_state = EDGES;
+                                next_operation = 'd5;
+                                                                                                                    
                          end
+                
+                
+                EDGES:  begin                             
+                                next_state = IDLE;
+                                next_operation = 0;                                                                                            
+                         end                         
                   
         endcase
         
     end
     
 endmodule
-
 
 
 

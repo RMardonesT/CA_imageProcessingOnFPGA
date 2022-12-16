@@ -1,80 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1671163603">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1671170668">
   <File Type="ROUTE-PWR" Name="TOP_BIN_power_routed.rpt"/>
   <File Type="PA-TCL" Name="TOP_BIN.tcl"/>
-  <File Type="BITSTR-MMI" Name="TOP_BIN.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="TOP_BIN_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="TOP_BIN_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="TOP_BIN_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="TOP_BIN_reports.tcl"/>
-  <File Type="OPT-TIMING" Name="TOP_BIN_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="TOP_BIN_opt.dcp"/>
+  <File Type="BITSTR-MSK" Name="TOP_BIN.msk"/>
+  <File Type="ROUTE-CLK" Name="TOP_BIN_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="TOP_BIN.vdi"/>
+  <File Type="BG-BIT" Name="TOP_BIN.bit"/>
+  <File Type="BG-DRC" Name="TOP_BIN.drc"/>
+  <File Type="BG-BGN" Name="TOP_BIN.bgn"/>
+  <File Type="BG-BIN" Name="TOP_BIN.bin"/>
+  <File Type="BITSTR-RBT" Name="TOP_BIN.rbt"/>
+  <File Type="BITSTR-NKY" Name="TOP_BIN.nky"/>
+  <File Type="BITSTR-BMM" Name="TOP_BIN_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="TOP_BIN.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="TOP_BIN_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="TOP_BIN.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="TOP_BIN.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="OPT-DRC" Name="TOP_BIN_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="TOP_BIN.hwdef"/>
-  <File Type="PWROPT-DCP" Name="TOP_BIN_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="TOP_BIN_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="TOP_BIN_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="TOP_BIN_placed.dcp"/>
   <File Type="PLACE-IO" Name="TOP_BIN_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="TOP_BIN_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="TOP_BIN_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="TOP_BIN_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="TOP_BIN_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="TOP_BIN_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="TOP_BIN_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="TOP_BIN.bin"/>
-  <File Type="PLACE-TIMING" Name="TOP_BIN_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="TOP_BIN_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="TOP_BIN.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="TOP_BIN_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="TOP_BIN_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="TOP_BIN_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="TOP_BIN.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="TOP_BIN_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="TOP_BIN_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="TOP_BIN_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="TOP_BIN_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="TOP_BIN_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="TOP_BIN_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="TOP_BIN_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="TOP_BIN_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="TOP_BIN_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="TOP_BIN_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="TOP_BIN_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="TOP_BIN_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="TOP_BIN_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="TOP_BIN_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="TOP_BIN_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="TOP_BIN_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="TOP_BIN_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="TOP_BIN_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="TOP_BIN_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="TOP_BIN_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="TOP_BIN_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="TOP_BIN_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="TOP_BIN_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="TOP_BIN_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="TOP_BIN_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="TOP_BIN_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="TOP_BIN_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="TOP_BIN_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="TOP_BIN_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="TOP_BIN_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="TOP_BIN_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="TOP_BIN_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="TOP_BIN_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="TOP_BIN_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="TOP_BIN_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="TOP_BIN.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="TOP_BIN_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="TOP_BIN_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="TOP_BIN.nky"/>
-  <File Type="BITSTR-BMM" Name="TOP_BIN_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="TOP_BIN_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="TOP_BIN_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="TOP_BIN_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="TOP_BIN.pdi"/>
   <File Type="RCFI_FILE" Name="TOP_BIN.rcfi"/>
   <File Type="CFI_FILE" Name="TOP_BIN.cfi"/>
   <File Type="RNPI_FILE" Name="TOP_BIN.rnpi"/>
   <File Type="NPI_FILE" Name="TOP_BIN.npi"/>
   <File Type="RBD_FILE" Name="TOP_BIN.rbd"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="TOP_BIN.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="TOP_BIN.sysdef"/>
-  <File Type="BG-BGN" Name="TOP_BIN.bgn"/>
-  <File Type="BG-DRC" Name="TOP_BIN.drc"/>
-  <File Type="RDI-RDI" Name="TOP_BIN.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="ROUTE-RQS" Name="TOP_BIN_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="TOP_BIN_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
@@ -216,5 +198,6 @@
     </Step>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Fri Dec 16 01:13:23 2022
+| Date         : Fri Dec 16 03:26:44 2022
 | Host         : Richi-PC running 64-bit major release  (build 9200)
 | Command      : report_methodology -file TOP_BIN_methodology_drc_routed.rpt -pb TOP_BIN_methodology_drc_routed.pb -rpx TOP_BIN_methodology_drc_routed.rpx
 | Design       : TOP_BIN
@@ -142,7 +142,7 @@ Related violations: <none>
 
 ULMTCS-2#1 Warning
 Control Sets use limits require reduction  
-This design uses 10018 control sets (vs. available limit of 15850, determined by 1 control set per CLB). This exceeds the control set use guideline of 15 percent. This is at a level where reduction is REQUIRED (see UG949). Use report_control_sets to get more details.
+This design uses 9043 control sets (vs. available limit of 15850, determined by 1 control set per CLB). This exceeds the control set use guideline of 15 percent. This is at a level where reduction is REQUIRED (see UG949). Use report_control_sets to get more details.
 Related violations: <none>
 
 LATCH-1#1 Advisory

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Fri Dec 16 01:13:17 2022
+| Date         : Fri Dec 16 03:26:34 2022
 | Host         : Richi-PC running 64-bit major release  (build 9200)
 | Command      : report_drc -file TOP_BIN_drc_routed.rpt -pb TOP_BIN_drc_routed.pb -rpx TOP_BIN_drc_routed.rpx
 | Design       : TOP_BIN
@@ -49,7 +49,7 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net fsm_inst/FSM_onehot_state_reg[3]_1 is a gated clock net sourced by a combinational pin fsm_inst/trigger_reg_i_2/O, cell fsm_inst/trigger_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net fsm_inst/FSM_onehot_state_reg[3]_0 is a gated clock net sourced by a combinational pin fsm_inst/trigger_reg_i_2/O, cell fsm_inst/trigger_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

@@ -123,6 +123,15 @@ module CELDA
                             
                                
                 end     
+        //5  NORMAL EVOLUTION edge detection
+        'd5: begin
+                if  (  (sum_neighborhod == 'd3) | (sum_neighborhod == 'd4)) // ((sum_neighborhod == 'd4) & (SELF == 'd1)) |
+                        next_cell_state = 'd1;
+            
+                     
+                    else 
+                        next_cell_state = 0;
+             end                
                 
                 
         default:    next_cell_state = cell_state;     

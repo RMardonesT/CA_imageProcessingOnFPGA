@@ -78,8 +78,8 @@ module TOP_BIN(
   /************************
  * INSTANCE OF FSM OP MODES
  ***********************/ 
-   localparam M = 100;
-   localparam N = 100;
+   localparam M = 95;
+   localparam N = 95;
    
    logic trigger;
    
