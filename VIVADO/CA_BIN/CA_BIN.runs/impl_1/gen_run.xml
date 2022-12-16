@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1669861942">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1671157452">
   <File Type="ROUTE-PWR" Name="TOP_BIN_power_routed.rpt"/>
   <File Type="PA-TCL" Name="TOP_BIN.tcl"/>
   <File Type="BITSTR-MMI" Name="TOP_BIN.mmi"/>
@@ -144,15 +144,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/display_7s.sv">
+    <File Path="$PSRCDIR/sources_1/new/TOP_BIN.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/TOP_BIN.sv">
+    <File Path="$PSRCDIR/sources_1/new/display_7s.sv">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

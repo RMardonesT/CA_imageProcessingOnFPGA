@@ -13,7 +13,7 @@ source TOP_BIN.tcl -notrace
 Command: read_checkpoint -auto_incremental -incremental C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/utils_1/imports/synth_1/TOP_BIN.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/utils_1/imports/synth_1/TOP_BIN.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
-Command: synth_design -top TOP_BIN -part xc7a100tcsg324-1 -directive AlternateRoutability -no_lc -shreg_min_size 10
+Command: synth_design -top TOP_BIN -part xc7a100tcsg324-1 -directive AreaOptimized_high -control_set_opt_threshold 1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
@@ -22,13 +22,13 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 4360
+INFO: [Synth 8-7075] Helper process launched with PID 9104
 WARNING: [Synth 8-9971] redeclaration of ansi port 'state' is not allowed [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/FSM_OPERATION_MODES.sv:40]
 WARNING: [Synth 8-8983] 'state' was previously declared with a range [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/FSM_OPERATION_MODES.sv:40]
 WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/TOP_BIN.sv:57]
 WARNING: [Synth 8-6901] identifier 'trigger' is used before its declaration [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/TOP_BIN.sv:57]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1280.098 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1279.270 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'TOP_BIN' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/TOP_BIN.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/debouncer.sv:1]
@@ -58,13 +58,13 @@ INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/ricar/OneDrive/Escr
 INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/uart_tx.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'UART_LOGIC' (0#1) [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/UART_LOGIC.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'FSM_OPERATION_MODES' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/FSM_OPERATION_MODES.sv:23]
-	Parameter M bound to: 60 - type: integer 
-	Parameter N bound to: 60 - type: integer 
+	Parameter M bound to: 50 - type: integer 
+	Parameter N bound to: 50 - type: integer 
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/FSM_OPERATION_MODES.sv:79]
 INFO: [Synth 8-6155] done synthesizing module 'FSM_OPERATION_MODES' (0#1) [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/FSM_OPERATION_MODES.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'GRID_SCRIPT' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/GRID_SCRIPT.sv:23]
-	Parameter M bound to: 60 - type: integer 
-	Parameter N bound to: 60 - type: integer 
+	Parameter M bound to: 50 - type: integer 
+	Parameter N bound to: 50 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'CELDA' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/CELDA.sv:23]
 	Parameter ic bound to: 0 - type: integer 
 	Parameter top_row bound to: 1 - type: integer 
@@ -86,77 +86,152 @@ INFO: [Synth 8-6157] synthesizing module 'CELDA__parameterized2' [C:/Users/ricar
 	Parameter bottom_row bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'CELDA__parameterized2' (0#1) [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/CELDA.sv:23]
 INFO: [Synth 8-6155] done synthesizing module 'GRID_SCRIPT' (0#1) [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/GRID_SCRIPT.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'display_7s' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/display_7s.sv:22]
-INFO: [Synth 8-226] default block is never used [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/display_7s.sv:72]
-INFO: [Synth 8-226] default block is never used [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/display_7s.sv:90]
-INFO: [Synth 8-226] default block is never used [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/display_7s.sv:113]
-INFO: [Synth 8-6155] done synthesizing module 'display_7s' (0#1) [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/display_7s.sv:22]
-WARNING: [Synth 8-689] width (64) of port connection 'numero' does not match port width (32) of module 'display_7s' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/TOP_BIN.sv:166]
 INFO: [Synth 8-6155] done synthesizing module 'TOP_BIN' (0#1) [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/TOP_BIN.sv:23]
 WARNING: [Synth 8-87] always_comb on 'next_state_reg' did not result in combinational logic [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/FSM_OPERATION_MODES.sv:83]
-WARNING: [Synth 8-87] always_comb on 'next_cell_state_reg' did not result in combinational logic [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/CELDA.sv:70]
-WARNING: [Synth 8-87] always_comb on 'next_cell_state_reg' did not result in combinational logic [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/CELDA.sv:70]
-WARNING: [Synth 8-87] always_comb on 'next_cell_state_reg' did not result in combinational logic [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/CELDA.sv:70]
-WARNING: [Synth 8-87] always_comb on 'next_cell_state_reg' did not result in combinational logic [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/CELDA.sv:70]
 WARNING: [Synth 8-87] always_comb on 'trigger_reg' did not result in combinational logic [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/TOP_BIN.sv:57]
-WARNING: [Synth 8-7129] Port SW[15] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW[14] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW[13] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW[12] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW[11] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW[10] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW[9] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW[8] in module TOP_BIN is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SW[7] in module TOP_BIN is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SW[6] in module TOP_BIN is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SW[5] in module TOP_BIN is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SW[4] in module TOP_BIN is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SW[3] in module TOP_BIN is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1329.777 ; gain = 49.680
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1299.383 ; gain = 20.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1329.777 ; gain = 49.680
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1299.383 ; gain = 20.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1329.777 ; gain = 49.680
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1299.383 ; gain = 20.113
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1329.777 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.516 . Memory (MB): peak = 1299.383 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[6]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[5]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[4]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[3]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[2]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[1]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG[0]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_BIN_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_BIN_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 1536.992 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1419.832 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.375 . Memory (MB): peak = 1536.992 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 1419.832 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1536.992 ; gain = 256.895
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1419.832 ; gain = 140.562
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1536.992 ; gain = 256.895
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1419.832 ; gain = 140.562
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1536.992 ; gain = 256.895
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1419.832 ; gain = 140.562
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'debouncer'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
@@ -175,13 +250,13 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                 RX_IDLE |                              000 |                              000
-                RX_START |                              001 |                              001
-                 RX_RECV |                              010 |                              010
-                 RX_STOP |                              011 |                              011
-                RX_READY |                              100 |                              100
+                 RX_IDLE |                            00001 |                              000
+                RX_START |                            00010 |                              001
+                 RX_RECV |                            00100 |                              010
+                 RX_STOP |                            01000 |                              011
+                RX_READY |                            10000 |                              100
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'uart_rx'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -196,61 +271,53 @@ WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' 
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                    IDLE |                              000 |                              000
-               LOAD_WAIT |                              001 |                              001
-                    LOAD |                              010 |                              010
-               DOWN_WAIT |                              011 |                              011
-                    DOWN |                              100 |                              100
-                 PROCESS |                              101 |                              101
+                    IDLE |                           000001 |                              000
+               LOAD_WAIT |                           000010 |                              001
+                    LOAD |                           000100 |                              010
+               DOWN_WAIT |                           001000 |                              011
+                    DOWN |                           010000 |                              100
+                 PROCESS |                           100000 |                              101
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'FSM_OPERATION_MODES'
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/FSM_OPERATION_MODES.sv:83]
-WARNING: [Synth 8-327] inferring latch for variable 'next_cell_state_reg' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/CELDA.sv:70]
-WARNING: [Synth 8-327] inferring latch for variable 'next_cell_state_reg' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/CELDA.sv:70]
-WARNING: [Synth 8-327] inferring latch for variable 'next_cell_state_reg' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/CELDA.sv:70]
-WARNING: [Synth 8-327] inferring latch for variable 'next_cell_state_reg' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/CELDA.sv:70]
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'FSM_OPERATION_MODES'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/FSM_OPERATION_MODES.sv:83]
 WARNING: [Synth 8-327] inferring latch for variable 'trigger_reg' [C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/TOP_BIN.sv:57]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1536.992 ; gain = 256.895
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 1419.832 ; gain = 140.562
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   27 Bit       Adders := 1     
 	   2 Input   19 Bit       Adders := 2     
-	   2 Input    8 Bit       Adders := 1     
-	   2 Input    6 Bit       Adders := 2     
-	   9 Input    5 Bit       Adders := 3600  
-	   2 Input    3 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 3     
+	   9 Input    5 Bit       Adders := 2500  
+	   2 Input    3 Bit       Adders := 3     
 	   2 Input    2 Bit       Adders := 1     
 +---Registers : 
-	               27 Bit    Registers := 1     
 	               19 Bit    Registers := 2     
-	                8 Bit    Registers := 3     
-	                6 Bit    Registers := 2     
-	                3 Bit    Registers := 5     
+	                8 Bit    Registers := 5     
+	                3 Bit    Registers := 4     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 3606  
+	                1 Bit    Registers := 2505  
 +---Muxes : 
-	   2 Input   27 Bit        Muxes := 1     
-	   2 Input    8 Bit        Muxes := 8     
+	   2 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 2     
 	   5 Input    6 Bit        Muxes := 1     
-	   2 Input    6 Bit        Muxes := 1     
-	   6 Input    6 Bit        Muxes := 2     
-	   5 Input    5 Bit        Muxes := 1     
-	   2 Input    5 Bit        Muxes := 5     
-	   2 Input    3 Bit        Muxes := 14    
-	   5 Input    3 Bit        Muxes := 2     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 12    
+	   5 Input    5 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 6     
+	   2 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
 	   4 Input    3 Bit        Muxes := 4     
-	   6 Input    3 Bit        Muxes := 3     
+	   6 Input    3 Bit        Muxes := 2     
 	   2 Input    2 Bit        Muxes := 7     
 	   4 Input    2 Bit        Muxes := 1     
-	   4 Input    1 Bit        Muxes := 3488  
-	   6 Input    1 Bit        Muxes := 3605  
-	   3 Input    1 Bit        Muxes := 60    
+	   6 Input    1 Bit        Muxes := 5003  
 	   2 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 6     
 	   5 Input    1 Bit        Muxes := 1     
 	   7 Input    1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
@@ -269,51 +336,35 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port LED[15] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port LED[14] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port LED[13] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port LED[12] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port LED[11] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port LED[10] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port LED[9] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port LED[8] in module TOP_BIN is either unconnected or has no load
 WARNING: [Synth 8-7129] Port LED[7] in module TOP_BIN is either unconnected or has no load
 WARNING: [Synth 8-7129] Port LED[6] in module TOP_BIN is either unconnected or has no load
 WARNING: [Synth 8-7129] Port LED[5] in module TOP_BIN is either unconnected or has no load
 WARNING: [Synth 8-7129] Port LED[4] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW[15] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW[14] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW[13] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW[12] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW[11] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW[10] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW[9] in module TOP_BIN is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SW[8] in module TOP_BIN is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SW[7] in module TOP_BIN is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SW[6] in module TOP_BIN is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SW[5] in module TOP_BIN is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SW[4] in module TOP_BIN is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SW[3] in module TOP_BIN is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:12:09 ; elapsed = 00:12:51 . Memory (MB): peak = 2148.035 ; gain = 867.938
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:06 ; elapsed = 00:07:22 . Memory (MB): peak = 2095.203 ; gain = 815.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:12:21 ; elapsed = 00:13:04 . Memory (MB): peak = 2160.680 ; gain = 880.582
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:14 ; elapsed = 00:07:31 . Memory (MB): peak = 2095.203 ; gain = 815.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:12:33 ; elapsed = 00:13:16 . Memory (MB): peak = 2182.336 ; gain = 902.238
+Finished Timing Optimization : Time (s): cpu = 00:07:35 ; elapsed = 00:07:51 . Memory (MB): peak = 2095.203 ; gain = 815.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:13:53 ; elapsed = 00:15:02 . Memory (MB): peak = 2743.281 ; gain = 1463.184
+Finished Technology Mapping : Time (s): cpu = 00:08:07 ; elapsed = 00:08:25 . Memory (MB): peak = 2344.480 ; gain = 1065.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -331,37 +382,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:14:03 ; elapsed = 00:15:13 . Memory (MB): peak = 2743.281 ; gain = 1463.184
+Finished IO Insertion : Time (s): cpu = 00:08:12 ; elapsed = 00:08:31 . Memory (MB): peak = 2344.480 ; gain = 1065.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:14:03 ; elapsed = 00:15:13 . Memory (MB): peak = 2743.281 ; gain = 1463.184
+Finished Renaming Generated Instances : Time (s): cpu = 00:08:12 ; elapsed = 00:08:31 . Memory (MB): peak = 2344.480 ; gain = 1065.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:14:38 ; elapsed = 00:15:48 . Memory (MB): peak = 2743.281 ; gain = 1463.184
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:08:16 ; elapsed = 00:08:35 . Memory (MB): peak = 2344.480 ; gain = 1065.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:14:39 ; elapsed = 00:15:49 . Memory (MB): peak = 2743.281 ; gain = 1463.184
+Finished Renaming Generated Ports : Time (s): cpu = 00:08:22 ; elapsed = 00:08:41 . Memory (MB): peak = 2344.480 ; gain = 1065.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:14:40 ; elapsed = 00:15:50 . Memory (MB): peak = 2743.281 ; gain = 1463.184
+Finished Handling Custom Attributes : Time (s): cpu = 00:08:23 ; elapsed = 00:08:42 . Memory (MB): peak = 2344.480 ; gain = 1065.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:14:40 ; elapsed = 00:15:50 . Memory (MB): peak = 2743.281 ; gain = 1463.184
+Finished Renaming Generated Nets : Time (s): cpu = 00:08:23 ; elapsed = 00:08:42 . Memory (MB): peak = 2344.480 ; gain = 1065.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -378,44 +429,43 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |     7|
-|3     |LUT1   |     6|
-|4     |LUT2   |  2367|
-|5     |LUT3   | 23819|
-|6     |LUT4   |    54|
-|7     |LUT5   |    81|
-|8     |LUT6   |  7259|
-|9     |FDCE   |     3|
-|10    |FDRE   |  3725|
-|11    |FDSE   |     5|
-|12    |LD     |  3604|
-|13    |IBUF   |     7|
-|14    |OBUF   |    20|
-|15    |OBUFT  |    12|
+|2     |CARRY4 |     9|
+|3     |LUT1   |    14|
+|4     |LUT2   |    18|
+|5     |LUT3   | 16345|
+|6     |LUT4   |    64|
+|7     |LUT5   |    66|
+|8     |LUT6   |  4971|
+|9     |FDRE   |  2602|
+|10    |FDSE   |     7|
+|11    |LD     |     1|
+|12    |IBUF   |     7|
+|13    |OBUF   |     5|
+|14    |OBUFT  |     4|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:14:40 ; elapsed = 00:15:50 . Memory (MB): peak = 2743.281 ; gain = 1463.184
+Finished Writing Synthesis Report : Time (s): cpu = 00:08:23 ; elapsed = 00:08:42 . Memory (MB): peak = 2344.480 ; gain = 1065.211
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:14:05 ; elapsed = 00:15:34 . Memory (MB): peak = 2743.281 ; gain = 1255.969
-Synthesis Optimization Complete : Time (s): cpu = 00:14:40 ; elapsed = 00:15:50 . Memory (MB): peak = 2743.281 ; gain = 1463.184
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:08:03 ; elapsed = 00:08:34 . Memory (MB): peak = 2344.480 ; gain = 944.762
+Synthesis Optimization Complete : Time (s): cpu = 00:08:23 ; elapsed = 00:08:42 . Memory (MB): peak = 2344.480 ; gain = 1065.211
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.667 . Memory (MB): peak = 2743.281 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 3611 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.361 . Memory (MB): peak = 2344.480 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2743.281 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2344.480 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 3604 instances were transformed.
-  LD => LDCE: 3604 instances
+  A total of 1 instances were transformed.
+  LD => LDCE: 1 instance 
 
-Synth Design complete, checksum: e403a4cf
+Synth Design complete, checksum: 69d551f7
 INFO: [Common 17-83] Releasing license: Synthesis
-65 Infos, 61 Warnings, 0 Critical Warnings and 0 Errors encountered.
+60 Infos, 59 Warnings, 31 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:14:55 ; elapsed = 00:16:07 . Memory (MB): peak = 2743.281 ; gain = 1463.184
+synth_design: Time (s): cpu = 00:08:35 ; elapsed = 00:08:54 . Memory (MB): peak = 2344.480 ; gain = 1065.211
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.runs/synth_1/TOP_BIN.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2743.281 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file TOP_BIN_utilization_synth.rpt -pb TOP_BIN_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 30 23:48:45 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 15 23:33:18 2022...

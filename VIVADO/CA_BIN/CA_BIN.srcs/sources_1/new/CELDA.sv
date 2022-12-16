@@ -63,54 +63,62 @@ module CELDA
     
     always_comb begin
         
-        //4 NORMAL EVOLUTINO       
-        if (operation == 4) 
+      case(operation)
         
-            if  (  (sum_neighborhod == 'd3) | (sum_neighborhod == 'd4) ) // ((sum_neighborhod == 'd4) & (SELF == 'd1)) |
-                next_cell_state = 'd1;
+        //0 KEEP CURRENT STATE
+        'd0:   begin
+                    next_cell_state = SELF;
+               end
+        
+        //1 HORIZONTAL SHIFT  ON TOP ROW  (load) 
+        'd1:   begin
+                    if(top_row)
+                        next_cell_state = O;
+            
+                    else 
+                        next_cell_state = SELF;
+               end  
+        
+        //2 VERTICAL SHIFT  
+        'd2:   begin
+                   //copy state from northern neighbor
+                    if (top_row == 0)
+                        next_cell_state = N;
+                                     
+                    else 
+                        //corner cell gets new data_in from uart
+                        if (load_cell)
+                            next_cell_state = O;
+                            
+                        //cell manteins its current state                    
+                        else     
+                            next_cell_state = SELF;                             
+       
+               end
+        
+        //3  HORIZONTAL SHIFT ON BOTTOM ROW  (download)
+        'd3:    begin
+                    if (bottom_row)                
+                        next_cell_state = O;
+                    else
+                        next_cell_state = SELF;
+                    end
+                            
+        
+        //4 NORMAL EVOLUTION
+        'd4:    begin
+                    if  (  (sum_neighborhod == 'd3) | (sum_neighborhod == 'd4)) // ((sum_neighborhod == 'd4) & (SELF == 'd1)) |
+                        next_cell_state = 'd1;
             
                      
-            else 
-                next_cell_state = 0;   
-                  //next_cell_state = SELF;
+                    else 
+                        next_cell_state = 0;   
+                end     
                 
-        // 1 HORIZONTAL operation ON TOP ROW     
-        else if (operation == 1)  
-            if(top_row)
-                next_cell_state = O;
-            
-            else 
-                next_cell_state = SELF;
                 
-        //2 VERTICAL operation                
-        else if (operation == 2)   
-                                    
-            //copy state from northern neighbor
-            if (top_row == 0)
-                next_cell_state = N;
-                             
-            else 
-                //corner cell gets new data_in from uart
-                if (load_cell)
-                    next_cell_state = O;
-                    
-                //cell manteins its current state                    
-                else     
-                    next_cell_state = SELF;                             
-       
-       //0 KEEP CURRENT  STATE 0             
-       else if (operation == 'd0)
-            next_cell_state = SELF;
-       
-       
-       //3  HORIZONTAL operation ON BOTTOM ROW     
-       else if (operation == 'd3)
-            if (bottom_row)                
-                next_cell_state = O;
-            else
-                next_cell_state = SELF;
-                
-        
+        default:    next_cell_state = cell_state;     
+                                  
+      endcase
         
     end
     

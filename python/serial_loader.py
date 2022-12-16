@@ -37,11 +37,34 @@ def show_CA(grid, M,N):                                                     #
 #############################################################################
 
 
+def binarize(img,th):
+    
+  #convert image to greyscale
+  img=img.convert('L') 
+
+  width,height=img.size
+
+  #traverse through pixels 
+  for x in range(width):
+    for y in range(height):
+
+      #if intensity less than threshold, assign white
+      if img.getpixel((x,y)) < th:
+        img.putpixel((x,y),0)
+
+      #if intensity greater than threshold, assign black 
+      else:
+        img.putpixel((x,y),255)
+
+  return img
+
+
+
  #############################################################################
  # Create and open the serial port                                          #
  #############################################################################    
                                                                             #
-serial_port = serial.Serial()                                               #
+serial_port = serial.Serial()                                           #
 serial_port.port = 'COM6'                                                   #
 serial_port.baudrate = 115200                                               #
 serial_port.timeout = 4                                                     #
@@ -57,22 +80,24 @@ serial_port.parity = serial.PARITY_NONE                                     #
  # Create image to send as initial value of CA                               #
  #############################################################################    
                                                                             #
-DEFAULT_IMAGE_SIZE = (60, 60)                                               #
+DEFAULT_IMAGE_SIZE = (50, 50)                                               #
 M,N = DEFAULT_IMAGE_SIZE                                                    #  
                  
                  
-           
+#original   = Image.open('paper.jpg', 'r')  
+#original.show()     
 
                                                                             #
-pil_im = Image.open('60_apple.png', 'r')   
+pil_im = Image.open('lena.jpg', 'r')   
 
                            #
-                                                                            #
+                                                                         #
 pil_im = pil_im.resize(DEFAULT_IMAGE_SIZE)    
-pil_im.show()                                      #
-pil_im = pil_im.convert("L")                                                #  
-print(pil_im)     
-datanp = np.array([pixel for  pixel in pil_im.getdata()][0:3600])   
+pil_im = binarize(pil_im,130)       
+#pil_im = pil_im.convert("L")                                                #  
+pil_im.show()                                #
+
+datanp = np.array([pixel for  pixel in pil_im.getdata()])   
 
 print(len(datanp))       #
                                                                             #    
@@ -138,9 +163,14 @@ while True:
             lista = data2            
             show_CA(lista, M,N)
 
+
+            #pil_im = pil_im.resize((848,477) ) 
             pil_im.putdata(data2.tolist())
+            
+            
             pil_im.show()
             
+
             
 
         else:

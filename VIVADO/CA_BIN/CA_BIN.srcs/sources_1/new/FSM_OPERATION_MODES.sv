@@ -40,8 +40,8 @@ module FSM_OPERATION_MODES
     enum logic [2:0] {IDLE, LOAD_WAIT, LOAD, DOWN_WAIT, DOWN, PROCESS}    state, next_state; 
     
     //COUNTERS    
-    logic [5:0] col, next_col;
-    logic [5:0] row, next_row;
+    logic [7:0] col, next_col;
+    logic [7:0] row, next_row;
     
     //NEXT OPERATION FF
     logic [2:0] next_operation;

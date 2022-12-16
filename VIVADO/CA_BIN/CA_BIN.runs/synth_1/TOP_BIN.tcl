@@ -72,6 +72,7 @@ proc create_report { reportName command } {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 2
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -92,7 +93,6 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/GRID_SCRIPT.sv
   C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/UART_LOGIC.sv
   C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/debouncer.sv
-  C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/display_7s.sv
   C:/Users/ricar/OneDrive/Escritorio/MEMORIA/CA_imageProcessingOnFPGA/VIVADO/CA_BIN/CA_BIN.srcs/sources_1/new/TOP_BIN.sv
 }
 read_verilog -library xil_defaultlib {
@@ -119,7 +119,7 @@ read_checkpoint -auto_incremental -incremental C:/Users/ricar/OneDrive/Escritori
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top TOP_BIN -part xc7a100tcsg324-1 -directive AlternateRoutability -no_lc -shreg_min_size 10
+synth_design -top TOP_BIN -part xc7a100tcsg324-1 -directive AreaOptimized_high -control_set_opt_threshold 1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

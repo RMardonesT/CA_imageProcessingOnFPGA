@@ -29,12 +29,12 @@ module TOP_BIN(
     input logic BTNC,
     input logic uart_rx_usb,
     
-    input logic [15:0] SW, 
+    input logic [7:0] SW, 
     
-    output logic [6:0] SEG,
-    output logic [7:0] AN, 
+    //output logic [6:0] SEG,
+    //output logic [7:0] AN, 
         
-    output logic [15:0] LED, 
+    output logic [7:0] LED, 
     output logic uart_tx_usb
     );
     
@@ -78,8 +78,8 @@ module TOP_BIN(
   /************************
  * INSTANCE OF FSM OP MODES
  ***********************/ 
-   localparam M = 60;
-   localparam N = 60;
+   localparam M = 50;
+   localparam N = 50;
    
    logic trigger;
    
@@ -158,17 +158,17 @@ module TOP_BIN(
     logic next_led_rx;
     
     assign next_led_rx = trigger ? ~LED[3] : LED[3];  
-    assign data_show = { {3'b0,out[0]} ,  {3'b0,out[1]} ,  {3'b0,out[2]},  {3'b0,out[3]} ,  {3'b0,out[4]},  {3'b0,out[5]},  {3'b0,out[6]},  {3'b0,out[7]}};
+    //assign data_show = { {3'b0,out[0]} ,  {3'b0,out[1]} ,  {3'b0,out[2]},  {3'b0,out[3]} ,  {3'b0,out[4]},  {3'b0,out[5]},  {3'b0,out[6]},  {3'b0,out[7]}};
     
- 
+ /*
      display_7s( .clk_in(CLK100MHZ),
                  .reset(~CPU_RESETN),
                  .numero({'b0,data_show}),
                  .sevenSeg(SEG),
                  .anodo(AN),
                  .an_on(8'b11111111)
-                 );   
-
+    );   
+*/           
      always_ff @(posedge CLK100MHZ) begin
                                                     
             LED[3] <= next_led_rx;
