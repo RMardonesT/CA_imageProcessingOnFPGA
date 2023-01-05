@@ -44,14 +44,17 @@ module TOP_CA(
     
     
     debouncer #(.DELAY(200)) BTN (.clk(CLK100MHZ),.rst('d0),.PB(BTNC),.PB_pressed_pulse(BTN_DEB)); //load_A
-  /****************************************************/
- /*          UART INSTANCE
- /****************************************************/
+  /****************************************************
+ *          UART INSTANCE
+ ****************************************************/
         
     //tx signal
     logic tx_busy;
     logic [7:0] data_send;
     logic tx_start;
+    
+    logic [2:0] state;
+    logic trigger;
     
     assign tx_start = (state ==3) ? trigger : 0;
     
@@ -80,7 +83,7 @@ module TOP_CA(
    localparam M = 4;
    localparam N = 4;
    
-   logic trigger;
+   //logic trigger;
    
    logic load, download, evolve;
    
@@ -89,7 +92,7 @@ module TOP_CA(
    assign evolve = SW[2] | BTN_DEB ;
    
    logic [2:0] operation;
-   logic [2:0] state;
+   //logic [2:0] state;
    
    
    assign LED[2:0] = state;   //state of FSM   
@@ -160,7 +163,7 @@ module TOP_CA(
     assign data_show = { out[0][3:0] ,  out[1][3:0] ,  out[2][3:0],  out[3][3:0] ,  out[4][3:0],  out[5][3:0],  out[6][3:0],  out[7][3:0]};
     
  
-     display_7s( .clk_in(CLK100MHZ),
+     display_7s lucecitas( .clk_in(CLK100MHZ),
                  .reset(~CPU_RESETN),
                  .numero({'b0,data_show}),
                  .sevenSeg(SEG),

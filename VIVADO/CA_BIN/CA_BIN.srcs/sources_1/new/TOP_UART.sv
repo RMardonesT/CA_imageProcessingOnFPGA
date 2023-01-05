@@ -66,5 +66,5 @@ module TOP_UART(
 	
 	
 	always @(posedge rx_ready) begin
-		LED <= led; end
+		LED <= leds; end
 endmodule

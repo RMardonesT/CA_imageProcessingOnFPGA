@@ -45,14 +45,17 @@ module TOP_BIN(
     
     
     debouncer #(.DELAY(200)) BTN (.clk(CLK100MHZ),.rst('d0),.PB(BTNC),.PB_pressed_pulse(BTN_DEB)); //load_A
-  /****************************************************/
- /*          UART INSTANCE
- /****************************************************/
+  /****************************************************
+ *          UART INSTANCE
+ ****************************************************/
         
     //tx signal
     logic tx_busy;
     logic [7:0] data_send;
     logic tx_start;
+    
+    logic [2:0] state;
+    logic trigger;
     
     assign tx_start = (state ==3) ? trigger : 0;
     
@@ -81,7 +84,7 @@ module TOP_BIN(
    localparam M = 95;
    localparam N = 95;
    
-   logic trigger;
+   //logic trigger;
    
    logic load, download, evolve;
    
@@ -90,7 +93,7 @@ module TOP_BIN(
    assign evolve = SW[2] | BTN_DEB ;
    
    logic [2:0] operation;
-   logic [2:0] state;
+   //logic [2:0] state;
    
    
    assign LED[2:0] = state;   //state of FSM   

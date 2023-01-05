@@ -38,9 +38,9 @@ module TOP(
     );
     
     
-  /****************************************************/
- /*          TEST UART TX
- /****************************************************/ 
+  /****************************************************
+ *          TEST UART TX
+ ****************************************************/ 
     logic BTN_DEB;
     
     
@@ -67,21 +67,24 @@ module TOP(
     
     assign next_led =  BTN_DEB ? ~LED[15] : LED[15];
     assign data_send_nx =  BTN_DEB ? data_send +1 : data_send;
-/************************************************************************?    
+/************************************************************************/    
     
    
-  /****************************************************/
- /*          UART INSTANCE
- /****************************************************/
-    assign LED[14] = tx_busy;
+  /****************************************************
+ *          UART INSTANCE
+ ****************************************************/
+    //assign LED[14] = tx_busy;
     
     //tx signal
     logic tx_busy;
+    
+    assign LED[14] = tx_busy;
     
     //rx signal
     logic [7:0] rx_data;
     logic rx_ready;
     
+    logic trigger;
     
     UART_LOGIC     uart_inst (
                             .clk(CLK100MHZ),
@@ -95,7 +98,7 @@ module TOP(
                             .tx_busy(tx_busy)
                   );
     
-/************************************************************************?
+/************************************************************************/
     
 
     
@@ -106,7 +109,7 @@ module TOP(
    localparam M = 4;
    localparam N = 4;
    
-   logic trigger;
+   //logic trigger;
    
    logic load, download, evolve;
    
@@ -164,7 +167,7 @@ module TOP(
     
     assign LED[2:0] = state;   //state of FSM   
    
-    display_7s( .clk_in(CLK100MHZ),
+    display_7s lucecitas( .clk_in(CLK100MHZ),
                  .reset(~CPU_RESETN),
                  .numero({'b0,rx_data}),
                  .sevenSeg(SEG),
